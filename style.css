@@ -78,3 +78,51 @@ nav{
     border-radius: 50px;
     padding: 50px 10px 30px 10px;
 }
+.discordmsg{
+    margin-bottom: 30px;
+}
+.replyLine{
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.profilePic{
+    float: inline-start;
+    margin-right: 15px;
+}
+.replyProfilePic{
+    width: 25px;
+}
+.profileName{
+    float: inline-start;
+    color: white;
+    margin-right: 5px;
+}
+.msgTime{
+    float: inline-start;
+    color: lightgray;
+    font-size: 10px;
+    margin-top: 7.5px;
+}
+.msgTextEspy{
+    margin-top: 1px;
+    color: white;
+    transform: translateX(-18.2%);
+}
+.msgTextEspy2{
+    margin-top: 1px;
+    color: white;
+    transform: translateX(5.25%) translateY(-60%);
+}
+.msgTextVolta{
+    margin-top: 1px;
+    color: white;
+    transform: translateX(-14.3%);
+}
+.msgTextLeaf{
+    color: white;
+    margin-top: 1px;
+    transform: translateX(-19.725%);
+}
+.extraheight1{
+    transform: translateY(-55%);
+}
