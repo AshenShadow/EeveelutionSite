@@ -1,0 +1,80 @@
+/*UNIVERSAL*/
+body{
+    background: linear-gradient(90deg, rgb(168, 67, 0, 0.5) 0%, rgb(52, 152, 219, 0.5) 10%, rgb(255, 88, 0, 0.5) 20%, rgb(241, 196, 15, 0.5) 30%, rgb(155, 89, 182, 0.5) 40%, rgb(30, 30, 30, 0.5) 50%, rgb(30, 204, 113, 0.5) 60%, rgb(0, 243, 255, 0.5) 70%, rgb(255, 0, 241, 0.5) 80%, rgb(255, 255, 255, 0.5) 90%, rgb(168, 67, 0, 0.5) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    color: white;
+}
+.navlogo{
+    width: 75px;
+    height: 75px;
+    float: inline-start;
+    margin-top: -12.5px;
+}
+.navbody{
+    background-color: #23272A;
+    height: 75px;
+}
+.titlenlogo{
+    margin-left: 50px;
+    padding-top: 12.5px;
+}
+.title{
+    background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 20% 20%;
+}
+.sites{
+    float: right;
+    margin-top: -55px;
+    height: 75px;
+    padding-top: 12.5px;
+    margin-right: 50px;
+}
+.sitebutton:hover{
+    background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    text-decoration: none;
+    width: 280px;
+    overflow: hidden;
+    transition: width 0.5s linear;
+    transition-timing-function: ease-in-out;
+}
+.sitebutton{
+    background-color: #23272A;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    height: 44px;
+    padding-left: 6px;
+    border-radius: 50px;
+    width: 48.5px;
+    overflow: hidden;
+    transition: width 0.5s linear;
+    transition-timing-function: ease-in-out;
+    float: left;
+}
+.discicon{
+    width: 30px;
+    height: 30px;
+}
+
+/*INDEX*/
+
+/*ARCHIVES*/
+.discordmimic{
+    background-color: #23272A;
+    width: 75%;
+    height: fit-content;
+    margin: 50px 12.5% 50px 12.5%;
+    border-radius: 50px;
+    padding: 50px 10px 30px 10px;
+}
