@@ -78,54 +78,80 @@ nav{
     border-radius: 50px;
     padding: 50px 10px 30px 10px;
 }
-.discordmsg{
-    margin-bottom: 3px;
-    border: 2px solid white;
-    height: fit-content;
+table{
+    color: white;
+    width: fit-content;
 }
-.replyLine{
-    border-top: 1px solid gray;
-    border-left: 1px solid gray;
-    border-radius: 5px 0 0 0;
+.profilepic{
+    width: 70px;
+    text-align: center;
+    padding-top: 0;
+}
+.picture{
+    margin-top: 30px;
     width: 50px;
-    height: 15px;
 }
-.replyProfilePic{
+.profilename{
+    font-size: larger;
+    font-weight: bold;
+}
+.profilenametext{
+    margin-bottom: -2px;
+}
+.profiletime{
+    font-size: 11px;
+    padding-left: 10px;
+    color: gray;
+}
+.profiletimetext{
+    margin-bottom: -9px;
+}
+.message{
+    margin-top: -20px;
+}
+.messagetext{
+    margin-top: -22.5px;
+}
+.reply{
+    margin-bottom: -42.5px;
+}
+.replyline{
+    border-top: 2px solid rgb(56, 56, 56);
+    border-left: 2px solid rgb(56, 56, 56);
+    border-radius: 10px 0 0 0;
+    width: 40px;
+    height: 20px;
+    margin-left: 33px;
+    margin-top: 0px;
+}
+.replypicture{
     width: 25px;
+    margin-top: -20px;
 }
-.profileName{
+.replyname{
+    color: rgb(180, 180, 180);
+    font-weight: bold;
+}
+.replytext{
+    color: darkgray;
+    font-size: 12.5px;
+}
+
+.explanation{
+    background-color: #23272A;
+    width: 75%;
+    height: fit-content;
+    margin: 50px 12.5% 50px 12.5%;
+    border-radius: 50px;
+    padding: 25px 10px 30px 10px;
     color: white;
-    margin-right: 5px;
-    width: fit-content;
-    float: inline-start;
-    transform: translateY(-5%) translateX(10%);
+    text-align: center;
 }
-.profileNameVolta{
-    margin-left: 4px;
-}
-.msgTime{
-    float: inline-start;
-    color: lightgray;
-    font-size: 10px;
-    margin-top: 7.5px;
-    transform: translateY(-5%) translateX(10%);
-}
-.msgTextEspy{
-    color: white;
-    width: 250px;
-    height: 100%;
-    transform: translateY(-15%);
-}
-.msgTextVolta{
-    margin-top: 1px;
-    color: white;
-}
-.msgTextLeaf{
-    color: white;
-    margin-top: 1px;
-}
-.imageDiv{
-    height: 75px;
-    width: fit-content;
-    float: inline-start;
+.joinbutton{
+    background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: xx-large;
+    background-size: 50% 50%;
 }
