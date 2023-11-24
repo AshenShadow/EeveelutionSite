@@ -159,6 +159,10 @@ table{
     font-size: xx-large;
     background-size: 50% 50%;
     text-decoration: none;
+    border: 2px solid white;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 5px 0 5px;
 }
 .joinbutton:hover{
     background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
@@ -168,6 +172,10 @@ table{
     font-size: xx-large;
     background-size: 50% 50%;
     text-decoration: none;
+    border: 2px solid white;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 5px 0 5px;
 }
 .pencil{
     float: inline-start;
