@@ -281,3 +281,32 @@ ul{
 .indent{
     text-indent: 25px;
 }
+
+/*MEMBERS*/
+.memberlist{
+    width: 75%;
+    height: fit-content;
+    margin: 50px 12.5% 50px 12.5%;
+    border-radius: 50px;
+    padding: 50px 10px 30px 10px;
+}
+.SpeciesImage{
+    width: 150px;
+}
+.membername{
+    font-size: 35px;
+}
+.memberusername{
+    color: gray;
+    font-size: large;
+    transform: translateX(-90%) translateY(5%);
+}
+.memberdiscord{
+    width: 25px;
+}
+.memberdescription{
+    font-size: 17.5px;
+}
+.TypeImage{
+    width: 40px;
+}
