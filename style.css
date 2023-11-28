@@ -304,6 +304,9 @@ ul{
     transform: scale(105%);
     transition-duration: 0.5s;
 }
+.membercard table{
+    width: 100%;
+}
 .SpeciesImage{
     width: 150px;
 }
@@ -313,13 +316,24 @@ ul{
 .memberusername{
     color: gray;
     font-size: large;
-    transform: translateX(-85%) translateY(5%);
 }
 .memberdiscord{
     width: 25px;
 }
 .memberdescription{
     font-size: 17.5px;
+}
+.memberspecies{
+    font-size: x-large;
+}
+.membertype{
+    font-size: x-large;
+}
+.memberlinks{
+    font-size: x-large;
+}
+.memberlinkicon{
+    width: 50px;
 }
 .TypeImage{
     width: 40px;
@@ -333,4 +347,9 @@ ul{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.line{
+    background-color: gray;
+    border-radius: 50px;
+    width: 100%;
 }
