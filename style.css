@@ -295,7 +295,7 @@ ul{
 .membercard{
     width: 100%;
     height: fit-content;
-    margin: 0;
+    margin: 25px 0 25px 0;
     border-radius: 50px;
     padding: 50px 10px 30px 10px;
     transition-duration: 0.5s;
@@ -316,6 +316,7 @@ ul{
 .memberusername{
     color: gray;
     font-size: large;
+    text-align: right;
 }
 .memberdiscord{
     width: 25px;
@@ -338,6 +339,16 @@ ul{
 .TypeImage{
     width: 40px;
 }
+.leaf{
+    background: linear-gradient(90deg, rgb(154, 221, 86) 65%, rgb(100, 147, 200) 85%);
+}
+.leafname{
+    background: linear-gradient(165deg, green 25%, lightblue 75%);
+    background-size: 12.5% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .ashby{
     background: radial-gradient(circle at -10% 50%, rgb(25, 25, 25) 10%, darkred 25%, rgb(25, 25, 25) 40%) ;
 }
@@ -347,6 +358,48 @@ ul{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.tornai{
+    background: linear-gradient(315deg, #bdad00 15%, pink 25%, pink 45%, #bdad00 55%);
+}
+.tornainame{
+    background: radial-gradient(circle at -10% 50%, yellow 0%, white 10%, yellow 20%);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.volta{
+    background: linear-gradient(90deg, #bdad00 5%, rgb(220, 220, 220) 15%, #bdad00 25%, #bdad00 70%, rgb(220, 220, 220) 80%, #bdad00 90%);
+}
+.voltaname{
+    background: radial-gradient(circle at 0% 50%, yellow 0%, white 10%, yellow 20%);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sam{
+    background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
+}
+.nick{
+    background: radial-gradient(circle at -10% 50%, darkgreen 10%, #bdad00 20%, #bdad00 30%, darkgreen 40%) ;
+}
+.nickname{
+    background: radial-gradient(circle at -15% 50%, green 10%, yellow 25%, green 40%);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skye{
+    background: radial-gradient(circle, rgb(168, 67, 0) 30%, rgb(220, 220, 220) 40%, rgb(220, 220, 220) 55%, rgb(168, 67, 0) 65%);
+}
+.zero{
+    background: linear-gradient(167.5deg, rgb(195, 240, 255) 40%, #bdad00 60%);
+}
+.spook{
+    background: radial-gradient(circle, darkgray 30%, rgb(220, 220, 220) 40%, rgb(220, 220, 220) 55%, darkgray 65%);
 }
 .line{
     background-color: gray;
