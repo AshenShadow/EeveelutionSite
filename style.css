@@ -299,7 +299,7 @@ ul{
 .memberusername{
     color: gray;
     font-size: large;
-    transform: translateX(-90%) translateY(5%);
+    transform: translateX(-85%) translateY(5%);
 }
 .memberdiscord{
     width: 25px;
