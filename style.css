@@ -318,8 +318,6 @@ ul{
 }
 .indent{
     text-indent: 25px;
-<<<<<<< Updated upstream
-=======
 }
 
 /*MEMBERS*/
@@ -445,5 +443,4 @@ ul{
     background-color: gray;
     border-radius: 50px;
     width: 100%;
->>>>>>> Stashed changes
 }
