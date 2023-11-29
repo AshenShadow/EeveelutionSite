@@ -463,8 +463,51 @@ ul{
 .spook{
     background: radial-gradient(circle, darkgray 30%, rgb(200, 200, 200) 40%, rgb(200, 200, 200) 55%, darkgray 65%);
 }
+.espy{
+    background: linear-gradient(90deg, #c9c191 10%, lightgreen 15%, #c9c191 20%, lightpink 25%, #c9c191 30%);
+}
 .line{
     background-color: gray;
     border-radius: 50px;
     width: 100%;
+}
+
+/*MOVESETS*/
+.movesetexplanation{
+    width: 75%;
+    height: fit-content;
+    margin: 20px 12.5% 0 12.5%;
+    background-color: #23272A;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+}
+.TypeChart{
+    float: inline-end;
+    width: 500px;
+}
+.movesets{
+    border: 5px solid gray;
+    background-color: rgb(120, 120, 120, 0.5);
+    width: 75%;
+    height: fit-content;
+    margin: 50px 12.5% 50px 12.5%;
+    border-radius: 50px;
+    padding: 50px 10px 30px 10px;
+}
+.MoveTypeImage{
+    width: 50px;
+}
+.move{
+    width: 200px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 0 20px 20px 0;
+}
+.move td{
+    width: 20%;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+.MoveName{
+    font-size: xx-large;
 }
