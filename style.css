@@ -79,13 +79,22 @@ nav{
     margin: 20px 3% 0 3%;
     background-color: #23272A;
     border-radius: 50px;
-    float: inline-start;
     text-align: center;
     transition-duration: 0.5s;
+    display: inline-table;
 }
 .navdiv:hover{
     transform: scale(110%);
     transition-duration: 0.5s;
+}
+.nounderline{
+    text-decoration: none;
+}
+.pagetitle{
+    background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .headdiv{
     height: 150px;
@@ -93,15 +102,24 @@ nav{
     margin: 25px 12.5% 0 12.5%;
     background-color: #23272A;
     border-radius: 50px;
+    text-align: center;
+    height: fit-content;
+    padding: 10px 0 10px 0;
+}
+.mainimage{
+    width: 150px;
 }
 .hiddentext{
     background-color: rgb(255,255,255,0.1);
+    width: 100%;
     overflow-y: hidden;
     height: 40px;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     transition-property: height;
     transition-delay: 0.1s;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 .navdiv:hover > .hiddentext{
     height: 170px;
