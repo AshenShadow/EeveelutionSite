@@ -475,6 +475,15 @@ ul{
 .dznot{
     background: conic-gradient(pink 15%, rgb(215, 215, 215) 20%, rgb(215, 215, 215) 80%, pink 85%);
 }
+.ashie{
+    background: linear-gradient(90deg, pink 25%, lightblue 75%);
+}
+.sylpan{
+    background: rgb(220, 220, 220);
+    background: conic-gradient(pink 12.5%, rgb(220, 220, 220) 12.5%, rgb(220, 220, 220) 87.5%, pink 87.5%);
+    background-size: 12.5% 25%;
+    background-repeat: repeat-x;
+}
 .line{
     background-color: gray;
     border-radius: 50px;
@@ -583,6 +592,18 @@ ul{
 .ghost td{
     border: 1px solid rgb(85, 0, 85);
 }
+.psychic{
+    background-color: rgb(255, 104, 192);
+}
+.psychic td{
+    border: 1px solid rgb(173, 0, 115);
+}
+.steel{
+    background-color: rgb(85, 122, 148);
+}
+.steel td{
+    border: 1px solid rgb(31, 50, 136);
+}
 .MoveName{
     font-size: 35px;
 }
@@ -638,6 +659,15 @@ ul{
     text-align: center;
     background: linear-gradient(90deg, black 15%, purple 50%, darkred 85%);
     border: 5px solid red;
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.sammoveset{
+    text-align: center;
+    background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
+    border: 5px solid white;
     padding: 10px 0px 10px 0px;
     border-radius: 50px;
     margin-top: 5px;
