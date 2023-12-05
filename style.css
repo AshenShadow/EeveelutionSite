@@ -463,8 +463,213 @@ ul{
 .spook{
     background: radial-gradient(circle, darkgray 30%, rgb(200, 200, 200) 40%, rgb(200, 200, 200) 55%, darkgray 65%);
 }
+.espy{
+    background: linear-gradient(90deg, #c9c191 10%, lightgreen 15%, #c9c191 20%, lightpink 25%, #c9c191 30%);
+}
+.mrvapo{
+    background:radial-gradient(at 0% 50%, blue, purple, blue, purple, blue, purple);
+}
+.mrvaponame{
+    color: lightblue;
+}
+.dznot{
+    background: conic-gradient(pink 15%, rgb(215, 215, 215) 20%, rgb(215, 215, 215) 80%, pink 85%);
+}
+.ashie{
+    background: linear-gradient(90deg, pink 25%, lightblue 75%);
+}
+.sylpan{
+    background: rgb(220, 220, 220);
+    background: conic-gradient(pink 12.5%, rgb(220, 220, 220) 12.5%, rgb(220, 220, 220) 87.5%, pink 87.5%);
+    background-size: 12.5% 25%;
+    background-repeat: repeat-x;
+}
 .line{
     background-color: gray;
     border-radius: 50px;
     width: 100%;
+}
+
+/*MOVESETS*/
+.movesetexplanation{
+    width: 75%;
+    height: fit-content;
+    margin: 20px 12.5% 0 12.5%;
+    background-color: #23272A;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+}
+.TypeChart{
+    float: inline-end;
+    width: 500px;
+}
+.MoveCategory{
+    width: 30px;
+}
+.movesets{
+    border: 5px solid gray;
+    background-color: rgb(120, 120, 120, 0.5);
+    width: 75%;
+    height: fit-content;
+    margin: 50px 12.5% 50px 12.5%;
+    border-radius: 50px;
+    padding: 50px 10px 30px 10px;
+}
+.MoveTypeImage{
+    width: 50px;
+}
+.MovePP{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.MoveType{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.move{
+    width: 250px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 20px;
+    display: inline-table;
+    margin: 10px 10px 0 10px;
+    transition-duration: 0.25s;
+}
+.move:hover{
+    transform: scale(110%);
+    transition-duration: 0.25s;
+}
+.move td{
+    width: 20%;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    border: 1px solid gray;
+}
+.water{
+    background-color: rgb(0, 150, 255, 0.9);
+}
+.water td{
+    border: 1px solid rgb(0, 102, 255);
+}
+.grass{
+    background-color: rgb(0, 255, 100, 0.9);
+}
+.grass td{
+    border: 1px solid lightgreen;
+}
+.dark{
+    background-color: rgb(41, 22, 7);
+}
+.dark td{
+    background-color: rgb(83, 46, 17);
+}
+.fire{
+    background-color: orange;
+}
+.fire td{
+    border: 1px solid yellow;
+}
+.poison{
+    background-color: rgb(155, 32, 155);
+}
+.poison td{
+    border: 1px solid purple;
+}
+.fairy{
+    background-color: rgb(230, 106, 255);
+}
+.fairy td{
+    border: 1px solid magenta;
+}
+.fighting{
+    background-color: darkred;
+}
+.fighting td{
+    border: 1px solid red;
+}
+.ghost{
+    background-color: purple;
+}
+.ghost td{
+    border: 1px solid rgb(85, 0, 85);
+}
+.psychic{
+    background-color: rgb(255, 104, 192);
+}
+.psychic td{
+    border: 1px solid rgb(173, 0, 115);
+}
+.steel{
+    background-color: rgb(85, 122, 148);
+}
+.steel td{
+    border: 1px solid rgb(31, 50, 136);
+}
+.MoveName{
+    font-size: 35px;
+}
+.MovePP{
+    font-size: xx-large;
+}
+.leafmoveset{
+    text-align: center;
+    background: linear-gradient(90deg, rgb(100, 147, 200) 15%, rgb(154, 221, 86) 50%, rgb(100, 147, 200) 85%);
+    border: 5px solid blue;
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.spookmoveset{
+    text-align: center;
+    background: linear-gradient(90deg, brown 15%, rgb(200, 200, 200) 50%, brown 85%);
+    border: 5px solid rgb(165, 87, 42);
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.nickmoveset{
+    text-align: center;
+    background: linear-gradient(90deg, Green 15%, #bdad00 50%, Green 85%);
+    border: 5px solid darkgreen;
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.tornmoveset{
+    text-align: center;
+    background: linear-gradient(90deg, pink 15%, rgb(200, 200, 200) 50%, #bdad00 85%);
+    border: 5px solid Yellow;
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.herbalmoveset{
+    text-align: center;
+    background: linear-gradient(90deg, lightpink 15%, #c9c191 50%, lightgreen 85%);
+    border: 5px solid #bdad00;
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ashbymoveset{
+    text-align: center;
+    background: linear-gradient(90deg, black 15%, purple 50%, darkred 85%);
+    border: 5px solid red;
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.sammoveset{
+    text-align: center;
+    background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
+    border: 5px solid white;
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
