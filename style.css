@@ -24,6 +24,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
+    overflow-x: -moz-hidden-unscrollable;
 }
 nav{
     color: white;
@@ -52,12 +53,12 @@ nav{
 .dropbtn{
     background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
     color: white;
-    padding: 7.5px;
+    padding: 7.5px 125px 7.5px 0;
     width: 250px;
     font-size: 25px;
     border: 5px solid white;
     border-radius: 50px;
-    transform: translateX(-75%);
+    transform: translateX(-25%);
 }
 .dropdown{
     width: 30px;
@@ -316,6 +317,7 @@ table{
 }
 .eeveelutionpicture{
     width: 300px;
+    min-width: 250px;
     float: inline-start;
     margin-right: 10px;
 }
