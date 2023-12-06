@@ -49,12 +49,31 @@ nav{
     -webkit-text-fill-color: transparent;
     background-size: 20% 20%;
 }
-.sites{
+.dropbtn{
+    background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
+    color: white;
+    padding: 7.5px;
+    width: 250px;
+    font-size: 25px;
+    border: 5px solid white;
+    border-radius: 50px;
+    transform: translateX(-75%);
+}
+.dropdown{
+    width: 30px;
     float: right;
-    margin-top: -55px;
-    height: 75px;
-    padding-top: 12.5px;
-    margin-right: 50px;
+    transform: translateX(-10%);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #191b1d;
+    border: 4px solid white;
+    z-index: 1;
+    right: 0;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 .sitebutton:hover{
     background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
@@ -81,7 +100,8 @@ nav{
     overflow: hidden;
     transition: width 0.5s linear;
     transition-timing-function: ease-in-out;
-    float: left;
+    float: right;
+    margin: 5px 2.5px 5px 2.5px;
 }
 .discicon{
     width: 30px;
@@ -246,7 +266,7 @@ table{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: xx-large;
+    font-size: x-large;
     background-size: 50% 50%;
     text-decoration: none;
     border: 2px solid white;
@@ -259,7 +279,7 @@ table{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: xx-large;
+    font-size: x-large;
     background-size: 50% 50%;
     text-decoration: none;
     border: 2px solid white;
@@ -629,7 +649,7 @@ ul{
     border-bottom-left-radius: 20px;
 }
 .move{
-    width: 100%;
+    width: 90%;
     table-layout: fixed;
     overflow-x: scroll;
     background-color: rgb(200, 200, 200);
@@ -719,11 +739,33 @@ ul{
 .fire{
     background-color: orange;
 }
+.fire::-webkit-scrollbar-track {
+    background: rgb(88, 38, 0);
+}
+.fire::-webkit-scrollbar-thumb {
+    background: orange;
+    border: 1px solid black;
+    border-top: none;
+}
+.fire::-webkit-scrollbar-thumb:hover {
+    background: darkorange;
+}
 .fire td{
     border: 1px solid yellow;
 }
 .poison{
     background-color: rgb(155, 32, 155);
+}
+.poison::-webkit-scrollbar-track {
+    background: rgb(48, 0, 88);
+}
+.poison::-webkit-scrollbar-thumb {
+    background: rgb(155, 32, 155);
+    border: 1px solid black;
+    border-top: none;
+}
+.poison::-webkit-scrollbar-thumb:hover {
+    background: rgb(102, 0, 102);
 }
 .poison td{
     border: 1px solid purple;
@@ -731,11 +773,33 @@ ul{
 .fairy{
     background-color: rgb(230, 106, 255);
 }
+.fairy::-webkit-scrollbar-track {
+    background: rgb(88, 0, 81);
+}
+.fairy::-webkit-scrollbar-thumb {
+    background: rgb(230, 106, 255);
+    border: 1px solid black;
+    border-top: none;
+}
+.fairy::-webkit-scrollbar-thumb:hover {
+    background: rgb(219, 39, 255);
+}
 .fairy td{
     border: 1px solid magenta;
 }
 .fighting{
     background-color: darkred;
+}
+.fighting::-webkit-scrollbar-track {
+    background: rgb(88, 0, 0);
+}
+.fighting::-webkit-scrollbar-thumb {
+    background: darkred;
+    border: 1px solid black;
+    border-top: none;
+}
+.fighting::-webkit-scrollbar-thumb:hover {
+    background: rgb(124, 0, 0);
 }
 .fighting td{
     border: 1px solid red;
@@ -743,17 +807,50 @@ ul{
 .ghost{
     background-color: purple;
 }
+.ghost::-webkit-scrollbar-track {
+    background: rgb(28, 0, 51);
+}
+.ghost::-webkit-scrollbar-thumb {
+    background: purple;
+    border: 1px solid black;
+    border-top: none;
+}
+.ghost::-webkit-scrollbar-thumb:hover {
+    background: rgb(64, 0, 124);
+}
 .ghost td{
     border: 1px solid rgb(85, 0, 85);
 }
 .psychic{
     background-color: rgb(255, 104, 192);
 }
+.psychic::-webkit-scrollbar-track {
+    background: rgb(148, 0, 86);
+}
+.psychic::-webkit-scrollbar-thumb {
+    background: rgb(255, 104, 192);
+    border: 1px solid black;
+    border-top: none;
+}
+.psychic::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 0, 149);
+}
 .psychic td{
     border: 1px solid rgb(173, 0, 115);
 }
 .steel{
     background-color: rgb(85, 122, 148);
+}
+.steel::-webkit-scrollbar-track {
+    background: rgb(16, 43, 63);
+}
+.steel::-webkit-scrollbar-thumb {
+    background: rgb(85, 122, 148);
+    border: 1px solid black;
+    border-top: none;
+}
+.steel::-webkit-scrollbar-thumb:hover {
+    background: rgb(40, 66, 85);
 }
 .steel td{
     border: 1px solid rgb(31, 50, 136);
@@ -827,3 +924,7 @@ ul{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+
+
+/*TESTING*/
