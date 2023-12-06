@@ -102,6 +102,12 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
 }
+.movesetsbutton{
+    background-image: url(Imgs/Movesets_icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .headdiv{
     height: 150px;
     width: 75%;
