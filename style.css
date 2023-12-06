@@ -25,6 +25,7 @@ body{
     background-attachment: fixed;
     overflow-x: hidden;
     width: 100%;
+    overflow-x: -moz-hidden-unscrollable;
 }
 nav{
     color: white;
