@@ -39,7 +39,7 @@ nav{
     height: 75px;
 }
 .titlenlogo{
-    margin-left: 50px;
+    margin-left: 25px;
     padding-top: 12.5px;
 }
 .title{
@@ -623,7 +623,7 @@ ul{
     width: 50%;
     margin: auto;
     display: block;
-    min-width: 300px;
+    min-width: 250px;
 }
 .MoveCategory{
     width: 30px;
