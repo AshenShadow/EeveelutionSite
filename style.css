@@ -462,7 +462,7 @@ ul{
 }
 .memberusername{
     color: gray;
-    font-size: large;
+    font-size: larger;
     text-align: right;
 }
 .memberdiscord{
@@ -585,8 +585,10 @@ ul{
     padding: 10px 20px 10px 20px;
 }
 .TypeChart{
-    float: inline-end;
-    width: 500px;
+    width: 50%;
+    margin: auto;
+    display: block;
+    min-width: 300px;
 }
 .MoveCategory{
     width: 30px;
@@ -612,11 +614,11 @@ ul{
     border-bottom-left-radius: 20px;
 }
 .move{
-    width: 250px;
+    width: 40%;
     background-color: rgb(200, 200, 200);
     border-radius: 20px;
     display: inline-table;
-    margin: 10px 10px 0 10px;
+    margin: 10px auto 10px auto;
     transition-duration: 0.25s;
 }
 .move:hover{
