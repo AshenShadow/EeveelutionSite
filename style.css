@@ -626,6 +626,32 @@ ul{
     padding: 10px;
     font-size: large;
 }
+.Volta{
+    background: linear-gradient(rgb(199, 199, 199) 100px, rgb(197, 197, 0) 105px);
+}
+.Volta .memberdesc{
+    border-top: 5px solid rgb(250, 255, 108);
+    border-bottom: 5px solid rgb(250, 255, 108);
+}
+.Volta .memberaccounts{
+    border-top: 5px solid rgb(250, 255, 108);
+    border-bottom: 5px solid rgb(250, 255, 108);
+    padding: 10px;
+    font-size: large;
+}
+.Tornai{
+    background: linear-gradient(rgb(239, 65, 255) 100px, rgb(197, 197, 0) 105px);
+}
+.Tornai .memberdesc{
+    border-top: 5px solid rgb(250, 255, 108);
+    border-bottom: 5px solid rgb(250, 255, 108);
+}
+.Tornai .memberaccounts{
+    border-top: 5px solid rgb(250, 255, 108);
+    border-bottom: 5px solid rgb(250, 255, 108);
+    padding: 10px;
+    font-size: large;
+}
 
 /*MOVESETS*/
 .movesetexplanation{
