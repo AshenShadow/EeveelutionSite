@@ -626,18 +626,9 @@ ul{
     display: block;
     min-width: 250px;
 }
-<<<<<<< Updated upstream
-.MoveCategory{
-    width: 30px;
-}
-.movesets{
-    border: 5px solid gray;
-    background-color: rgb(120, 120, 120, 0.5);
-=======
 .moves{
     background-color: #23272A;
     border-radius: 50px;
->>>>>>> Stashed changes
     width: 75%;
     margin: 20px 12.5% 0 12.5%;
     padding: 10px 20px 40px 20px;
@@ -656,191 +647,12 @@ ul{
     text-align: center;
     display: block;
     width: 25%;
-<<<<<<< Updated upstream
-    padding: 5px 15px 5px 15px;
-    text-align: center;
-    border: 1px solid gray;
-}
-.water{
-    background-color: rgb(0, 150, 255, 0.9);
-}
-.water::-webkit-scrollbar-track {
-    background: #00378a;
-}
-.water::-webkit-scrollbar-thumb {
-    background: rgb(0, 150, 255, 0.9);
-    border: 1px solid black;
-    border-top: none;
-}
-.water::-webkit-scrollbar-thumb:hover {
-    background: #0066ff;
-}
-.water td{
-    border: 1px solid rgb(0, 102, 255);
-}
-.grass{
-    background-color: rgb(0, 255, 100, 0.9);
-}
-.grass::-webkit-scrollbar-track {
-    background: #008a00;
-}
-.grass::-webkit-scrollbar-thumb {
-    background: rgba(0, 255, 13, 0.9);
-    border: 1px solid black;
-    border-top: none;
-}
-.grass::-webkit-scrollbar-thumb:hover {
-    background: #00c711;
-}
-.grass td{
-    border: 1px solid lightgreen;
-}
-.dark{
-    background-color: rgb(41, 22, 7);
-}
-.dark::-webkit-scrollbar-track {
-    background: rgb(41, 22, 7);
-}
-.dark::-webkit-scrollbar-thumb {
-    background: rgb(83, 46, 17);
-    border: 1px solid black;
-    border-top: none;
-}
-.dark::-webkit-scrollbar-thumb:hover {
-    background: #6b4900;
-}
-.dark td{
-    background-color: rgb(83, 46, 17);
-}
-.fire{
-    background-color: orange;
-}
-.fire::-webkit-scrollbar-track {
-    background: rgb(88, 38, 0);
-}
-.fire::-webkit-scrollbar-thumb {
-    background: orange;
-    border: 1px solid black;
-    border-top: none;
-}
-.fire::-webkit-scrollbar-thumb:hover {
-    background: darkorange;
-}
-.fire td{
-    border: 1px solid yellow;
-}
-.poison{
-    background-color: rgb(155, 32, 155);
-}
-.poison::-webkit-scrollbar-track {
-    background: rgb(48, 0, 88);
-}
-.poison::-webkit-scrollbar-thumb {
-    background: rgb(155, 32, 155);
-    border: 1px solid black;
-    border-top: none;
-}
-.poison::-webkit-scrollbar-thumb:hover {
-    background: rgb(102, 0, 102);
-}
-.poison td{
-    border: 1px solid purple;
-}
-.fairy{
-    background-color: rgb(230, 106, 255);
-}
-.fairy::-webkit-scrollbar-track {
-    background: rgb(88, 0, 81);
-}
-.fairy::-webkit-scrollbar-thumb {
-    background: rgb(230, 106, 255);
-    border: 1px solid black;
-    border-top: none;
-}
-.fairy::-webkit-scrollbar-thumb:hover {
-    background: rgb(219, 39, 255);
-}
-.fairy td{
-    border: 1px solid magenta;
-}
-.fighting{
-    background-color: darkred;
-}
-.fighting::-webkit-scrollbar-track {
-    background: rgb(88, 0, 0);
-}
-.fighting::-webkit-scrollbar-thumb {
-    background: darkred;
-    border: 1px solid black;
-    border-top: none;
-}
-.fighting::-webkit-scrollbar-thumb:hover {
-    background: rgb(124, 0, 0);
-}
-.fighting td{
-    border: 1px solid red;
-}
-.ghost{
-    background-color: purple;
-}
-.ghost::-webkit-scrollbar-track {
-    background: rgb(28, 0, 51);
-}
-.ghost::-webkit-scrollbar-thumb {
-    background: purple;
-    border: 1px solid black;
-    border-top: none;
-}
-.ghost::-webkit-scrollbar-thumb:hover {
-    background: rgb(64, 0, 124);
-}
-.ghost td{
-    border: 1px solid rgb(85, 0, 85);
-}
-.psychic{
-    background-color: rgb(255, 104, 192);
-}
-.psychic::-webkit-scrollbar-track {
-    background: rgb(148, 0, 86);
-}
-.psychic::-webkit-scrollbar-thumb {
-    background: rgb(255, 104, 192);
-    border: 1px solid black;
-    border-top: none;
-}
-.psychic::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 0, 149);
-}
-.psychic td{
-    border: 1px solid rgb(173, 0, 115);
-}
-.steel{
-    background-color: rgb(85, 122, 148);
-}
-.steel::-webkit-scrollbar-track {
-    background: rgb(16, 43, 63);
-}
-.steel::-webkit-scrollbar-thumb {
-    background: rgb(85, 122, 148);
-    border: 1px solid black;
-    border-top: none;
-}
-.steel::-webkit-scrollbar-thumb:hover {
-    background: rgb(40, 66, 85);
-}
-.steel td{
-    border: 1px solid rgb(31, 50, 136);
-}
-.MoveName{
-    font-size: 35px;
-=======
     margin: 0 auto 5px auto;
     border: 5px solid green;
     border-radius: 25px;
     background-color: rgb(100, 218, 100);
     padding: 10px 5px 10px 5px;
     min-width: 250px;
->>>>>>> Stashed changes
 }
 .LeafSpirit .moveDesc{
     width: 65%;
@@ -909,16 +721,6 @@ ul{
 }
 .UltraPump .moveInfo{
     text-align: center;
-<<<<<<< Updated upstream
-    background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
-    border: 5px solid white;
-    padding: 10px 0px 10px 0px;
-    border-radius: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-=======
     display: block;
     width: 25%;
     margin: 0 auto 5px auto;
@@ -952,7 +754,6 @@ ul{
 .moveType{
     width: 75px;
 }
->>>>>>> Stashed changes
 
 .abilities{
     background-color: #23272A;
