@@ -611,7 +611,7 @@ ul{
     width: 100%;
 }
 
-/*MOVESETS*/
+/*MOVES*/
 .movesetexplanation{
     width: 75%;
     height: fit-content;
@@ -626,62 +626,37 @@ ul{
     display: block;
     min-width: 250px;
 }
+<<<<<<< Updated upstream
 .MoveCategory{
     width: 30px;
 }
 .movesets{
     border: 5px solid gray;
     background-color: rgb(120, 120, 120, 0.5);
+=======
+.moves{
+    background-color: #23272A;
+    border-radius: 50px;
+>>>>>>> Stashed changes
     width: 75%;
-    height: fit-content;
-    margin: 50px 12.5% 50px 12.5%;
-    border-radius: 50px;
-    padding: 50px 10px 30px 10px;
+    margin: 20px 12.5% 0 12.5%;
+    padding: 10px 20px 40px 20px;
+    color: white;
 }
-.MoveTypeImage{
-    width: 50px;
+.LeafSpirit{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 10px solid green;
+    border-bottom: 10px solid green;
+    padding: 40px 10px 40px 5px;
+    background: linear-gradient(90deg, transparent 1%, lightgreen 1%, lightgreen 99%, transparent 99%);
 }
-.MovePP{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.MoveType{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-.move{
-    width: 90%;
-    table-layout: fixed;
-    overflow-x: scroll;
-    background-color: rgb(200, 200, 200);
-    border-radius: 20px;
-    display: inline-block;
-    margin: 10px auto 10px auto;
-    transition-duration: 0.25s;
-    height: fit-content;
-}
-.move::-webkit-scrollbar {
-    height: 7.5px;
-}
-.move::-webkit-scrollbar-track {
-    background: #555;
-    border-radius: 50px;
-}
-.move::-webkit-scrollbar-thumb {
-    background: rgb(200, 200, 200);
-    border: 1px solid black;
-    border-top: none;
-    border-radius: 50px;
-}
-.move::-webkit-scrollbar-thumb:hover {
-    background: #888;
-}
-.move:hover{
-    transform: scale(110%);
-    transition-duration: 0.25s;
-}
-.move td{
+.LeafSpirit .moveInfo{
+    text-align: center;
+    display: block;
     width: 25%;
+<<<<<<< Updated upstream
     padding: 5px 15px 5px 15px;
     text-align: center;
     border: 1px solid gray;
@@ -858,66 +833,83 @@ ul{
 }
 .MoveName{
     font-size: 35px;
+=======
+    margin: 0 auto 5px auto;
+    border: 5px solid green;
+    border-radius: 25px;
+    background-color: rgb(100, 218, 100);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+>>>>>>> Stashed changes
 }
-.MovePP{
-    font-size: xx-large;
+.LeafSpirit .moveDesc{
+    width: 65%;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 5px solid green;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(100, 218, 100);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
 }
-.leafmoveset{
+.LeafSpirit .moveName{
+    font-size: 50px;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    width: 90%;
+    margin: 25px 0 25px 0;
+}
+.LightWeight{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    padding: 40px 10px 40px 10px;
+    background: linear-gradient(90deg, transparent 1%, rgb(197, 197, 197) 1%, rgb(197, 197, 197) 99%, transparent 99%);
+}
+.LightWeight .moveInfo{
     text-align: center;
-    background: linear-gradient(90deg, rgb(100, 147, 200) 15%, rgb(154, 221, 86) 50%, rgb(100, 147, 200) 85%);
-    border: 5px solid blue;
-    padding: 10px 0px 10px 0px;
-    border-radius: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    display: block;
+    width: 25%;
+    margin: 0 auto 5px auto;
+    border: 5px solid gray;
+    border-radius: 25px;
+    background-color: rgb(170, 170, 170);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
 }
-.spookmoveset{
-    text-align: center;
-    background: linear-gradient(90deg, brown 15%, rgb(200, 200, 200) 50%, brown 85%);
-    border: 5px solid rgb(165, 87, 42);
-    padding: 10px 0px 10px 0px;
-    border-radius: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.LightWeight .moveDesc{
+    width: 65%;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 5px solid gray;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(170, 170, 170);
+    padding: 10px 5px 10px 10px;
+    min-width: 250px;
 }
-.nickmoveset{
-    text-align: center;
-    background: linear-gradient(90deg, Green 15%, #bdad00 50%, Green 85%);
-    border: 5px solid darkgreen;
-    padding: 10px 0px 10px 0px;
-    border-radius: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.LightWeight .moveName{
+    font-size: 50px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    width: 90%;
+    margin: 25px 0 25px 0;
 }
-.tornmoveset{
-    text-align: center;
-    background: linear-gradient(90deg, pink 15%, rgb(200, 200, 200) 50%, #bdad00 85%);
-    border: 5px solid Yellow;
-    padding: 10px 0px 10px 0px;
-    border-radius: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.UltraPump{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 10px solid rgb(60, 60, 255);
+    border-bottom: 10px solid rgb(60, 60, 255);
+    padding: 40px 10px 40px 10px;
+    background: linear-gradient(90deg, transparent 1%, rgb(0, 116, 194) 1%, rgb(0, 116, 194) 99%, transparent 99%);
 }
-.herbalmoveset{
+.UltraPump .moveInfo{
     text-align: center;
-    background: linear-gradient(90deg, lightpink 15%, #c9c191 50%, lightgreen 85%);
-    border: 5px solid #bdad00;
-    padding: 10px 0px 10px 0px;
-    border-radius: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.ashbymoveset{
-    text-align: center;
-    background: linear-gradient(90deg, black 15%, purple 50%, darkred 85%);
-    border: 5px solid red;
-    padding: 10px 0px 10px 0px;
-    border-radius: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.sammoveset{
-    text-align: center;
+<<<<<<< Updated upstream
     background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
     border: 5px solid white;
     padding: 10px 0px 10px 0px;
@@ -926,6 +918,98 @@ ul{
     margin-bottom: 5px;
 }
 
+=======
+    display: block;
+    width: 25%;
+    margin: 0 auto 5px auto;
+    border: 5px solid rgb(60, 60, 255);
+    border-radius: 25px;
+    background-color: rgb(0, 80, 145);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.UltraPump .moveDesc{
+    width: 65%;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 5px solid rgb(60, 60, 255);
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(0, 80, 145);
+    padding: 10px 5px 10px 10px;
+    min-width: 250px;
+}
+.UltraPump .moveName{
+    font-size: 50px;
+    border-top: 3px solid rgb(60, 60, 255);
+    border-bottom: 3px solid rgb(60, 60, 255);
+    width: 90%;
+    margin: 25px 0 25px 0;
+}
+.moveCategory{
+    width: 40px;
+}
+.moveType{
+    width: 75px;
+}
+>>>>>>> Stashed changes
 
+.abilities{
+    background-color: #23272A;
+    border-radius: 50px;
+    width: 75%;
+    margin: 20px 12.5% 0 12.5%;
+    padding: 10px 20px 40px 20px;
+    color: white;
+}
+.transform{
+    margin-top: 50px;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    padding: 40px 15px 40px 15px;
+    background: linear-gradient(90deg, transparent 1%, rgb(189, 0, 0) 1%, rgb(35, 0, 189) 99%, transparent 99%);
+}
+.transformForms{
+    display: flex;
+    flex-wrap: wrap;
+}
+.AbilityInfo{
+    display: block;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    border: 5px solid gray;
+    border-radius: 25%;
+    background-color: rgba(170, 170, 170);
+    padding: 10px 5px 10px 5px
+}
+.Form{
+    display: block;
+    width: 25%;
+    min-width: 250px;
+    border: 5px solid;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+    padding: 10px 5px 10px 5px
+}
+.FormImage{
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    height: 150px;
+    background-color: gray;
+}
+.Berserk{
+    background-color: rgba(35, 0, 189, 0.75);
+    border-color: blue;
+}
+.Berserk .FormImage{
+    border-color: blue;
+}
+.Ultra{
+    background-color: rgb(255, 255, 255, 0.75);
+    border-color: darkgray;
+}
+.Ultra .FormImage{
+    border-color: darkgray;
+}
 
 /*TESTING*/
