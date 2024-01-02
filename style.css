@@ -474,141 +474,281 @@ ul{
     margin: 50px 12.5% 50px 12.5%;
     border-radius: 50px;
     padding: 50px 10px 30px 10px;
+    display: flex;
+    flex-flow: column;
 }
 .membercard{
-    width: 100%;
-    height: fit-content;
-    margin: 25px 0 25px 0;
+    width: 90%;
+    height: 100%;
+    margin: 50px 5% 50px 5%;
+    padding: 25px 10px 0px 10px;
     border-radius: 50px;
-    padding: 50px 10px 30px 10px;
-    transition-duration: 0.5s;
+    overflow-y: hidden;
+    display: flex;
+    flex-flow: column;
+    transition: all 0.5s ease-in-out;
 }
 .membercard:hover{
-    transform: scale(105%);
-    transition-duration: 0.5s;
+    transform: scale(110%);
 }
-.membercard table{
+.memberinfo{
     width: 100%;
-}
-.SpeciesImage{
-    width: 150px;
+    display: flex;
+    flex-flow: row;
 }
 .membername{
-    font-size: 35px;
+    font-size: xx-large;
+    margin-bottom: 18.75px;
+    margin-top: 18.75px;
 }
-.memberusername{
-    color: gray;
+.memberdesc{
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+.memberaccounts{
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
     font-size: larger;
-    text-align: right;
+    width: 100%;
 }
-.memberdiscord{
-    width: 25px;
-}
-.memberdescription{
-    font-size: 17.5px;
-}
-.memberspecies{
-    font-size: x-large;
-}
-.membertype{
-    font-size: x-large;
-}
-.memberlinks{
-    font-size: x-large;
-}
-.memberlinkicon{
+.memberaccountimage{
     width: 50px;
 }
-.TypeImage{
-    width: 40px;
+.memberspecies{
+    width: 50%;
+    text-align: center;
 }
-.leaf{
-    background: linear-gradient(90deg, rgb(154, 221, 86) 65%, rgb(100, 147, 200) 85%);
+.membertype{
+    width: 50%;
+    text-align: center;
 }
-.leafname{
-    background: linear-gradient(165deg, green 25%, lightblue 75%);
-    background-size: 12.5% 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.SpeciesImage{
+    width: 25%;
+    min-width: 100px;
 }
-.ashby{
-    background: radial-gradient(circle at -10% 50%, rgb(25, 25, 25) 10%, darkred 25%, rgb(25, 25, 25) 40%) ;
+.typeimage{
+    width: 50px;
 }
-.ashbyname{
-    background: radial-gradient(circle at -25% 50%, lightgray 10%, red 25%, lightgray 40%);
-    background-size: contain;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.moveset{
+    display: flex;
+    flex-flow: wrap;
 }
-.tornai{
-    background: linear-gradient(315deg, #bdad00 15%, pink 25%, pink 45%, #bdad00 55%);
+.move{
+    display: block;
+    width: 200px;
+    margin: 5px auto 5px auto;
+    border-radius: 25px;
+    transition: all 0.25s ease-in-out;
 }
-.tornainame{
-    background: radial-gradient(circle at -10% 50%, yellow 0%, white 10%, yellow 20%);
-    background-size: contain;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.move:hover{
+    transform: scale(110%);
 }
-.volta{
-    background: linear-gradient(90deg, #bdad00 5%, rgb(220, 220, 220) 15%, #bdad00 25%, #bdad00 70%, rgb(220, 220, 220) 80%, #bdad00 90%);
+.movecategorytext{
+    display: block;
+    margin: auto;
+    width: 125px;
+    text-align: center;
 }
-.voltaname{
-    background: radial-gradient(circle at 0% 50%, yellow 0%, white 10%, yellow 20%);
-    background-size: contain;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.movecategory{
+    width: 30px;
 }
-.sam{
+.movetype{
+    width: 50px;
+}
+.normal{
+    background-color: rgb(200, 200, 200);
+}
+.water{
+    background-color: rgb(0, 150, 255, 0.9);
+}
+.grass{
+    background-color: rgb(0, 255, 100, 0.9);
+}
+.dark{
+    background-color: rgb(41, 22, 7);
+}
+.fire{
+    background-color: orange;
+}
+.poison{
+    background-color: rgb(155, 32, 155);
+}
+.fairy{
+    background-color: rgb(230, 106, 255);
+}
+.fighting{
+    background-color: darkred;
+}
+.ghost{
+    background-color: purple;
+}
+.psychic{
+    background-color: rgb(255, 104, 192);
+}
+.steel{
+    background-color: rgb(85, 122, 148);
+}
+.electric{
+    background-color: rgb(255, 221, 0);
+}
+.ice{
+    background-color: aqua;
+}
+.Bleedy{
+    background: linear-gradient(rgb(30, 30, 30) 100px, rgb(87, 0, 0) 105px);
+}
+.Bleedy .memberdesc{
+    border-top: 5px solid rgb(128, 0, 0);
+    border-bottom: 5px solid rgb(128, 0, 0);
+}
+.Bleedy .memberaccounts{
+    border-top: 5px solid rgb(128, 0, 0);
+    border-bottom: 5px solid rgb(128, 0, 0);
+    padding: 10px;
+    font-size: large;
+}
+.Leaf{
+    background: linear-gradient(rgb(12, 143, 0) 100px, rgb(119, 207, 237) 105px);
+}
+.Leaf .memberdesc{
+    border-top: 5px solid rgb(143, 232, 254);
+    border-bottom: 5px solid rgb(143, 232, 254);
+}
+.Leaf .memberaccounts{
+    border-top: 5px solid rgb(143, 232, 254);
+    border-bottom: 5px solid rgb(143, 232, 254);
+    padding: 10px;
+    font-size: large;
+}
+.doesnotdoit{
+    background: linear-gradient(rgb(102, 207, 195) 100px, rgb(197, 197, 197) 105px);
+}
+.doesnotdoit .memberdesc{
+    border-top: 5px solid rgb(143, 232, 254);
+    border-bottom: 5px solid rgb(143, 232, 254);
+}
+.doesnotdoit .memberaccounts{
+    border-top: 5px solid rgb(143, 232, 254);
+    border-bottom: 5px solid rgb(143, 232, 254);
+    padding: 10px;
+    font-size: large;
+}
+.Volta{
+    background: linear-gradient(rgb(199, 199, 199) 100px, rgb(197, 197, 0) 105px);
+}
+.Volta .memberdesc{
+    border-top: 5px solid rgb(250, 255, 108);
+    border-bottom: 5px solid rgb(250, 255, 108);
+}
+.Volta .memberaccounts{
+    border-top: 5px solid rgb(250, 255, 108);
+    border-bottom: 5px solid rgb(250, 255, 108);
+    padding: 10px;
+    font-size: large;
+}
+.Tornai{
+    background: linear-gradient(rgb(239, 65, 255) 100px, rgb(197, 197, 0) 105px);
+}
+.Tornai .memberdesc{
+    border-top: 5px solid rgb(250, 255, 108);
+    border-bottom: 5px solid rgb(250, 255, 108);
+}
+.Tornai .memberaccounts{
+    border-top: 5px solid rgb(250, 255, 108);
+    border-bottom: 5px solid rgb(250, 255, 108);
+    padding: 10px;
+    font-size: large;
+}
+.Sam{
     background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
 }
-.nick{
-    background: radial-gradient(circle at -10% 50%, darkgreen 10%, #bdad00 20%, #bdad00 30%, darkgreen 40%) ;
+.Sam .memberdesc{
+    border-top: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255);
 }
-.nickname{
-    background: radial-gradient(circle at -15% 50%, green 10%, yellow 25%, green 40%);
-    background-size: contain;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.Sam .memberaccounts{
+    border-top: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    padding: 10px;
+    font-size: large;
 }
-.skye{
-    background: radial-gradient(circle, rgb(168, 67, 0) 30%, rgb(220, 220, 220) 40%, rgb(220, 220, 220) 55%, rgb(168, 67, 0) 65%);
+.Nick{
+    background: linear-gradient(#bdad00 100px, Green 105px);
 }
-.zero{
-    background: linear-gradient(167.5deg, rgb(195, 240, 255) 40%, #bdad00 60%);
+.Nick .memberdesc{
+    border-top: 5px solid rgb(108, 140, 0);
+    border-bottom: 5px solid rgb(108, 140, 0);
 }
-.spook{
-    background: radial-gradient(circle, darkgray 30%, rgb(200, 200, 200) 40%, rgb(200, 200, 200) 55%, darkgray 65%);
+.Nick .memberaccounts{
+    border-top: 5px solid rgb(108, 140, 0);
+    border-bottom: 5px solid rgb(108, 140, 0);
+    padding: 10px;
+    font-size: large;
 }
-.espy{
-    background: linear-gradient(90deg, #c9c191 10%, lightgreen 15%, #c9c191 20%, lightpink 25%, #c9c191 30%);
+.Sky{
+    background: linear-gradient(rgb(200, 200, 200) 100px, rgb(168, 67, 0) 105px);
 }
-.mrvapo{
-    background:radial-gradient(at 0% 50%, blue, purple, blue, purple, blue, purple);
+.Sky .memberdesc{
+    border-top: 5px solid rgb(92, 92, 92);
+    border-bottom: 5px solid rgb(92, 92, 92);
 }
-.mrvaponame{
-    color: lightblue;
+.Sky .memberaccounts{
+    border-top: 5px solid rgb(92, 92, 92);
+    border-bottom: 5px solid rgb(92, 92, 92);
+    padding: 10px;
+    font-size: large;
 }
-.dznot{
-    background: conic-gradient(pink 15%, rgb(215, 215, 215) 20%, rgb(215, 215, 215) 80%, pink 85%);
+.Zero{
+    background: linear-gradient(#bdad00 100px, rgb(0, 215, 190) 105px);
 }
-.ashie{
-    background: linear-gradient(90deg, pink 25%, lightblue 75%);
+.Zero .memberdesc{
+    border-top: 5px solid rgb(0, 247, 255);
+    border-bottom: 5px solid rgb(0, 247, 255);
 }
-.sylpan{
-    background: rgb(220, 220, 220);
-    background: conic-gradient(pink 12.5%, rgb(220, 220, 220) 12.5%, rgb(220, 220, 220) 87.5%, pink 87.5%);
-    background-size: 12.5% 25%;
-    background-repeat: repeat-x;
+.Zero .memberaccounts{
+    border-top: 5px solid rgb(0, 247, 255);
+    border-bottom: 5px solid rgb(0, 247, 255);
+    padding: 10px;
+    font-size: large;
 }
-.line{
-    background-color: gray;
-    border-radius: 50px;
-    width: 100%;
+.Espy{
+    background: linear-gradient(lightgreen 100px, lightpink 105px);
+}
+.Espy .memberdesc{
+    border-top: 5px solid pink;
+    border-bottom: 5px solid pink;
+}
+.Espy .memberaccounts{
+    border-top: 5px solid pink;
+    border-bottom: 5px solid pink;
+    padding: 10px;
+    font-size: large;
+}
+.Maple{
+    background: linear-gradient(lightblue 100px, rgb(255, 53, 255) 105px);
+}
+.Maple .memberdesc{
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+.Maple .memberaccounts{
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
+    padding: 10px;
+    font-size: large;
+}
+.Ashie{
+    background: linear-gradient(lightpink 100px, lightblue 105px);
+}
+.Ashie .memberdesc{
+    border-top: 5px solid cyan;
+    border-bottom: 5px solid cyan;
+}
+.Ashie .memberaccounts{
+    border-top: 5px solid cyan;
+    border-bottom: 5px solid cyan;
+    padding: 10px;
+    font-size: large;
 }
 
 /*MOVESETS*/
@@ -626,7 +766,7 @@ ul{
     display: block;
     min-width: 250px;
 }
-.MoveCategory{
+/*.MoveCategory{
     width: 30px;
 }
 .movesets{
@@ -685,178 +825,8 @@ ul{
     padding: 5px 15px 5px 15px;
     text-align: center;
     border: 1px solid gray;
-}
-.water{
-    background-color: rgb(0, 150, 255, 0.9);
-}
-.water::-webkit-scrollbar-track {
-    background: #00378a;
-}
-.water::-webkit-scrollbar-thumb {
-    background: rgb(0, 150, 255, 0.9);
-    border: 1px solid black;
-    border-top: none;
-}
-.water::-webkit-scrollbar-thumb:hover {
-    background: #0066ff;
-}
-.water td{
-    border: 1px solid rgb(0, 102, 255);
-}
-.grass{
-    background-color: rgb(0, 255, 100, 0.9);
-}
-.grass::-webkit-scrollbar-track {
-    background: #008a00;
-}
-.grass::-webkit-scrollbar-thumb {
-    background: rgba(0, 255, 13, 0.9);
-    border: 1px solid black;
-    border-top: none;
-}
-.grass::-webkit-scrollbar-thumb:hover {
-    background: #00c711;
-}
-.grass td{
-    border: 1px solid lightgreen;
-}
-.dark{
-    background-color: rgb(41, 22, 7);
-}
-.dark::-webkit-scrollbar-track {
-    background: rgb(41, 22, 7);
-}
-.dark::-webkit-scrollbar-thumb {
-    background: rgb(83, 46, 17);
-    border: 1px solid black;
-    border-top: none;
-}
-.dark::-webkit-scrollbar-thumb:hover {
-    background: #6b4900;
-}
-.dark td{
-    background-color: rgb(83, 46, 17);
-}
-.fire{
-    background-color: orange;
-}
-.fire::-webkit-scrollbar-track {
-    background: rgb(88, 38, 0);
-}
-.fire::-webkit-scrollbar-thumb {
-    background: orange;
-    border: 1px solid black;
-    border-top: none;
-}
-.fire::-webkit-scrollbar-thumb:hover {
-    background: darkorange;
-}
-.fire td{
-    border: 1px solid yellow;
-}
-.poison{
-    background-color: rgb(155, 32, 155);
-}
-.poison::-webkit-scrollbar-track {
-    background: rgb(48, 0, 88);
-}
-.poison::-webkit-scrollbar-thumb {
-    background: rgb(155, 32, 155);
-    border: 1px solid black;
-    border-top: none;
-}
-.poison::-webkit-scrollbar-thumb:hover {
-    background: rgb(102, 0, 102);
-}
-.poison td{
-    border: 1px solid purple;
-}
-.fairy{
-    background-color: rgb(230, 106, 255);
-}
-.fairy::-webkit-scrollbar-track {
-    background: rgb(88, 0, 81);
-}
-.fairy::-webkit-scrollbar-thumb {
-    background: rgb(230, 106, 255);
-    border: 1px solid black;
-    border-top: none;
-}
-.fairy::-webkit-scrollbar-thumb:hover {
-    background: rgb(219, 39, 255);
-}
-.fairy td{
-    border: 1px solid magenta;
-}
-.fighting{
-    background-color: darkred;
-}
-.fighting::-webkit-scrollbar-track {
-    background: rgb(88, 0, 0);
-}
-.fighting::-webkit-scrollbar-thumb {
-    background: darkred;
-    border: 1px solid black;
-    border-top: none;
-}
-.fighting::-webkit-scrollbar-thumb:hover {
-    background: rgb(124, 0, 0);
-}
-.fighting td{
-    border: 1px solid red;
-}
-.ghost{
-    background-color: purple;
-}
-.ghost::-webkit-scrollbar-track {
-    background: rgb(28, 0, 51);
-}
-.ghost::-webkit-scrollbar-thumb {
-    background: purple;
-    border: 1px solid black;
-    border-top: none;
-}
-.ghost::-webkit-scrollbar-thumb:hover {
-    background: rgb(64, 0, 124);
-}
-.ghost td{
-    border: 1px solid rgb(85, 0, 85);
-}
-.psychic{
-    background-color: rgb(255, 104, 192);
-}
-.psychic::-webkit-scrollbar-track {
-    background: rgb(148, 0, 86);
-}
-.psychic::-webkit-scrollbar-thumb {
-    background: rgb(255, 104, 192);
-    border: 1px solid black;
-    border-top: none;
-}
-.psychic::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 0, 149);
-}
-.psychic td{
-    border: 1px solid rgb(173, 0, 115);
-}
-.steel{
-    background-color: rgb(85, 122, 148);
-}
-.steel::-webkit-scrollbar-track {
-    background: rgb(16, 43, 63);
-}
-.steel::-webkit-scrollbar-thumb {
-    background: rgb(85, 122, 148);
-    border: 1px solid black;
-    border-top: none;
-}
-.steel::-webkit-scrollbar-thumb:hover {
-    background: rgb(40, 66, 85);
-}
-.steel td{
-    border: 1px solid rgb(31, 50, 136);
-}
-.MoveName{
+}*/
+/*.MoveName{
     font-size: 35px;
 }
 .MovePP{
@@ -924,7 +894,7 @@ ul{
     border-radius: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
+}*/
 
 
 
