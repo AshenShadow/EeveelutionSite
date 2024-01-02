@@ -183,124 +183,6 @@ nav{
     transition-delay: 0.1s;
 }
 
-/*ARCHIVES*/
-.discordmimic{
-    background-color: #23272A;
-    width: 75%;
-    height: fit-content;
-    margin: 50px 12.5% 50px 12.5%;
-    border-radius: 50px;
-    padding: 50px 10px 30px 10px;
-}
-table{
-    color: white;
-    width: fit-content;
-}
-.profilepic{
-    width: 70px;
-    text-align: center;
-    padding-top: 0;
-}
-.picture{
-    margin-top: 30px;
-    width: 50px;
-}
-.profilename{
-    font-size: larger;
-    font-weight: bold;
-}
-.profilenametext{
-    margin-bottom: -2px;
-}
-.profiletime{
-    font-size: 11px;
-    padding-left: 10px;
-    color: gray;
-}
-.profiletimetext{
-    margin-bottom: -9px;
-}
-.message{
-    margin-top: -20px;
-}
-.messagetext{
-    margin-top: -22.5px;
-}
-.reply{
-    margin-bottom: -42.5px;
-}
-.replyline{
-    border-top: 2px solid rgb(56, 56, 56);
-    border-left: 2px solid rgb(56, 56, 56);
-    border-radius: 10px 0 0 0;
-    width: 40px;
-    height: 20px;
-    margin-left: 33px;
-    margin-top: 0px;
-}
-.replypicture{
-    width: 25px;
-    margin-top: -20px;
-}
-.replyname{
-    color: rgb(180, 180, 180);
-    font-weight: bold;
-}
-.replytext{
-    color: darkgray;
-    font-size: 12.5px;
-}
-
-.explanation{
-    background-color: #23272A;
-    width: 75%;
-    height: fit-content;
-    margin: 50px 12.5% 50px 12.5%;
-    border-radius: 50px;
-    padding: 25px 10px 30px 10px;
-    color: white;
-    text-align: center;
-}
-.joinbutton{
-    background: white;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: x-large;
-    background-size: 50% 50%;
-    text-decoration: none;
-    border: 2px solid white;
-    border-top: none;
-    border-bottom: none;
-    padding: 0 5px 0 5px;
-}
-.joinbutton:hover{
-    background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: x-large;
-    background-size: 50% 50%;
-    text-decoration: none;
-    border: 2px solid white;
-    border-top: none;
-    border-bottom: none;
-    padding: 0 5px 0 5px;
-}
-.pencil{
-    float: inline-start;
-    width: 30px;
-    margin-left: 25px;
-}
-.changetext{
-    color: rgb(177, 177, 177);
-    font-size: 17.5px;
-    margin-left: 10px;
-}
-.changetime{
-    transform: translateX(34.5%) translateY(-215%);
-}
-
 /*EEVEELUTIONS*/
 .eeveelutiondiv{
     padding: 10px 20px 10px 20px;
@@ -745,6 +627,44 @@ ul{
     font-size: 50px;
     border-top: 3px solid rgb(60, 60, 255);
     border-bottom: 3px solid rgb(60, 60, 255);
+    width: 90%;
+    margin: 25px 0 25px 0;
+}
+.TheEnd{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    padding: 40px 10px 40px 5px;
+    background: linear-gradient(90deg, transparent 1%, rgb(200, 200, 200) 1%, rgb(200, 200, 200) 99%, transparent 99%);
+}
+.TheEnd .moveInfo{
+    text-align: center;
+    display: block;
+    width: 25%;
+    margin: 0 auto 5px auto;
+    border: 5px solid gray;
+    border-radius: 25px;
+    background-color: rgb(160, 160, 160);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.TheEnd .moveDesc{
+    width: 65%;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 5px solid gray;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(160, 160, 160);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.TheEnd .moveName{
+    font-size: 50px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
     width: 90%;
     margin: 25px 0 25px 0;
 }
