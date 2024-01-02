@@ -498,9 +498,10 @@ ul{
 }
 .membername{
     font-size: xx-large;
+    margin-bottom: 18.75px;
+    margin-top: 18.75px;
 }
 .memberdesc{
-    margin-top: -15px;
     border-top: 5px solid gray;
     border-bottom: 5px solid gray;
 }
@@ -587,6 +588,12 @@ ul{
 .steel{
     background-color: rgb(85, 122, 148);
 }
+.electric{
+    background-color: rgb(255, 221, 0);
+}
+.ice{
+    background-color: aqua;
+}
 .Bleedy{
     background: linear-gradient(rgb(30, 30, 30) 100px, rgb(87, 0, 0) 105px);
 }
@@ -649,6 +656,97 @@ ul{
 .Tornai .memberaccounts{
     border-top: 5px solid rgb(250, 255, 108);
     border-bottom: 5px solid rgb(250, 255, 108);
+    padding: 10px;
+    font-size: large;
+}
+.Sam{
+    background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
+}
+.Sam .memberdesc{
+    border-top: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+.Sam .memberaccounts{
+    border-top: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    padding: 10px;
+    font-size: large;
+}
+.Nick{
+    background: linear-gradient(#bdad00 100px, Green 105px);
+}
+.Nick .memberdesc{
+    border-top: 5px solid rgb(108, 140, 0);
+    border-bottom: 5px solid rgb(108, 140, 0);
+}
+.Nick .memberaccounts{
+    border-top: 5px solid rgb(108, 140, 0);
+    border-bottom: 5px solid rgb(108, 140, 0);
+    padding: 10px;
+    font-size: large;
+}
+.Sky{
+    background: linear-gradient(rgb(200, 200, 200) 100px, rgb(168, 67, 0) 105px);
+}
+.Sky .memberdesc{
+    border-top: 5px solid rgb(92, 92, 92);
+    border-bottom: 5px solid rgb(92, 92, 92);
+}
+.Sky .memberaccounts{
+    border-top: 5px solid rgb(92, 92, 92);
+    border-bottom: 5px solid rgb(92, 92, 92);
+    padding: 10px;
+    font-size: large;
+}
+.Zero{
+    background: linear-gradient(#bdad00 100px, rgb(0, 215, 190) 105px);
+}
+.Zero .memberdesc{
+    border-top: 5px solid rgb(0, 247, 255);
+    border-bottom: 5px solid rgb(0, 247, 255);
+}
+.Zero .memberaccounts{
+    border-top: 5px solid rgb(0, 247, 255);
+    border-bottom: 5px solid rgb(0, 247, 255);
+    padding: 10px;
+    font-size: large;
+}
+.Espy{
+    background: linear-gradient(lightgreen 100px, lightpink 105px);
+}
+.Espy .memberdesc{
+    border-top: 5px solid pink;
+    border-bottom: 5px solid pink;
+}
+.Espy .memberaccounts{
+    border-top: 5px solid pink;
+    border-bottom: 5px solid pink;
+    padding: 10px;
+    font-size: large;
+}
+.Maple{
+    background: linear-gradient(lightblue 100px, rgb(255, 53, 255) 105px);
+}
+.Maple .memberdesc{
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+.Maple .memberaccounts{
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
+    padding: 10px;
+    font-size: large;
+}
+.Ashie{
+    background: linear-gradient(lightpink 100px, lightblue 105px);
+}
+.Ashie .memberdesc{
+    border-top: 5px solid cyan;
+    border-bottom: 5px solid cyan;
+}
+.Ashie .memberaccounts{
+    border-top: 5px solid cyan;
+    border-bottom: 5px solid cyan;
     padding: 10px;
     font-size: large;
 }
