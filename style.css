@@ -23,9 +23,8 @@ body{
     background: linear-gradient(90deg, rgb(168, 67, 0, 0.5) 0%, rgb(52, 152, 219, 0.5) 10%, rgb(255, 88, 0, 0.5) 20%, rgb(241, 196, 15, 0.5) 30%, rgb(155, 89, 182, 0.5) 40%, rgb(30, 30, 30, 0.5) 50%, rgb(30, 204, 113, 0.5) 60%, rgb(0, 243, 255, 0.5) 70%, rgb(255, 0, 241, 0.5) 80%, rgb(255, 255, 255, 0.5) 90%, rgb(168, 67, 0, 0.5) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    max-width: 1920px;
     overflow-x: hidden;
-    width: 100%;
-    overflow-x: -moz-hidden-unscrollable;
 }
 nav{
     color: white;
@@ -187,6 +186,7 @@ nav{
 .eeveelutiondiv{
     padding: 10px 20px 10px 20px;
     transition-duration: 0.5s;
+    margin-bottom: 15px;
 }
 .eeveelutiondiv:hover{
     transform: scale(110%);
@@ -369,6 +369,7 @@ ul{
     display: flex;
     flex-flow: column;
     transition: all 0.5s ease-in-out;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.33);
 }
 .membercard:hover{
     transform: scale(110%);
@@ -476,16 +477,19 @@ ul{
 .ice{
     background-color: aqua;
 }
+.dragon{
+    background-color: rgb(0, 106, 255);
+}
 .Bleedy{
-    background: linear-gradient(rgb(30, 30, 30) 100px, rgb(87, 0, 0) 105px);
+    background: linear-gradient(rgb(255, 213, 25) 100px, rgb(255, 0, 208) 105px);
 }
 .Bleedy .memberdesc{
-    border-top: 5px solid rgb(128, 0, 0);
-    border-bottom: 5px solid rgb(128, 0, 0);
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
 }
 .Bleedy .memberaccounts{
-    border-top: 5px solid rgb(128, 0, 0);
-    border-bottom: 5px solid rgb(128, 0, 0);
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
     padding: 10px;
     font-size: large;
 }
@@ -497,19 +501,6 @@ ul{
     border-bottom: 5px solid rgb(143, 232, 254);
 }
 .Leaf .memberaccounts{
-    border-top: 5px solid rgb(143, 232, 254);
-    border-bottom: 5px solid rgb(143, 232, 254);
-    padding: 10px;
-    font-size: large;
-}
-.doesnotdoit{
-    background: linear-gradient(rgb(102, 207, 195) 100px, rgb(197, 197, 197) 105px);
-}
-.doesnotdoit .memberdesc{
-    border-top: 5px solid rgb(143, 232, 254);
-    border-bottom: 5px solid rgb(143, 232, 254);
-}
-.doesnotdoit .memberaccounts{
     border-top: 5px solid rgb(143, 232, 254);
     border-bottom: 5px solid rgb(143, 232, 254);
     padding: 10px;
@@ -632,12 +623,103 @@ ul{
     padding: 10px;
     font-size: large;
 }
+.Leif{
+    background: linear-gradient(rgb(35, 255, 50) 100px, lightgreen 105px);
+}
+.Leif .memberdesc{
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+}
+.Leif .memberaccounts{
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+    padding: 10px;
+    font-size: large;
+}
+.Luc{
+    background: linear-gradient(rgb(35, 226, 255) 100px, lightblue 105px);
+}
+.Luc .memberdesc{
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+}
+.Luc .memberaccounts{
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    padding: 10px;
+    font-size: large;
+}
+.Spee{
+    background: linear-gradient(rgb(233, 35, 255) 100px, rgb(230, 173, 224) 105px);
+}
+.Spee .memberdesc{
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+.Spee .memberaccounts{
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
+    padding: 10px;
+    font-size: large;
+}
+.Auro{
+    background: linear-gradient(rgb(255, 226, 35) 100px, rgb(255, 111, 0) 105px);
+}
+.Auro .memberdesc{
+    border-top: 5px solid orangered;
+    border-bottom: 5px solid orangered;
+}
+.Auro .memberaccounts{
+    border-top: 5px solid orangered;
+    border-bottom: 5px solid orangered;
+    padding: 10px;
+    font-size: large;
+}
+.Lex{
+    background: linear-gradient(rgb(23, 23, 23) 100px, rgb(136, 25, 25) 105px);
+}
+.Lex .memberdesc{
+    border-top: 5px solid darkred;
+    border-bottom: 5px solid darkred;
+}
+.Lex .memberaccounts{
+    border-top: 5px solid darkred;
+    border-bottom: 5px solid darkred;
+    padding: 10px;
+    font-size: large;
+}
+.Faris{
+    background: linear-gradient(rgb(164, 150, 0) 100px, rgb(26, 26, 26) 105px);
+}
+.Faris .memberdesc{
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+}
+.Faris .memberaccounts{
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    padding: 10px;
+    font-size: large;
+}
+.Rab{
+    background: linear-gradient(rgb(158, 158, 158) 100px, rgb(207, 0, 0) 105px);
+}
+.Rab .memberdesc{
+    border-top: 5px solid orangered;
+    border-bottom: 5px solid orangered;
+}
+.Rab .memberaccounts{
+    border-top: 5px solid orangered;
+    border-bottom: 5px solid orangered;
+    padding: 10px;
+    font-size: large;
+}
 
 /*MOVES*/
 .movesetexplanation{
     width: 75%;
     height: fit-content;
-    margin: 20px 12.5% 0 12.5%;
+    margin: 20px 12.5% 20px 12.5%;
     background-color: #23272A;
     border-radius: 50px;
     padding: 10px 20px 10px 20px;
