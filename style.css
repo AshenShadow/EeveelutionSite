@@ -155,8 +155,9 @@ nav{
     height: 30px;
 }
 .discInvite{
-    min-width: 250px;
-    width: 50%;
+    min-width: 175px;
+    max-width: 500px;
+    width: 75%;
 }
 
 /*INDEX*/
@@ -1062,6 +1063,7 @@ ul{
     border: 5px solid #191b1d;
     border-top: none;
     width: 17.5%;
+    min-width: 268.8px;
     text-align: center;
     margin: 0 auto;
     border-radius: 0 0 15px 15px;
