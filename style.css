@@ -19,12 +19,55 @@
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
 }
+.jointext{
+    text-decoration: none;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes colorchange {
+    0%{
+        color: red;
+    }
+    10%{
+        color: orangered;
+    }
+    20%{
+        color: orange;
+    }
+    30%{
+        color: yellow;
+    }
+    40%{
+        color: lightgreen;
+    }
+    50%{
+        color: green;
+    }
+    60%{
+        color: lightblue;
+    }
+    70%{
+        color: blue;
+    }
+    80%{
+        color: purple;
+    }
+    90%{
+        color: pink;
+    }
+    100%{
+        color: red;
+    }
+}
 body{
     background: linear-gradient(90deg, rgb(168, 67, 0, 0.5) 0%, rgb(52, 152, 219, 0.5) 10%, rgb(255, 88, 0, 0.5) 20%, rgb(241, 196, 15, 0.5) 30%, rgb(155, 89, 182, 0.5) 40%, rgb(30, 30, 30, 0.5) 50%, rgb(30, 204, 113, 0.5) 60%, rgb(0, 243, 255, 0.5) 70%, rgb(255, 0, 241, 0.5) 80%, rgb(255, 255, 255, 0.5) 90%, rgb(168, 67, 0, 0.5) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
     overflow-x: hidden;
+    padding-bottom: 10px;
 }
 head{
     overflow-x: hidden;
@@ -62,9 +105,10 @@ nav{
     border: 5px solid white;
     border-radius: 50px 0 0 50px;
     transform: translateX(-60%);
+    border-right: none;
 }
 .dropdown{
-    width: 30px;
+    width: 39px;
     float: right;
 }
 .dropdown-content{
@@ -104,7 +148,7 @@ nav{
     transition: width 0.5s linear;
     transition-timing-function: ease-in-out;
     float: right;
-    margin: 5px 2.5px 5px 2.5px;
+    margin: 2.5px 2.5px 5px 2.5px;
 }
 .discicon{
     width: 30px;
@@ -154,7 +198,7 @@ nav{
     -webkit-text-fill-color: transparent;
 }
 .headdiv{
-    height: 150px;
+    height: fit-content;
     width: 75%;
     margin: 25px 12.5% 0 12.5%;
     background-color: #23272A;
@@ -971,6 +1015,52 @@ ul{
 }
 .Ultra .FormImage{
     border-color: darkgray;
+}
+
+/*MAP*/
+.map{
+    background: url(Imgs/Map.png);
+    background-size: cover;
+    width: 80%;
+    height: 600px;
+    border: 10px solid black;
+    margin: 25px auto;
+}
+.namelabel{
+    background-color: rgba(100,100,100,0.5);
+    width: 150px;
+    height: 25px;
+    padding: 0 5px 0 5px;
+    border-radius: 25px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    transition-duration: 2.5s;
+}
+.namelabel h5{
+    font-size: medium;
+    transition-duration: 2.5s;
+}
+.namelabel:hover{
+    background-color: rgba(100,100,100,0.5);
+    width: 400px;
+    height: 350px;
+    padding: 0 5px 0 5px;
+    border-radius: 25px;
+    transition-duration: 2.5s;
+}
+.namelabel:hover h5{
+    font-size: 40px;
+    transition-duration: 2.5s;
+}
+.infolabel{
+    background-color: rgba(100,100,100,0.75);
+    border: 5px solid #191b1d;
+    border-top: none;
+    width: 17.5%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0 0 15px 15px;
 }
 
 /*TESTING*/
