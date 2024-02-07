@@ -179,6 +179,12 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
 }
+.mapbutton{
+    background-image: url(Imgs/MapCover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .navdiv{
     width: 22.5%;
     height: 500px;
