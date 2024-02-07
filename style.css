@@ -154,6 +154,10 @@ nav{
     width: 30px;
     height: 30px;
 }
+.discInvite{
+    min-width: 300px;
+    width: 50%;
+}
 
 /*INDEX*/
 .eeveelutionsbutton{
