@@ -181,6 +181,7 @@ nav{
 }
 .mapbutton{
     background-image: url(Imgs/MapCover.png);
+    background-blend-mode: color;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -337,7 +338,7 @@ nav{
     height: fit-content;
 }
 .insecteon{
-    background-color: rgb(145, 233, 110);
+    background-color: rgb(109, 181, 80);
     border-radius: 50px;
     width: 75%;
     margin: 50px 12.5% 0 12.5%;
@@ -394,6 +395,16 @@ nav{
 }
 .glaiveon{
     background-color: rgb(171, 190, 202);
+    border-radius: 50px;
+    width: 75%;
+    margin: 50px 12.5% 0 12.5%;
+    height: fit-content;
+}
+.galacteon{
+    background: url(Imgs/cosmicbg.png);
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    background-size: cover;
     border-radius: 50px;
     width: 75%;
     margin: 50px 12.5% 0 12.5%;
@@ -519,10 +530,10 @@ ul{
     background-color: rgb(230, 106, 255);
 }
 .fighting{
-    background-color: darkred;
+    background-color: rgb(255, 0, 60);
 }
 .ghost{
-    background-color: purple;
+    background-color: rgb(61, 39, 126);
 }
 .psychic{
     background-color: rgb(255, 104, 192);
@@ -539,8 +550,24 @@ ul{
 .dragon{
     background-color: rgb(0, 106, 255);
 }
+.ground{
+    background-color: orangered;
+}
+.flying{
+    background-color: skyblue;
+}
+.bug{
+    background-color: #75bd00;
+}
+.rock{
+    background-color: rgb(200, 176, 124);
+}
+.cosmic{
+    background: rgb(68, 17, 95);
+}
 .Bleedy{
-    background: linear-gradient(rgb(255, 213, 25) 100px, rgb(255, 0, 208) 105px);
+    background: linear-gradient(rgba(150,0,0) 100px, rgba(150,0,0,0.4) 300px), url(Imgs/cosmicbg.png);
+    background-size: cover;
 }
 .Bleedy .memberdesc{
     border-top: 5px solid purple;
@@ -579,7 +606,7 @@ ul{
     font-size: large;
 }
 .Tornai{
-    background: linear-gradient(rgb(239, 65, 255) 100px, rgb(197, 197, 0) 105px);
+    background: linear-gradient(rgb(197, 197, 0) 100px, rgb(194, 64, 24) 105px);
 }
 .Tornai .memberdesc{
     border-top: 5px solid rgb(250, 255, 108);
@@ -604,19 +631,6 @@ ul{
     padding: 10px;
     font-size: large;
 }
-.Nick{
-    background: linear-gradient(#bdad00 100px, Green 105px);
-}
-.Nick .memberdesc{
-    border-top: 5px solid rgb(108, 140, 0);
-    border-bottom: 5px solid rgb(108, 140, 0);
-}
-.Nick .memberaccounts{
-    border-top: 5px solid rgb(108, 140, 0);
-    border-bottom: 5px solid rgb(108, 140, 0);
-    padding: 10px;
-    font-size: large;
-}
 .Sky{
     background: linear-gradient(rgb(200, 200, 200) 100px, rgb(168, 67, 0) 105px);
 }
@@ -627,32 +641,6 @@ ul{
 .Sky .memberaccounts{
     border-top: 5px solid rgb(92, 92, 92);
     border-bottom: 5px solid rgb(92, 92, 92);
-    padding: 10px;
-    font-size: large;
-}
-.Zero{
-    background: linear-gradient(#bdad00 100px, rgb(0, 215, 190) 105px);
-}
-.Zero .memberdesc{
-    border-top: 5px solid rgb(0, 247, 255);
-    border-bottom: 5px solid rgb(0, 247, 255);
-}
-.Zero .memberaccounts{
-    border-top: 5px solid rgb(0, 247, 255);
-    border-bottom: 5px solid rgb(0, 247, 255);
-    padding: 10px;
-    font-size: large;
-}
-.Espy{
-    background: linear-gradient(lightgreen 100px, lightpink 105px);
-}
-.Espy .memberdesc{
-    border-top: 5px solid pink;
-    border-bottom: 5px solid pink;
-}
-.Espy .memberaccounts{
-    border-top: 5px solid pink;
-    border-bottom: 5px solid pink;
     padding: 10px;
     font-size: large;
 }
@@ -721,32 +709,6 @@ ul{
     padding: 10px;
     font-size: large;
 }
-.Auro{
-    background: linear-gradient(rgb(255, 226, 35) 100px, rgb(255, 111, 0) 105px);
-}
-.Auro .memberdesc{
-    border-top: 5px solid orangered;
-    border-bottom: 5px solid orangered;
-}
-.Auro .memberaccounts{
-    border-top: 5px solid orangered;
-    border-bottom: 5px solid orangered;
-    padding: 10px;
-    font-size: large;
-}
-.Lex{
-    background: linear-gradient(rgb(23, 23, 23) 100px, rgb(136, 25, 25) 105px);
-}
-.Lex .memberdesc{
-    border-top: 5px solid darkred;
-    border-bottom: 5px solid darkred;
-}
-.Lex .memberaccounts{
-    border-top: 5px solid darkred;
-    border-bottom: 5px solid darkred;
-    padding: 10px;
-    font-size: large;
-}
 .Faris{
     background: linear-gradient(rgb(164, 150, 0) 100px, rgb(26, 26, 26) 105px);
 }
@@ -760,16 +722,42 @@ ul{
     padding: 10px;
     font-size: large;
 }
-.Rab{
-    background: linear-gradient(rgb(158, 158, 158) 100px, rgb(207, 0, 0) 105px);
+.Erkal{
+    background: linear-gradient(rgb(189, 189, 189) 100px, rgb(0, 153, 173) 105px);
 }
-.Rab .memberdesc{
-    border-top: 5px solid orangered;
-    border-bottom: 5px solid orangered;
+.Erkal .memberdesc{
+    border-top: 5px solid lightblue;
+    border-bottom: 5px solid lightblue;
 }
-.Rab .memberaccounts{
-    border-top: 5px solid orangered;
-    border-bottom: 5px solid orangered;
+.Erkal .memberaccounts{
+    border-top: 5px solid lightblue;
+    border-bottom: 5px solid lightblue;
+    padding: 10px;
+    font-size: large;
+}
+.Sunset{
+    background: linear-gradient(rgb(0, 0, 0) 100px, rgb(173, 158, 0) 105px);
+}
+.Sunset .memberdesc{
+    border-top: 5px solid Yellow;
+    border-bottom: 5px solid Yellow;
+}
+.Sunset .memberaccounts{
+    border-top: 5px solid Yellow;
+    border-bottom: 5px solid Yellow;
+    padding: 10px;
+    font-size: large;
+}
+.Rubi{
+    background: linear-gradient(rgb(208, 196, 61) 100px, rgb(57, 57, 57) 105px);
+}
+.Rubi .memberdesc{
+    border-top: 5px solid Yellow;
+    border-bottom: 5px solid Yellow;
+}
+.Rubi .memberaccounts{
+    border-top: 5px solid Yellow;
+    border-bottom: 5px solid Yellow;
     padding: 10px;
     font-size: large;
 }
@@ -783,11 +771,55 @@ ul{
     border-radius: 50px;
     padding: 10px 20px 10px 20px;
 }
-.TypeChart{
-    width: 50%;
-    margin: auto;
-    display: block;
-    min-width: 250px;
+.TypeChartHolder{
+    display: flex;
+    flex-direction: row;
+}
+.typechart{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 150px;
+}
+.CurrentType{
+    width: 7.5%;
+}
+.Effectiveness{
+    width: 7.5%;
+}
+.typeList{
+    width: 85%;
+    height: 60px;
+}
+.typeEffect{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.typeChartContent{
+    text-align: center;
+    width: 100%;
+}
+.SuperE{
+    background-color: lightgreen;
+    border-radius: 50px;
+    width: 33%;
+}
+.NotVeryE{
+    background-color: darkred;
+    border-radius: 50px;
+    width: 34%;
+}
+.NoE{
+    background-color: black;
+    border-radius: 50px;
+    width: 33%;
+}
+.typeImage{
+    width: 50px;
+}
+.typeImageMain{
+    width: 75px;
 }
 .moves{
     background-color: #23272A;
@@ -921,41 +953,193 @@ ul{
     width: 90%;
     margin: 25px 0 25px 0;
 }
-.TheEnd{
+.CoreCollapse{
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-    border-top: 10px solid gray;
-    border-bottom: 10px solid gray;
+    border-top: 10px solid purple;
+    border-bottom: 10px solid purple;
     padding: 40px 10px 40px 5px;
-    background: linear-gradient(90deg, transparent 1%, rgb(200, 200, 200) 1%, rgb(200, 200, 200) 99%, transparent 99%);
+    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
 }
-.TheEnd .moveInfo{
+.CoreCollapse .moveInfo{
     text-align: center;
     display: block;
     width: 25%;
     margin: 0 auto 5px auto;
-    border: 5px solid gray;
+    border: 5px solid purple;
     border-radius: 25px;
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(68, 17, 95);
     padding: 10px 5px 10px 5px;
     min-width: 250px;
 }
-.TheEnd .moveDesc{
+.CoreCollapse .moveDesc{
     width: 65%;
     display: block;
     margin: 0 auto 5px auto;
-    border: 5px solid gray;
+    border: 5px solid purple;
     border-radius: 25px;
     color: white;
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(68, 17, 95);
     padding: 10px 5px 10px 5px;
     min-width: 250px;
 }
-.TheEnd .moveName{
+.CoreCollapse .moveName{
     font-size: 50px;
-    border-top: 3px solid gray;
-    border-bottom: 3px solid gray;
+    border-top: 3px solid purple;
+    border-bottom: 3px solid purple;
+    width: 90%;
+    margin: 25px 0 25px 0;
+}
+.StarShooter{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 10px solid purple;
+    border-bottom: 10px solid purple;
+    padding: 40px 10px 40px 5px;
+    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
+}
+.StarShooter .moveInfo{
+    text-align: center;
+    display: block;
+    width: 25%;
+    margin: 0 auto 5px auto;
+    border: 5px solid purple;
+    border-radius: 25px;
+    background-color: rgb(68, 17, 95);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.StarShooter .moveDesc{
+    width: 65%;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 5px solid purple;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(68, 17, 95);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.StarShooter .moveName{
+    font-size: 50px;
+    border-top: 3px solid purple;
+    border-bottom: 3px solid purple;
+    width: 90%;
+    margin: 25px 0 25px 0;
+}
+.CosmicFang{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 10px solid purple;
+    border-bottom: 10px solid purple;
+    padding: 40px 10px 40px 5px;
+    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
+}
+.CosmicFang .moveInfo{
+    text-align: center;
+    display: block;
+    width: 25%;
+    margin: 0 auto 5px auto;
+    border: 5px solid purple;
+    border-radius: 25px;
+    background-color: rgb(68, 17, 95);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.CosmicFang .moveDesc{
+    width: 65%;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 5px solid purple;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(68, 17, 95);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.CosmicFang .moveName{
+    font-size: 50px;
+    border-top: 3px solid purple;
+    border-bottom: 3px solid purple;
+    width: 90%;
+    margin: 25px 0 25px 0;
+}
+.Supernova{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 10px solid purple;
+    border-bottom: 10px solid purple;
+    padding: 40px 10px 40px 5px;
+    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
+}
+.Supernova .moveInfo{
+    text-align: center;
+    display: block;
+    width: 25%;
+    margin: 0 auto 5px auto;
+    border: 5px solid purple;
+    border-radius: 25px;
+    background-color: rgb(68, 17, 95);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.Supernova .moveDesc{
+    width: 65%;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 5px solid purple;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(68, 17, 95);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.Supernova .moveName{
+    font-size: 50px;
+    border-top: 3px solid purple;
+    border-bottom: 3px solid purple;
+    width: 90%;
+    margin: 25px 0 25px 0;
+}
+.AsteroidRain{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 10px solid purple;
+    border-bottom: 10px solid purple;
+    padding: 40px 10px 40px 5px;
+    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
+}
+.AsteroidRain .moveInfo{
+    text-align: center;
+    display: block;
+    width: 25%;
+    margin: 0 auto 5px auto;
+    border: 5px solid purple;
+    border-radius: 25px;
+    background-color: rgb(68, 17, 95);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.AsteroidRain .moveDesc{
+    width: 65%;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 5px solid purple;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(68, 17, 95);
+    padding: 10px 5px 10px 5px;
+    min-width: 250px;
+}
+.AsteroidRain .moveName{
+    font-size: 50px;
+    border-top: 3px solid purple;
+    border-bottom: 3px solid purple;
     width: 90%;
     margin: 25px 0 25px 0;
 }
