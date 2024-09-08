@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Ketchum";
     src: url('fonts/Ketchum.otf');
-  }
+}
 
 /*UNIVERSAL*/
 ::-webkit-scrollbar {
@@ -162,25 +162,25 @@ nav{
 
 /*INDEX*/
 .eeveelutionsbutton{
-    background-image: url(Imgs/eeveelutionbg.png);
+    background-image: url(Imgs/eeveelutionbg.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .movesetsbutton{
-    background-image: url(Imgs/Movesets_icon.png);
+    background-image: url(Imgs/Movesets_icon.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .membersbutton{
-    background-image: url(Imgs/Members_icon.png);
+    background-image: url(Imgs/Members_icon.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .mapbutton{
-    background-image: url(Imgs/MapCover.png);
+    background-image: url(Imgs/MapCover.webp);
     background-blend-mode: color;
     background-size: cover;
     background-repeat: no-repeat;
@@ -401,7 +401,7 @@ nav{
     height: fit-content;
 }
 .galacteon{
-    background: url(Imgs/cosmicbg.png);
+    background: url(Imgs/cosmicbg.webp);
     background-repeat: no-repeat;
     background-position: 50%, 50%;
     background-size: cover;
@@ -566,7 +566,7 @@ ul{
     background: rgb(68, 17, 95);
 }
 .Bleedy{
-    background: linear-gradient(rgba(150,0,0) 100px, rgba(150,0,0,0.4) 300px), url(Imgs/cosmicbg.png);
+    background: linear-gradient(rgba(150,0,0) 100px, rgba(150,0,0,0.4) 300px), url(Imgs/cosmicbg.webp);
     background-size: cover;
 }
 .Bleedy .memberdesc{
@@ -1214,7 +1214,7 @@ ul{
 
 /*MAP*/
 .map{
-    background: url(Imgs/Map.png);
+    background: url(Imgs/Map.webp);
     background-size: cover;
     width: 80%;
     height: 600px;
