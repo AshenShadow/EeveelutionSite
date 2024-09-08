@@ -179,8 +179,8 @@ body{
 
 .explanationDiv{
     width: 65%;
-    height: 295px;
     display: block;
+    height: fit-content;
     margin: 20px auto 0 auto;
     background-color: #23272A;
     padding: 10px;
@@ -200,7 +200,7 @@ body{
 
 .historyDiv{
     width: 65%;
-    height: 450px;
+    height: fit-content;
     display: block;
     margin: 20px auto 0 auto;
     background-color: #23272A;
@@ -221,12 +221,56 @@ body{
 
 .joinDiv{
     width: 40%;
-    height: 165px;
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 10px auto;
     background-color: #23272A;
     padding: 10px;
     border-radius: 25px;
+}
+@media (min-width: 1680px){
+    .joinDiv{
+        height: 185px;
+    }
+}
+@media (max-width: 1680px){
+    .joinDiv{
+        height: 210px;
+    }
+}
+@media (max-width: 1319px){
+    .joinDiv{
+        height: 225px;
+    }
+}
+@media (max-width: 771px){
+    .joinDiv{
+        height: 265px;
+    }
+}
+@media (max-width: 758px){
+    .joinDiv{
+        height: 295px;
+    }
+}
+@media (max-width: 545px){
+    .joinDiv{
+        height: 310px;
+    }
+}
+@media (max-width: 483px){
+    .joinDiv{
+        height: 340px;
+    }
+}
+@media (max-width: 413px){
+    .joinDiv{
+        height: 370px;
+    }
+}
+@media (max-width: 404px){
+    .joinDiv{
+        height: 410px;
+    }
 }
 .joinDiv img{
     width: 75px;
@@ -235,13 +279,15 @@ body{
     position: relative;
     top: -25px;
 }
+.joinDiv a{
+    position: relative;
+    top: -35px;
+}
 .joinDiv p{
     position: relative;
-    top: -60px;
+    top: -40px;
 }
 .joinDiv a{
     animation: colorchange 10s linear infinite;
     text-decoration: none;
-    position: relative;
-    top: -45px;
 }
