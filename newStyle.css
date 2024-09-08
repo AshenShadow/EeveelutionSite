@@ -60,6 +60,7 @@ body{
     background-color: #23272A;
     position: fixed;
     display: block;
+    z-index: 999;
 }
 
 @media (max-width: 1200px){
