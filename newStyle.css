@@ -386,9 +386,7 @@ body{
 .carouselSelection{
     width: 100%;
     position: relative;
-    display: flex;
-    max-width: calc(870px * 19);
-    width: calc(870px * 19);
+    width: 100%;
 }
 .eeveelution{
     display: block;
