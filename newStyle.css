@@ -44,6 +44,41 @@
     }
 }
 
+/*SCROLLBAR*/
+
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color: #23272A;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 25px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: lightgray;
+}
+body::-webkit-scrollbar-track{
+    background-color: #23272A;
+}
+
+
+
+.sideDiv::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #23272A;
+}
+.sideDiv::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 25px;
+}
+.sideDiv::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+.sideDiv::-webkit-scrollbar-track{
+    background-color: #23272A;
+}
+
 /*UNIVERSAL*/
 
 body{
@@ -51,9 +86,12 @@ body{
     background-image: url(NewImgs/MembersIcon.webp);
     margin: 0;
     overflow-x: hidden;
+    overflow: overlay;
     font-family: "Ketchum";
     color: white;
 }
+
+
 
 .sideDiv{
     background-color: #23272A;
@@ -63,15 +101,18 @@ body{
     text-decoration: none;
 }
 
-.eeveelutionPage{
-    background-image: linear-gradient(to right, transparent 0%, #23272A 70%), url(NewImgs/ButtonBgEeveelutions.webp);
-    background-size: cover;
-}
+
 
 .indexPage{
     background-image: linear-gradient(to right, transparent 0%, #23272A 70%), url(NewImgs/MembersIcon.webp);
     background-size: cover;
 }
+.eeveelutionPage{
+    background-image: linear-gradient(to right, transparent 0%, #23272A 70%), url(NewImgs/ButtonBgEeveelutions.webp);
+    background-size: cover;
+}
+
+
 
 @media (max-width: 1200px){
     body{
@@ -114,6 +155,8 @@ body{
     }
 }
 
+
+
 @media (min-width: 1200px){
     body{
         background-repeat: no-repeat;
@@ -148,6 +191,8 @@ body{
     
 }
 
+
+
 /*HOME PAGE*/
 
 .welcomeDiv{
@@ -170,6 +215,8 @@ body{
     }
 }
 
+
+
 .nameDiv{
     display: block;
     position: relative;
@@ -185,6 +232,8 @@ body{
     top: -20px;
     animation: colorchange 10s linear infinite;
 }
+
+
 
 .carouselDiv{
     height: 65px;
@@ -217,6 +266,8 @@ body{
     width: 65px;
 }
 
+
+
 .explanationDiv{
     width: 65%;
     display: block;
@@ -238,6 +289,8 @@ body{
     top: -25px;
 }
 
+
+
 .historyDiv{
     width: 65%;
     height: fit-content;
@@ -258,6 +311,8 @@ body{
     position: relative;
     top: -25px;
 }
+
+
 
 .joinDiv{
     width: 40%;
@@ -282,4 +337,142 @@ body{
 .joinDiv a{
     animation: colorchange 10s linear infinite;
     text-decoration: none;
+}
+
+
+
+/*EEVEELUTIONS PAGE*/
+
+.eeveelutions{
+    display: block;
+    margin: 10px auto;
+    width: 60%;
+    padding-bottom: 5px;
+    background-color: #23272A;
+    border-radius: 25px;
+}
+
+
+
+.pageSwitch{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.switchButton{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    text-align: center;
+}
+.switchButton:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.switchButton img{
+    width: 50px;
+}
+
+
+.eeveelutionSelection{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.carouselSelection{
+    width: 100%;
+    position: relative;
+}
+.eeveelution{
+    display: block;
+    margin: 0;
+    width: 100%;
+    max-width: 850px;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+
+
+.Eevee{
+    background-color: #AD8459;
+}
+.Vaporeon{
+    background-color: #538E91;
+}
+.Flareon{
+    background-color: #B64A4F;
+}
+.Jolteon{
+    background-color: #DAB301;
+}
+.Umbreon{
+    background-color: #31353A;
+}
+.Espeon{
+    background-color: #C09AB2;
+}
+.Leafeon{
+    background-color: #C1DC95;
+}
+.Glaceon{
+    background-color: #277C92;
+}
+.Sylveon{
+    background-color: #D7736E;
+}
+.Insecteon{
+    background-color: #91FF00;
+}
+.Brawleon{
+    background-color: #AE0100;
+}
+.Veneon{
+    background-color: #9D00FF;
+}
+.Dusteon{
+    background-color: #FFCC9C;
+}
+.Breezeon{
+    background-color: #C3FFED;
+}
+.Obsideon{
+    background-color: #6D5F54;
+}
+.Skulleon{
+    background-color: #A1A1A1;
+}
+.Eterneon{
+    background-color: #003283;
+}
+.Glaiveon{
+    background-color: #CCCAC9;
+}
+.Galacteon{
+    background-color: #2B217F;
+}
+
+
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+.speciesImage{
+    max-width: 200px;
+    width: 50%;
+    max-height: 200px;
+    height: 50%;
+}
+.paragraphImage{
+    width: 25px;
+    position: relative;
+    top: 7.5px;
+}
+.warningSign{
+    color: rgb(183, 0, 0);
 }
