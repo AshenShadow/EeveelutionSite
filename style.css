@@ -1,1262 +1,281 @@
-@font-face {
-    font-family: "Ketchum";
-    src: url('fonts/Ketchum.otf');
-}
+/* --- FONTS SETUP --- */
+    @font-face {
+        font-family: 'Ketchum';
+        src: url('Fonts/Ketchum.otf') format('opentype'),
+             url('Fonts/Ketchum.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
-/*UNIVERSAL*/
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: linear-gradient(rgb(168, 67, 0, 0.5) 0%, rgb(52, 152, 219, 0.5) 10%, rgb(255, 88, 0, 0.5) 20%, rgb(241, 196, 15, 0.5) 30%, rgb(155, 89, 182, 0.5) 40%, rgb(30, 30, 30, 0.5) 50%, rgb(30, 204, 113, 0.5) 60%, rgb(0, 243, 255, 0.5) 70%, rgb(255, 0, 241, 0.5) 80%, rgb(255, 255, 255, 0.5) 90%, rgb(168, 67, 0, 0.5) 100%);
-    border-left: 2px solid black;
-}
-::-webkit-scrollbar-thumb {
-    background: white;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
-}
-.jointext{
-    text-decoration: none;
-    animation-name: colorchange;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-}
-@keyframes colorchange {
-    0%{
-        color: red;
-    }
-    10%{
-        color: orangered;
-    }
-    20%{
-        color: orange;
-    }
-    30%{
-        color: yellow;
-    }
-    40%{
-        color: lightgreen;
-    }
-    50%{
-        color: green;
-    }
-    60%{
-        color: lightblue;
-    }
-    70%{
-        color: blue;
-    }
-    80%{
-        color: purple;
-    }
-    90%{
-        color: pink;
-    }
-    100%{
-        color: red;
-    }
-}
-body{
-    background: linear-gradient(90deg, rgb(168, 67, 0, 0.5) 0%, rgb(52, 152, 219, 0.5) 10%, rgb(255, 88, 0, 0.5) 20%, rgb(241, 196, 15, 0.5) 30%, rgb(155, 89, 182, 0.5) 40%, rgb(30, 30, 30, 0.5) 50%, rgb(30, 204, 113, 0.5) 60%, rgb(0, 243, 255, 0.5) 70%, rgb(255, 0, 241, 0.5) 80%, rgb(255, 255, 255, 0.5) 90%, rgb(168, 67, 0, 0.5) 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    overflow-x: hidden;
-    padding-bottom: 10px;
-}
-head{
-    overflow-x: hidden;
-}
-nav{
-    color: white;
-    width: 100%;
-}
-.navlogo{
-    width: 75px;
-    height: 75px;
-    float: inline-start;
-    margin-top: -12.5px;
-}
-.navbody{
-    background-color: #23272A;
-    height: 75px;
-}
-.titlenlogo{
-    margin-left: 25px;
-    padding-top: 12.5px;
-}
-.title{
-    background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 20% 20%;
-}
-.dropbtn{
-    background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
-    color: white;
-    width: 100px;
-    font-size: 25px;
-    border: 5px solid white;
-    border-radius: 50px 0 0 50px;
-    transform: translateX(-60%);
-    border-right: none;
-}
-.dropdown{
-    width: 39px;
-    float: right;
-}
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #191b1d;
-    border: 4px solid white;
-    z-index: 1;
-    right: 0;
-}
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-.sitebutton:hover{
-    background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 100% 100%;
-    text-decoration: none;
-    width: 280px;
-    overflow: hidden;
-    transition: width 0.5s linear;
-    transition-timing-function: ease-in-out;
-}
-.sitebutton{
-    background-color: #23272A;
-    border: 3px solid white;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    height: 44px;
-    padding-left: 6px;
-    border-radius: 50px;
-    width: 48.5px;
-    overflow: hidden;
-    transition: width 0.5s linear;
-    transition-timing-function: ease-in-out;
-    float: right;
-    margin: 2.5px 2.5px 5px 2.5px;
-}
-.discicon{
-    width: 30px;
-    height: 30px;
-}
-.discInvite{
-    min-width: 175px;
-    max-width: 500px;
-    width: 75%;
-}
 
-/*INDEX*/
-.eeveelutionsbutton{
-    background-image: url(Imgs/eeveelutionbg.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.movesetsbutton{
-    background-image: url(Imgs/Movesets_icon.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.membersbutton{
-    background-image: url(Imgs/Members_icon.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.mapbutton{
-    background-image: url(Imgs/MapCover.webp);
-    background-blend-mode: color;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.navdiv{
-    width: 22.5%;
-    height: 500px;
-    margin: 20px 3% 0 3%;
-    background-color: #23272A;
-    border-radius: 50px;
-    text-align: center;
-    transition-duration: 0.5s;
-    display: inline-table;
-}
-.navdiv:hover{
-    transform: scale(110%);
-    transition-duration: 0.5s;
-}
-.nounderline{
-    text-decoration: none;
-}
-.pagetitle{
-    background: linear-gradient(90deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 204, 113) 50%, rgb(0, 243, 255) 60%, rgb(255, 0, 241) 70%, rgb(255, 255, 255) 80%, rgb(168, 67, 0) 100%);;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.headdiv{
-    height: fit-content;
-    width: 75%;
-    margin: 25px 12.5% 0 12.5%;
-    background-color: #23272A;
-    border-radius: 50px;
-    text-align: center;
-    height: fit-content;
-    padding: 10px 0 10px 0;
-}
-.mainimage{
-    width: 150px;
-}
-.hiddentext{
-    background-color: rgb(0,0,0,0.33);
-    width: 100%;
-    overflow-y: hidden;
-    height: 40px;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-property: height;
-    transition-delay: 0.1s;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
-.navdiv:hover > .hiddentext{
-    height: 170px;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-property: height;
-    transition-delay: 0.1s;
-}
 
-/*EEVEELUTIONS*/
-.eeveelutiondiv{
-    padding: 10px 20px 10px 20px;
-    transition-duration: 0.5s;
-    margin-bottom: 15px;
-}
-.eeveelutiondiv:hover{
-    transform: scale(110%);
-    transition-duration: 0.5s;
-}
-.eeveelutionname{
-    color: white;
-    font-family: "Ketchum";
-}
-.eeveelutionpicture{
-    min-width: 250px;
-    width: 25%;
-    float: inline-start;
-    margin: 0 auto 0 auto;
-}
-.eeveelutiontext{
-    color: white;
-    font-family: "Ketchum";
-}
-.eeveelutionnamelist{
-    text-align: center;
-    font-size: 17.5px;
-}
-.formImage{
-    float: inline-start;
-    width: 100px;
-}
-.eevee{
-    background-color: rgb(168, 67, 0);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.vaporeon{
-    background-color: rgb(52, 152, 219);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.jolteon{
-    background-color: rgb(241, 196, 15);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.flareon{
-    background-color: rgb(255, 88, 0);;
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.espeon{
-    background-color: rgb(155, 89, 182);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.umbreon{
-    background-color: rgb(25, 25, 25);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.leafeon{
-    background-color: rgb(30, 204, 113);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.glaceon{
-    background-color: rgb(0, 243, 255);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.sylveon{
-    background-color: rgb(255, 103, 247);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.insecteon{
-    background-color: rgb(109, 181, 80);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.brawleon{
-    background-color: rgb(138, 20, 20);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.veneon{
-    background-color: rgb(105, 20, 138);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.dusteon{
-    background-color: rgb(209, 108, 61);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.breezeon{
-    background-color: rgb(220, 220, 220);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.obsideon{
-    background-color: rgb(128, 110, 91);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.skulleon{
-    background-color: rgb(125, 62, 139);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;  
-}
-.eterneon{
-    background-color: rgb(0, 43, 71);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.glaiveon{
-    background-color: rgb(171, 190, 202);
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-.galacteon{
-    background: url(Imgs/cosmicbg.webp);
-    background-repeat: no-repeat;
-    background-position: 50%, 50%;
-    background-size: cover;
-    border-radius: 50px;
-    width: 75%;
-    margin: 50px 12.5% 0 12.5%;
-    height: fit-content;
-}
-ul{
-    list-style: none;
-}
-.indent{
-    text-indent: 25px;
-}
+/* --- VARIABLES --- */
+    :root {
+        --font-main: 'Ketchum', 'Segoe UI', Tahoma, sans-serif; 
+        --font-body: 'Ketchum', 'Segoe UI', Tahoma, sans-serif;
+        
+        --primary: #e7a05d; /* Eevee Orange */
+        --secondary: #5865F2; /* Discord Blue */
+        --bg-dark: #0a0a0c;
+        --bg-glass: rgba(30, 31, 34, 0.85);
+        --sidebar-width: 260px;
+        --glow: 0 0 20px rgba(231, 160, 93, 0.4);
+    }
 
-/*MEMBERS*/
-.memberlist{
-    border: 5px solid gray;
-    background-color: rgb(120, 120, 120, 0.5);
-    width: 75%;
-    height: fit-content;
-    margin: 50px 12.5% 50px 12.5%;
-    border-radius: 50px;
-    padding: 50px 10px 30px 10px;
-    display: flex;
-    flex-flow: column;
-}
-.membercard{
-    width: 90%;
-    height: 100%;
-    margin: 50px 5% 50px 5%;
-    padding: 25px 10px 0px 10px;
-    border-radius: 50px;
-    overflow-y: hidden;
-    display: flex;
-    flex-flow: column;
-    transition: all 0.5s ease-in-out;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.33);
-}
-.membercard:hover{
-    transform: scale(110%);
-}
-.memberinfo{
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-}
-.membername{
-    font-size: xx-large;
-    margin-bottom: 18.75px;
-    margin-top: 18.75px;
-}
-.memberdesc{
-    border-top: 5px solid gray;
-    border-bottom: 5px solid gray;
-}
-.memberaccounts{
-    border-top: 5px solid gray;
-    border-bottom: 5px solid gray;
-    font-size: larger;
-    width: 100%;
-}
-.memberaccountimage{
-    width: 50px;
-}
-.memberspecies{
-    width: 50%;
-    text-align: center;
-}
-.membertype{
-    width: 50%;
-    text-align: center;
-}
-.SpeciesImage{
-    width: 25%;
-    min-width: 100px;
-}
-.typeimage{
-    width: 50px;
-}
-.moveset{
-    display: flex;
-    flex-flow: wrap;
-}
-.move{
-    display: block;
-    width: 200px;
-    margin: 5px auto 5px auto;
-    border-radius: 25px;
-    transition: all 0.25s ease-in-out;
-}
-.move:hover{
-    transform: scale(110%);
-}
-.movecategorytext{
-    display: block;
-    margin: auto;
-    width: 125px;
-    text-align: center;
-}
-.movecategory{
-    width: 30px;
-}
-.movetype{
-    width: 50px;
-}
-.normal{
-    background-color: rgb(200, 200, 200);
-}
-.water{
-    background-color: rgb(0, 150, 255, 0.9);
-}
-.grass{
-    background-color: rgb(0, 255, 100, 0.9);
-}
-.dark{
-    background-color: rgb(41, 22, 7);
-}
-.fire{
-    background-color: orange;
-}
-.poison{
-    background-color: rgb(155, 32, 155);
-}
-.fairy{
-    background-color: rgb(230, 106, 255);
-}
-.fighting{
-    background-color: rgb(255, 0, 60);
-}
-.ghost{
-    background-color: rgb(61, 39, 126);
-}
-.psychic{
-    background-color: rgb(255, 104, 192);
-}
-.steel{
-    background-color: rgb(85, 122, 148);
-}
-.electric{
-    background-color: rgb(255, 221, 0);
-}
-.ice{
-    background-color: aqua;
-}
-.dragon{
-    background-color: rgb(0, 106, 255);
-}
-.ground{
-    background-color: orangered;
-}
-.flying{
-    background-color: skyblue;
-}
-.bug{
-    background-color: #75bd00;
-}
-.rock{
-    background-color: rgb(200, 176, 124);
-}
-.cosmic{
-    background: rgb(68, 17, 95);
-}
-.Bleedy{
-    background: linear-gradient(rgba(150,0,0) 100px, rgba(150,0,0,0.4) 300px), url(Imgs/cosmicbg.webp);
-    background-size: cover;
-}
-.Bleedy .memberdesc{
-    border-top: 5px solid purple;
-    border-bottom: 5px solid purple;
-}
-.Bleedy .memberaccounts{
-    border-top: 5px solid purple;
-    border-bottom: 5px solid purple;
-    padding: 10px;
-    font-size: large;
-}
-.Leaf{
-    background: linear-gradient(rgb(12, 143, 0) 100px, rgb(119, 207, 237) 105px);
-}
-.Leaf .memberdesc{
-    border-top: 5px solid rgb(143, 232, 254);
-    border-bottom: 5px solid rgb(143, 232, 254);
-}
-.Leaf .memberaccounts{
-    border-top: 5px solid rgb(143, 232, 254);
-    border-bottom: 5px solid rgb(143, 232, 254);
-    padding: 10px;
-    font-size: large;
-}
-.Volta{
-    background: linear-gradient(rgb(199, 199, 199) 100px, rgb(197, 197, 0) 105px);
-}
-.Volta .memberdesc{
-    border-top: 5px solid rgb(250, 255, 108);
-    border-bottom: 5px solid rgb(250, 255, 108);
-}
-.Volta .memberaccounts{
-    border-top: 5px solid rgb(250, 255, 108);
-    border-bottom: 5px solid rgb(250, 255, 108);
-    padding: 10px;
-    font-size: large;
-}
-.Tornai{
-    background: linear-gradient(rgb(197, 197, 0) 100px, rgb(194, 64, 24) 105px);
-}
-.Tornai .memberdesc{
-    border-top: 5px solid rgb(250, 255, 108);
-    border-bottom: 5px solid rgb(250, 255, 108);
-}
-.Tornai .memberaccounts{
-    border-top: 5px solid rgb(250, 255, 108);
-    border-bottom: 5px solid rgb(250, 255, 108);
-    padding: 10px;
-    font-size: large;
-}
-.Sam{
-    background: linear-gradient(315deg, rgb(168, 67, 0) 0%, rgb(52, 152, 219) 10%, rgb(255, 88, 0) 20%, rgb(241, 196, 15) 30%, rgb(155, 89, 182) 40%, rgb(30, 30, 30) 50%, rgb(30, 204, 113) 60%, rgb(0, 243, 255) 70%, rgb(255, 0, 241) 80%, rgb(220, 220, 220) 90%, rgb(168, 67, 0) 100%);
-}
-.Sam .memberdesc{
-    border-top: 5px solid rgb(255, 255, 255);
-    border-bottom: 5px solid rgb(255, 255, 255);
-}
-.Sam .memberaccounts{
-    border-top: 5px solid rgb(255, 255, 255);
-    border-bottom: 5px solid rgb(255, 255, 255);
-    padding: 10px;
-    font-size: large;
-}
-.Sky{
-    background: linear-gradient(rgb(200, 200, 200) 100px, rgb(168, 67, 0) 105px);
-}
-.Sky .memberdesc{
-    border-top: 5px solid rgb(92, 92, 92);
-    border-bottom: 5px solid rgb(92, 92, 92);
-}
-.Sky .memberaccounts{
-    border-top: 5px solid rgb(92, 92, 92);
-    border-bottom: 5px solid rgb(92, 92, 92);
-    padding: 10px;
-    font-size: large;
-}
-.Maple{
-    background: linear-gradient(lightblue 100px, rgb(255, 53, 255) 105px);
-}
-.Maple .memberdesc{
-    border-top: 5px solid purple;
-    border-bottom: 5px solid purple;
-}
-.Maple .memberaccounts{
-    border-top: 5px solid purple;
-    border-bottom: 5px solid purple;
-    padding: 10px;
-    font-size: large;
-}
-.Ashie{
-    background: linear-gradient(lightpink 100px, lightblue 105px);
-}
-.Ashie .memberdesc{
-    border-top: 5px solid cyan;
-    border-bottom: 5px solid cyan;
-}
-.Ashie .memberaccounts{
-    border-top: 5px solid cyan;
-    border-bottom: 5px solid cyan;
-    padding: 10px;
-    font-size: large;
-}
-.Leif{
-    background: linear-gradient(rgb(35, 255, 50) 100px, lightgreen 105px);
-}
-.Leif .memberdesc{
-    border-top: 5px solid green;
-    border-bottom: 5px solid green;
-}
-.Leif .memberaccounts{
-    border-top: 5px solid green;
-    border-bottom: 5px solid green;
-    padding: 10px;
-    font-size: large;
-}
-.Luc{
-    background: linear-gradient(rgb(35, 226, 255) 100px, lightblue 105px);
-}
-.Luc .memberdesc{
-    border-top: 5px solid blue;
-    border-bottom: 5px solid blue;
-}
-.Luc .memberaccounts{
-    border-top: 5px solid blue;
-    border-bottom: 5px solid blue;
-    padding: 10px;
-    font-size: large;
-}
-.Spee{
-    background: linear-gradient(rgb(233, 35, 255) 100px, rgb(230, 173, 224) 105px);
-}
-.Spee .memberdesc{
-    border-top: 5px solid purple;
-    border-bottom: 5px solid purple;
-}
-.Spee .memberaccounts{
-    border-top: 5px solid purple;
-    border-bottom: 5px solid purple;
-    padding: 10px;
-    font-size: large;
-}
-.Faris{
-    background: linear-gradient(rgb(164, 150, 0) 100px, rgb(26, 26, 26) 105px);
-}
-.Faris .memberdesc{
-    border-top: 5px solid yellow;
-    border-bottom: 5px solid yellow;
-}
-.Faris .memberaccounts{
-    border-top: 5px solid yellow;
-    border-bottom: 5px solid yellow;
-    padding: 10px;
-    font-size: large;
-}
-.Erkal{
-    background: linear-gradient(rgb(189, 189, 189) 100px, rgb(0, 153, 173) 105px);
-}
-.Erkal .memberdesc{
-    border-top: 5px solid lightblue;
-    border-bottom: 5px solid lightblue;
-}
-.Erkal .memberaccounts{
-    border-top: 5px solid lightblue;
-    border-bottom: 5px solid lightblue;
-    padding: 10px;
-    font-size: large;
-}
-.Sunset{
-    background: linear-gradient(rgb(0, 0, 0) 100px, rgb(173, 158, 0) 105px);
-}
-.Sunset .memberdesc{
-    border-top: 5px solid Yellow;
-    border-bottom: 5px solid Yellow;
-}
-.Sunset .memberaccounts{
-    border-top: 5px solid Yellow;
-    border-bottom: 5px solid Yellow;
-    padding: 10px;
-    font-size: large;
-}
-.Rubi{
-    background: linear-gradient(rgb(208, 196, 61) 100px, rgb(57, 57, 57) 105px);
-}
-.Rubi .memberdesc{
-    border-top: 5px solid Yellow;
-    border-bottom: 5px solid Yellow;
-}
-.Rubi .memberaccounts{
-    border-top: 5px solid Yellow;
-    border-bottom: 5px solid Yellow;
-    padding: 10px;
-    font-size: large;
-}
 
-/*MOVES*/
-.movesetexplanation{
-    width: 75%;
-    height: fit-content;
-    margin: 20px 12.5% 20px 12.5%;
-    background-color: #23272A;
-    border-radius: 50px;
-    padding: 10px 20px 10px 20px;
-}
-.TypeChartHolder{
-    display: flex;
-    flex-direction: row;
-}
-.typechart{
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 150px;
-}
-.CurrentType{
-    width: 7.5%;
-}
-.Effectiveness{
-    width: 7.5%;
-}
-.typeList{
-    width: 85%;
-    height: 60px;
-}
-.typeEffect{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.typeChartContent{
-    text-align: center;
-    width: 100%;
-}
-.SuperE{
-    background-color: lightgreen;
-    border-radius: 50px;
-    width: 33%;
-}
-.NotVeryE{
-    background-color: darkred;
-    border-radius: 50px;
-    width: 34%;
-}
-.NoE{
-    background-color: black;
-    border-radius: 50px;
-    width: 33%;
-}
-.typeImage{
-    width: 50px;
-}
-.typeImageMain{
-    width: 75px;
-}
-.moves{
-    background-color: #23272A;
-}
-.MoveCategory{
-    width: 30px;
-}
-.movesets{
-    border: 5px solid gray;
-    background-color: rgb(120, 120, 120, 0.5);
-    width: 75%;
-    height: fit-content;
-    margin: 50px 12.5% 50px 12.5%;
-    border-radius: 50px;
-    width: 75%;
-    margin: 20px 12.5% 0 12.5%;
-    padding: 10px 20px 40px 20px;
-    color: white;
-}
-.LeafSpirit{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    border-top: 10px solid green;
-    border-bottom: 10px solid green;
-    padding: 40px 10px 40px 5px;
-    background: linear-gradient(90deg, transparent 1%, lightgreen 1%, lightgreen 99%, transparent 99%);
-}
-.LeafSpirit .moveInfo{
-    text-align: center;
-    display: block;
-    width: 25%;
-    margin: 0 auto 5px auto;
-    border: 5px solid green;
-    border-radius: 25px;
-    background-color: rgb(100, 218, 100);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.LeafSpirit .moveDesc{
-    width: 65%;
-    display: block;
-    margin: 0 auto 5px auto;
-    border: 5px solid green;
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(100, 218, 100);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.LeafSpirit .moveName{
-    font-size: 50px;
-    border-top: 3px solid green;
-    border-bottom: 3px solid green;
-    width: 90%;
-    margin: 25px 0 25px 0;
-}
-.LightWeight{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    border-top: 10px solid gray;
-    border-bottom: 10px solid gray;
-    padding: 40px 10px 40px 10px;
-    background: linear-gradient(90deg, transparent 1%, rgb(197, 197, 197) 1%, rgb(197, 197, 197) 99%, transparent 99%);
-}
-.LightWeight .moveInfo{
-    text-align: center;
-    display: block;
-    width: 25%;
-    margin: 0 auto 5px auto;
-    border: 5px solid gray;
-    border-radius: 25px;
-    background-color: rgb(170, 170, 170);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.LightWeight .moveDesc{
-    width: 65%;
-    display: block;
-    margin: 0 auto 5px auto;
-    border: 5px solid gray;
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(170, 170, 170);
-    padding: 10px 5px 10px 10px;
-    min-width: 250px;
-}
-.LightWeight .moveName{
-    font-size: 50px;
-    border-top: 3px solid gray;
-    border-bottom: 3px solid gray;
-    width: 90%;
-    margin: 25px 0 25px 0;
-}
-.UltraPump{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    border-top: 10px solid rgb(60, 60, 255);
-    border-bottom: 10px solid rgb(60, 60, 255);
-    padding: 40px 10px 40px 10px;
-    background: linear-gradient(90deg, transparent 1%, rgb(0, 116, 194) 1%, rgb(0, 116, 194) 99%, transparent 99%);
-}
-.UltraPump .moveInfo{
-    text-align: center;
-    display: block;
-    width: 25%;
-    margin: 0 auto 5px auto;
-    border: 5px solid rgb(60, 60, 255);
-    border-radius: 25px;
-    background-color: rgb(0, 80, 145);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.UltraPump .moveDesc{
-    width: 65%;
-    display: block;
-    margin: 0 auto 5px auto;
-    border: 5px solid rgb(60, 60, 255);
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(0, 80, 145);
-    padding: 10px 5px 10px 10px;
-    min-width: 250px;
-}
-.UltraPump .moveName{
-    font-size: 50px;
-    border-top: 3px solid rgb(60, 60, 255);
-    border-bottom: 3px solid rgb(60, 60, 255);
-    width: 90%;
-    margin: 25px 0 25px 0;
-}
-.CoreCollapse{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    border-top: 10px solid purple;
-    border-bottom: 10px solid purple;
-    padding: 40px 10px 40px 5px;
-    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
-}
-.CoreCollapse .moveInfo{
-    text-align: center;
-    display: block;
-    width: 25%;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.CoreCollapse .moveDesc{
-    width: 65%;
-    display: block;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.CoreCollapse .moveName{
-    font-size: 50px;
-    border-top: 3px solid purple;
-    border-bottom: 3px solid purple;
-    width: 90%;
-    margin: 25px 0 25px 0;
-}
-.StarShooter{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    border-top: 10px solid purple;
-    border-bottom: 10px solid purple;
-    padding: 40px 10px 40px 5px;
-    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
-}
-.StarShooter .moveInfo{
-    text-align: center;
-    display: block;
-    width: 25%;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.StarShooter .moveDesc{
-    width: 65%;
-    display: block;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.StarShooter .moveName{
-    font-size: 50px;
-    border-top: 3px solid purple;
-    border-bottom: 3px solid purple;
-    width: 90%;
-    margin: 25px 0 25px 0;
-}
-.CosmicFang{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    border-top: 10px solid purple;
-    border-bottom: 10px solid purple;
-    padding: 40px 10px 40px 5px;
-    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
-}
-.CosmicFang .moveInfo{
-    text-align: center;
-    display: block;
-    width: 25%;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.CosmicFang .moveDesc{
-    width: 65%;
-    display: block;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.CosmicFang .moveName{
-    font-size: 50px;
-    border-top: 3px solid purple;
-    border-bottom: 3px solid purple;
-    width: 90%;
-    margin: 25px 0 25px 0;
-}
-.Supernova{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    border-top: 10px solid purple;
-    border-bottom: 10px solid purple;
-    padding: 40px 10px 40px 5px;
-    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
-}
-.Supernova .moveInfo{
-    text-align: center;
-    display: block;
-    width: 25%;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.Supernova .moveDesc{
-    width: 65%;
-    display: block;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.Supernova .moveName{
-    font-size: 50px;
-    border-top: 3px solid purple;
-    border-bottom: 3px solid purple;
-    width: 90%;
-    margin: 25px 0 25px 0;
-}
-.AsteroidRain{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    border-top: 10px solid purple;
-    border-bottom: 10px solid purple;
-    padding: 40px 10px 40px 5px;
-    background: linear-gradient(90deg, transparent 1%, rgb(98, 24, 137) 1%, rgb(98, 24, 137) 99%, transparent 99%);
-}
-.AsteroidRain .moveInfo{
-    text-align: center;
-    display: block;
-    width: 25%;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.AsteroidRain .moveDesc{
-    width: 65%;
-    display: block;
-    margin: 0 auto 5px auto;
-    border: 5px solid purple;
-    border-radius: 25px;
-    color: white;
-    background-color: rgb(68, 17, 95);
-    padding: 10px 5px 10px 5px;
-    min-width: 250px;
-}
-.AsteroidRain .moveName{
-    font-size: 50px;
-    border-top: 3px solid purple;
-    border-bottom: 3px solid purple;
-    width: 90%;
-    margin: 25px 0 25px 0;
-}
-.moveCategory{
-    width: 40px;
-}
-.moveType{
-    width: 75px;
-}
+/* --- ALL AND BODY --- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: var(--font-body);
+        background-color: var(--bg-dark);
+        color: white;
+        display: flex;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
 
-.abilities{
-    background-color: #23272A;
-    border-radius: 50px;
-    width: 75%;
-    margin: 20px 12.5% 0 12.5%;
-    padding: 10px 20px 40px 20px;
-    color: white;
-    border: 1px solid gray;
-}
-.MoveName{
-    font-size: 35px;
-}
-.transform{
-    margin-top: 50px;
-    border-top: 10px solid gray;
-    border-bottom: 10px solid gray;
-    padding: 40px 15px 40px 15px;
-    background: linear-gradient(90deg, transparent 1%, rgb(189, 0, 0) 1%, rgb(35, 0, 189) 99%, transparent 99%);
-}
-.transformForms{
-    display: flex;
-    flex-wrap: wrap;
-}
-.AbilityInfo{
-    display: block;
-    text-align: center;
-    margin: 0 auto 50px auto;
-    border: 5px solid gray;
-    border-radius: 25%;
-    background-color: rgba(170, 170, 170);
-    padding: 10px 5px 10px 5px
-}
-.Form{
-    display: block;
-    width: 25%;
-    min-width: 250px;
-    border: 5px solid;
-    border-radius: 25px;
-    margin: 0 auto 10px auto;
-    padding: 10px 5px 10px 5px
-}
-.FormImage{
-    border-top: 5px solid;
-    border-bottom: 5px solid;
-    height: 150px;
-    background-color: gray;
-}
-.Berserk{
-    background-color: rgba(35, 0, 189, 0.75);
-    border-color: blue;
-}
-.Berserk .FormImage{
-    border-color: blue;
-}
-.Ultra{
-    background-color: rgb(255, 255, 255, 0.75);
-    border-color: darkgray;
-}
-.Ultra .FormImage{
-    border-color: darkgray;
-}
 
-/*MAP*/
-.map{
-    background: url(Imgs/Map.webp);
-    background-size: cover;
-    width: 80%;
-    height: 600px;
-    border: 10px solid black;
-    margin: 25px auto;
-}
-.namelabel{
-    background-color: rgba(100,100,100,0.5);
-    width: 150px;
-    height: 25px;
-    padding: 0 5px 0 5px;
-    border-radius: 25px;
-    text-align: center;
-    overflow: hidden;
-    margin: 0 auto;
-    transition-duration: 2.5s;
-}
-.namelabel h5{
-    font-size: medium;
-    transition-duration: 2.5s;
-}
-.namelabel:hover{
-    background-color: rgba(100,100,100,0.5);
-    width: 400px;
-    height: 350px;
-    padding: 0 5px 0 5px;
-    border-radius: 25px;
-    transition-duration: 2.5s;
-}
-.namelabel:hover h5{
-    font-size: 40px;
-    transition-duration: 2.5s;
-}
-.infolabel{
-    background-color: rgba(100,100,100,0.75);
-    border: 5px solid #191b1d;
-    border-top: none;
-    width: 17.5%;
-    min-width: 268.8px;
-    text-align: center;
-    margin: 0 auto;
-    border-radius: 0 0 15px 15px;
-}
 
-/*TESTING*/
+/* --- SIDEBAR --- */
+    .sideDiv {
+        width: var(--sidebar-width);
+        background: #1e1f22;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1rem;
+        z-index: 100;
+        border-right: 1px solid #333;
+    }
+    .nav-item {
+        padding: 1rem;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        position: relative;
+        background: #2b2d31;
+    }
+    .nav-item h2 {
+        font-family: var(--font-main);
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        z-index: 2;
+    }
+    .nav-item.Active {
+        background: linear-gradient(90deg, rgba(231,160,93,0.2), transparent);
+        border-left: 4px solid var(--primary);
+    }
+    
+    .nav-item.Active h2 { color: var(--primary); text-shadow: 0 0 10px rgba(231,160,93,0.5); }
+    .nav-item:hover { transform: translateX(5px); background: #35373c; }
+
+
+
+/* --- MAIN CONTENT AREA --- */
+    .main-content {
+        margin-left: var(--sidebar-width);
+        width: calc(100% - var(--sidebar-width));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+/* --- HERO SECTION --- */
+    .welcomeDiv {
+        width: 100%;
+        min-height: 80vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.5) 25%, rgb(0,0,0) 75%), url('imgs/Members_icon.png');
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: -950px;
+        background-attachment: fixed;
+    }
+    .nameDiv {
+        text-align: center;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 2rem 4rem;
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255,255,255,0.1);
+        margin-top: 50px;
+    }
+    .nameDiv img {
+        width: 80px;
+        margin: 0 auto 1rem;
+        filter: drop-shadow(0 0 15px #ff8800);
+        animation: flicker 3s infinite alternate;
+    }
+    .nameDiv h1 {
+        font-family: var(--font-main);
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+        margin-bottom: 0.5rem;
+    }
+    .nameDiv h2 {
+        font-family: var(--font-main);
+        font-size: 2rem;
+        color: var(--primary);
+    }
+
+
+
+/* --- SEAMLESS CAROUSEL --- */
+    .carouselDiv {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding: 20px 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+        overflow: hidden;
+        z-index: 20;
+    }
+    .carouselTrack {
+        display: flex;
+        gap: 1.6rem;
+        width: max-content;
+        /* 
+           Calculation (in @keyframes scroll): 
+           We move -50% because the track contains TWO identical sets.
+           When it reaches -50%, it snaps back to 0% instantly.
+           Since the content at 0% and -50% is identical, it looks seamless.
+        */
+        animation: scroll 60s linear infinite;
+    }
+    .CarouselIcon {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: transform 0.3s;
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+    }
+    .CarouselIcon:hover { transform: scale(1.2); }
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-49%); } 
+    }
+    @keyframes flicker {
+        0% { filter: drop-shadow(0 0 15px #ff8800); opacity: 0.9; }
+        50% { filter: drop-shadow(0 0 25px #ffaa00); opacity: 1; }
+        100% { filter: drop-shadow(0 0 10px #ff6600); opacity: 0.9; }
+    }
+
+
+
+/* --- CARD STYLES --- */
+    .content-container {
+        width: 100%;
+        max-width: 1000px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: -50px;
+        z-index: 50;
+    }
+    .card {
+        background: var(--bg-glass);
+        border-radius: 16px;
+        padding: 20px;
+        border: 1px solid #2e3035;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+    }
+    .card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .card-image{
+        width: 75px;
+        margin-bottom: 20px;
+    }
+    .card h2 {
+        font-family: var(--font-main);
+        color: var(--primary);
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+    .card p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #b5bac1;
+        margin-bottom: 1rem;
+    }
+
+
+
+/* --- INVITE SECTION --- */
+    .joinDiv {
+        text-align: center;
+        background: linear-gradient(145deg, #2b2d31, #18191c);
+        border: 1px solid var(--secondary);
+        box-shadow: 0 0 30px rgba(88, 101, 242, 0.15);
+    }
+    .invite-image {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 12px;
+        margin: 20px auto;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        transition: transform 0.3s;
+    }
+    
+    .invite-image:hover {
+        transform: scale(1.02);
+    }
+    .join-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background-color: var(--secondary);
+        color: white;
+        padding: 1rem 3rem;
+        border-radius: 50px;
+        font-family: var(--font-main);
+        font-size: 1.8rem;
+        transition: all 0.2s;
+        box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+    }
+    .join-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 25px rgba(88, 101, 242, 0.6);
+        background-color: #4752c4;
+    }
+
+
+
+/* --- MOBILE --- */
+    @media (max-width: 768px) {
+        body { flex-direction: column; }
+        .sideDiv {
+            width: 100%;
+            height: auto;
+            position: relative;
+            flex-direction: row;
+            overflow-x: auto;
+            padding: 1rem;
+        }
+        .main-content { margin-left: 0; width: 100%; }
+        .nameDiv { padding: 1.5rem; width: 90%; }
+        .nameDiv h1 { font-size: 2.5rem; }
+        .card { padding: 1.5rem; }
+    }
