@@ -2,515 +2,380 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veelution Campfire - Eeveelutions</title>
+    <link rel="icon" href="Assets/Images/Campfire.webp">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <title>Eeveelution Family - Eeveelutions</title>
-    <link rel="icon" href="Imgs/Eeveelutions.png">
+    <script src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="navbody eeveelutiontext">
-            <table style="width: 100%; max-height: 75px;">
-                <tr>
-                    <td style="width:65%; overflow: hidden; max-height: 75px; display: flexbox; flex-wrap: nowrap;">
-                        <div class="titlenlogo">
-                            <a href="index.html"><img src="Imgs/Eeveelutions.png" alt="Veelutions" title="Eeveelutions" class="navlogo"></a>
-                            <h2 class="title">Eeveelution Family</h2>
-                        </div>
-                    </td>
-                    <td style="width: 30%; max-height: 75px;">
-                        <div class="dropdown eeveelutiontext">
-                            <button class="dropbtn">Pages</button>
-                            <div class="dropdown-content">
-                                <a href="custommovesandabilities.html" class="sitebutton"><img src="Imgs/Movesets_icon.png" class="discicon">|Movesets</a>
-                                <br>
-                                <br>
-                                <br>
-                                <a href="members.html" class="sitebutton"><img src="Imgs/Eeveelutions.png" class="discicon">|Members</a>
-                                <br>
-                                <br>
-                                <br>
-                                <a href="eeveelutions.html" class="sitebutton"><img src="Imgs/vee_face.png" class="discicon">|Eeveelutions</a>
-                                <br>
-                                <br>
-                                <br>
-                                <a href="map.html" class="sitebutton"><img src="Imgs/Map.png" class="discicon" style="border-radius: 5px;">|Map</a>
-                            </div>
-                          </div> 
-                    </td>
-                </tr>
-            </table>
+
+    <aside class="sideDiv">
+        <a href="index.html">
+            <div class="nav-item">
+                <h2>Home</h2>
+            </div>
+        </a>
+        <a href="#">
+            <div class="nav-item Active">
+                <h2>Eeveelutions</h2>
+            </div>
+        </a>
+        <a href="movesandabilities.html">
+            <div class="nav-item">
+                <h2>WIP</h2>
+            </div>
+        </a>
+    </aside>
+
+    <main class="main-content eeveelutions-main-content">
+        
+        <div class="welcomeDiv">
+            <div class="nameDiv">
+                <img src="Assets/Images/Campfire.webp" alt="Campfire Icon">
+                <h1>Eeveelution Campfire</h1>
+                <h2>Eeveelutions</h2>
+            </div>
         </div>
-    </nav>
 
-    <div class="eevee eeveelutiondiv">
-        <img src="Imgs/Eevee.png" alt="Eevee" title="Eevee" class="eeveelutionpicture">
-        <h1 class="eeveelutionname">Eevee <img src="Imgs/eevee_icon.png" alt="Minimalist Eevee" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Eevee is the source of the Eeveelutions, being the one to evolve into one of the 17.</h5>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Description</h3>
-        <p class="eeveelutiontext">Eevee is a brown fox-like creature. It's most recognizable feature is it's light butter colored for around it's neck and the end of it's tail. Eevee is the most common one to be found out in the wild.</p>
-        <br>
-        <table class="eeveelutiontext">
-            <tr>
-                <td colspan="3"><h4>Eevee can be evolved with or without a stone. It's evolutions are the following:</h4></td>
-            </tr>
-            <tr>
-                <td class="eeveelutionnamelist"><a href="#vaporeon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(52, 152, 219);">Vaporeon</a></td>
-                <td class="eeveelutionnamelist"><a href="#jolteon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(241, 196, 15);">Jolteon</a></td>
-                <td class="eeveelutionnamelist"><a href="#flareon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(255, 88, 0);">Flareon</a></td>
-            </tr>
-            <tr>
-                <td class="eeveelutionnamelist"><a href="#espeon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(216, 125, 252);">Espeon</a></td>
-                <td class="eeveelutionnamelist"><a href="#umbreon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(0, 0, 0);">Umbreon</a></td>
-                <td class="eeveelutionnamelist"><a href="#leafeon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(30, 204, 113);">Leafeon</a></td>
-            </tr>
-            <tr>
-                <td class="eeveelutionnamelist"><a href="#glaceon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(0, 243, 255);">Glaceon</a></td>
-                <td class="eeveelutionnamelist"><a href="#sylveon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(255, 0, 241);">Sylveon</a></td>
-                <td class="eeveelutionnamelist"><a href="#insecteon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(145, 233, 110);">Insecteon</a></td>
-            </tr>
-            <tr>
-                <td class="eeveelutionnamelist"><a href="#brawleon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(138, 20, 20)">Brawleon</a></td>
-                <td class="eeveelutionnamelist"><a href="#veneon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(105, 20, 138);">Veneon</a></td>
-                <td class="eeveelutionnamelist"><a href="#dusteon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(209, 108, 61)">Dusteon</a></td>
-            </tr>
-            <tr>
-                <td class="eeveelutionnamelist"><a href="#breezeon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(220, 220, 220);">Breezeon</a></td>
-                <td class="eeveelutionnamelist"><a href="#obsideon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(128, 110, 91);">Obsideon</a></td>
-                <td class="eeveelutionnamelist"><a href="#skulleon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(125, 62, 139);">Skulleon</a></td>
-            </tr>
-            <tr>
-                <td class="eeveelutionnamelist"><a href="#eterneon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(0, 43, 71);">Eterneon</a></td>
-                <td style="text-align: center;"><a href="#glaiveon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(171, 190, 202);">Glaiveon</a></td>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <h5 class="eeveelutiontext"> It's suspected that Eevee can also evolve into <a href="#galacteon" style="transition-duration: 5s; transition-timing-function: ease-in-out; text-decoration: none; color: rgb(17, 70, 102);">Galacteon</a>, however this theory is still under investigation, as we don't know much about the species.</h5>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Eevee has multiple forms:</p>
-        <img src="Imgs/SpiritEevee.png" alt="SpiritVee" title="Spirit Eevee" class="formImage">
-        <br>
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large;"> | Spirit Eevee</p>
-        <br>
-        <img src="Imgs/Eevee_shiny.png" alt="ShinyVee" title="Shiny Eevee" class="formImage">
-        <br>
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large;"> | Shiny Eevee</p>
-        <br>
-        <img src="Imgs/Eevee_Gigantamax.png" alt="GigaVee" title="Gigantamax Eevee" class="formImage">
-        <br>
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large;"> | Gigantamax Eevee</p>
-        <br>
-    </div>
+        <!-- Layout Container for Slideshow -->
+        <div class="eeveelutions-container">
+            <div class="switchButton desktop-only" onclick="plusSlides(-1)">
+                <img src="Assets/Images/fast-forward.webp" alt="Prev" class="switchButtonIcon" style="transform: rotate(180deg);">
+            </div>
 
-    <div class="vaporeon eeveelutiondiv" id="vaporeon">
-        <img src="Imgs/Vaporeon.png" alt="Vaporeon" title="Vaporeon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Vaporeon <img src="Imgs/vaporeon_icon.png" alt="Vaporeon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Vaporeon is the water type evolution of Eevee. It's most recognizable by it's mermaid-like tail and fin-like structures around it's neck and head.</h5>
-        <br>
-        <p class="eeveelutiontext">Vaporeon is, if not, the first eeveelution you're most likely to run into. It has a 33% chance to be evolved from an eevee naturally. It's most commonly found around bigger bodies of water like rivers or ponds. It doesn't usually appear near oceans.</p>
-        <br>
-        <p class="eeveelutiontext">Most trainers get Vaporeon first regardless of wanting Flareon or Jolteon if evolved naturally. Luckier trainers may stumble across the water stone, which is a guaranteed way to evolve eevee into vaporeon:</p>
-        <br>
-        <img src="Imgs/Water_Stone.png" alt="WStone" title="Water Stone" style="float: inline-start; width: 75px; margin-right: 10px;">
-        <h3 class="eeveelutiontext">Water Stone</h3>
-        <p class="eeveelutiontext">The water stone is one of the special stones found across the world. Some water type pokemon carry it as held items (or may have accidentally swallowed it). It's usually found at the bottom of oceans.</p>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Vaporeon has only one form:</p>
-        <img src="Imgs/Vaporeon_shiny.png" alt="ShinyVapo" title="Shiny Vaporeon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Vaporeon</p>
-        <br>
-    </div>
+            <div class="mobile-controls" style="display: none;">
+                 <div class="switchButton" onclick="plusSlides(-1)">
+                    <img src="Assets/Images/fast-forward.webp" alt="Prev" class="switchButtonIcon" style="transform: rotate(180deg);">
+                </div>
+                <div class="switchButton" onclick="plusSlides(1)">
+                    <img src="Assets/Images/fast-forward.webp" alt="Next" class="switchButtonIcon">
+                </div>
+            </div>
 
-    <div class="jolteon eeveelutiondiv" id="jolteon">
-        <img src="Imgs/Jolteon.png" alt="Jolteon" title="Jolteon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Jolteon <img src="Imgs/jolteon_icon.png" alt="Jolteon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Jolteon is the electric type evolution of Eevee. It's most recognizable feature is it's spiky fur.</h5>
-        <br>
-        <p class="eeveelutiontext">Jolteon has a 33% chance to be evolved from an eevee naturally. It's the second of the 3 original, generation 1 eeveelutions, so it's likely for trainers have a Jolteon instead of Vaporeon. Luckier trainers might stumble across a Thunder Stone which is a guaranteed evolution method for Jolteon.</p>
-        <br>
-        <p class="eeveelutiontext">Jolteon is most commonly found around mountains regardless of stormy weathers. But if it is storming, Jolteon's can be found anywhere.</p>
-        <br>
-        <img src="Imgs/Thunder_Stone.png" alt="TStone" title="Thunder Stone" style="float: inline-start; width: 75px; margin-right: 10px;">
-        <h3 class="eeveelutiontext">Thunder Stone</h3>
-        <p class="eeveelutiontext">The thunder stone is one of the special stones found across the world. Some electric type pokemon, most notably electabuzz, carry it as a held item. It's usually found scattered across mountains, etched into the mountainsides.</p>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Jolteon has multiple forms:</p>
-        <img src="Imgs/Jolteon_shiny.png" alt="ShinyJolt" title="Shiny Jolteon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Jolteon</p>
-        <br>
-        <img src="Imgs/Jolteon_strike.png" alt="StrikeJolt" title="Strike Jolteon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Strike Jolteon</p>
-        <br>
-    </div>
+            <!-- Content Area -->
+            <div class="eeveelutionSelection" id="selection">
+                
+                <!-- EEVEE -->
+                <div class="eeveelution Eevee">
+                    <h1>Eevee</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/1_Eevee/Normal.webp" alt="Eevee" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/1_Eevee/Shiny.webp" alt="Shiny Eevee" class="speciesImage">
+                    </div>
+                    <p>Eevee is the source of all the eeveelutions. Being the "baby version" of each of them, it's likely you'll see eevees in other eeveelutions' nests.</p>
+                    <p>As innocent as it looks, Eevee can pack quite a punch when used for offense. However it's nearly equal defense stats mean it can also be used as quite the defender if needed.</p>
+                    <p>Eevee's most recognizable feature is most likely it's thick, white fur around it's neck. It can most commonly be found around plains and forests.</p>
+                    
+                    <h3>Strike Eevee</h3>
+                    <p>Strike Eevee is a black Eevee with blue eyes and markings all over it's body and tail. It's most active during storms, often resting in abandoned places.</p>
+                    
+                    <h3>Spirit Eevee</h3>
+                    <p>Spirit Eevee is a pure white Eevee. Being slightly lighter and similar than shiny, it's often mistaken for it. It's most commonly found around graveyards.</p>
+                    
+                    <div class="warningSign">
+                        !!! Please note that the special forms above are always hunted for their price. They're worth significantly more than shinies. !!!
+                    </div>
+                </div>
 
-    <div class="flareon eeveelutiondiv" id="flareon">
-        <img src="Imgs/Flareon.png" alt="Flareon" title="Flareon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Flareon <img src="Imgs/flareon_icon.png" alt="Flareon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Flareon is the fire type evolution of eevee. It's most recognizable feature is it's giant, fluffy, yellow tail.</h5>
-        <br>
-        <p class="eeveelutiontext">Flareon has a 33% chance to be evolved from an eevee naturally. It's the last of the 3 original, generation 1 eeveelutions, so it's just as common to find across trainers as jolteon and vaporeon are. Luckier trainers might stumble across a Fire Stone which is a guaranteed evolution method for Flareon.</p>
-        <br>
-        <p class="eeveelutiontext">Flareon is most commonly found around hot environments like deserts and savannas, even around volcanoes.</p>
-        <br>
-        <img src="Imgs/Fire_stone.png" alt="FStone" title="Fire Stone" style="float: inline-start; width: 75px; margin-right: 10px;">
-        <h3 class="eeveelutiontext">Fire Stone</h3>
-        <p class="eeveelutiontext">The fire stone is one of the special stones found across the world. Some fire type pokemon carry it as a held item. It's usually found scattered around in the side of an active volcano.</p>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Flareon has multiple forms:</p>
-        <img src="Imgs/Flareon_shiny.png" alt="ShinyFlare" title="Shiny Flareon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Flareon</p>
-        <br>
-        <img src="Imgs/Flareon_bluemoon.png" alt="BlueFlare" title="Blue Moon Flareon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Blue Moon Flareon</p>
-        <br>
-    </div>
+                <!-- VAPOREON -->
+                <div class="eeveelution Vaporeon">
+                    <h1>Vaporeon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/2_Vaporeon/Normal.webp" alt="Vaporeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/2_Vaporeon/Shiny.webp" alt="Shiny Vaporeon" class="speciesImage">
+                    </div>
+                    <p>Vaporeon is one of the original, generation I eeveelutions. It has the most common evolution rate at 34% out of the 3.</p>
+                    <p>Its fish-like fins and dolphin-like tail allow it to swim extremely quickly underwater.</p>
+                    
+                    <h3>Strike Vaporeon</h3>
+                    <p>Strike Vaporeon is a black Vaporeon with light blue eyes and markings on it's body. It's most active during storms.</p>
+                    
+                    <h3>Spirit Vaporeon</h3>
+                    <p>Spirit Vaporeon is a pure white Vaporeon. It has slightly less weight due to it's spirit-like build.</p>
 
-    <div class="espeon eeveelutiondiv" id="espeon">
-        <img src="Imgs/Espeon.png" alt="Espeon" title="Espeon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Espeon <img src="Imgs/espeon_icon.png" alt="Espeon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Espeon is the psychic type evolution of eevee. It's most recognizable features are it's twin tail and it's red gem.</h5>
-        <br>
-        <p class="eeveelutiontext">Espeon can only be evolved from eevee if it's daytime and it's friendship level is high enough (1 heart in Pokemon GO, 200 points in Pixelmon). It's one of the generation 2 eeveelutions, so it's not as common as the originals.</p>
-        <br>
-        <p class="eeveelutiontext">Espeon is most commonly found in clear, plain patches of grass when it's daytime. It's not found anywhere during nighttime.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Espeon has only one form:</p>
-        <img src="Imgs/Espeon_shiny.png" alt="ShinyEspy" title="Shiny Espeon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Espeon</p>
-        <br>
-    </div>
+                    <div class="warningSign">
+                        !!! Special forms are high-value targets. Proceed with caution. !!!
+                    </div>
+                </div>
 
-    <div class="umbreon eeveelutiondiv" id="umbreon">
-        <img src="Imgs/Umbreon.png" alt="Umbreon" title="Umbreon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Umbreon <img src="Imgs/umbreon_icon.png" alt="Umbreon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Umbreon is the dark type evolution of eevee. It's most recognizable feature is it's many rings across it's body.</h5>
-        <br>
-        <p class="eeveelutiontext">Umbreon can only be evolved from eevee if it's nighttime and it's friendship level is high enough (1 heart in Pokemon GO, 200 points in Pixelmon). It's the second generation 2 eeveelution, so it's just as common as Espeon.</p>
-        <br>
-        <p class="eeveelutiontext">Umbreon is most commonly found in clear, plain patches of grass and mountains during nighttime. It's not found anywhere during daytime.</p>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Umbreon has multiple forms:</p>
-        <img src="Imgs/Umbreon_shiny.png" alt="ShinyUmb" title="Shiny Umbreon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Umbreon</p>
-        <br>
-        <img src="Imgs/Ashen_Umbreon.png" alt="AshenUmb" title="Ashen Umbreon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Ashen Umbreon</p>
-        <br>
-        <img src="Imgs/Umbreon_bloodmoon.png" alt="BloodMoonUmb" title="Blood Moon Umbreon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Blood Moon Umbreon</p>
-        <br>
-    </div>
+                <!-- FLAREON -->
+                <div class="eeveelution Flareon">
+                    <h1>Flareon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/3_Flareon/Normal.webp" alt="Flareon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/3_Flareon/Shiny.webp" alt="Shiny Flareon" class="speciesImage">
+                    </div>
+                    <p>Flareon is the second eeveelution out of the original trio. Preferred by families for its warmth.</p>
+                    <p>Flareon is a great defender due to its fluff, which can absorb attacks.</p>
+                    
+                    <h3>Spirit Flareon</h3>
+                    <p>Spirit Flareon is a black Flareon. It's slightly lighter due to its spirit-like build.</p>
+                    
+                    <div class="warningSign">!!! High Value Target !!!</div>
+                </div>
 
-    <div class="leafeon eeveelutiondiv" id="leafeon">
-        <img src="Imgs/Leafeon.png" alt="Leafeon" title="Leafeon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Leafeon <img src="Imgs/leafeon_icon.png" alt="Leafeon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Leafeon is the grass type evolution of eevee. It's most recognizable feature is it's leaf like body parts.</h5>
-        <br>
-        <p class="eeveelutiontext">Leafeon can only be evolved if an eevee is near a Mossy Lure Module (Pokemon GO) or Mossy rock (Pixelmon). It's one of the generation 4 eeveelutions, making it one of the rarer ones among them.</p>
-        <br>
-        <p class="eeveelutiontext">Leafeons can be found in very grown environments, such as jungles and forests. It's mostly active during the day but there are a fair share of them roaming the nights. It's never active during Winter.</p>
-        <br>
-        <img src="Imgs/Mossy_Lure_Module.png" alt="Mossy LM" title="Mossy Lure Module" style="float: inline-start; width: 75px; margin-right: 10px;">
-        <h3 class="eeveelutiontext">Mossy Lure Module (Pokemon GO exclusive)</h3>
-        <p class="eeveelutiontext">Mossy Lure Modules are one of the 5 types of lure modules that can be found, purchased or awarded by missions in Pokemon GO. These lure modules have a higher chance to attract grass type pokemon and can cause some pokemon to evolve.</p>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Leafeon has multiple forms:</p>
-        <img src="Imgs/Leafeon_shiny.png" alt="ShinyLeaf" title="Shiny Leafeon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Leafeon</p>
-        <br>
-        <img src="Imgs/Leafeon_autumn.png" alt="AutumnLeaf" title="Autumn Leafeon / Harvest Moon Leafeon" class="formImage">
-        <br>
-        <br>
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Autumn / Harvest Moon Leafeon</p>
-        <br>
-        <img src="Imgs/Leafeon_spring.png" alt="SpringLeaf" title="Spring Leafeon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Spring Leafeon</p>
-        <br>
-        <br>
-    </div>
+                <!-- JOLTEON -->
+                <div class="eeveelution Jolteon">
+                    <h1>Jolteon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/4_Jolteon/Normal.webp" alt="Jolteon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/4_Jolteon/Shiny.webp" alt="Shiny Jolteon" class="speciesImage">
+                    </div>
+                    <p>Jolteon is the third eeveelution of the trio. Often used for charging electrical devices.</p>
+                    <p>It is the fastest eeveelution on the ground.</p>
 
-    <div class="glaceon eeveelutiondiv" id="glaceon">
-        <img src="Imgs/Glaceon.png" alt="Glaceon" title="Glaceon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Glaceon <img src="Imgs/glaceon_icon.png" alt="Glaceon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Glaceon is the ice type evolution of eevee. It's most recognizable feature are it's ice crown and flat tail.</h5>
-        <br>
-        <p class="eeveelutiontext">Glaceon can only be evolved if an eevee is near a Glacial Lure Module (Pokemon GO) or Frozen Rock (Pixelmon). It's the second generation 4 eeveelution, making it just as rare as Leafeon.</p>
-        <br>
-        <p class="eeveelutiontext">Glaceons can be found all around frozen areas like mountaintops, tundras and the arctics. They also wander around during winter, regardless of day-night cycle.</p>
-        <br>
-        <img src="Imgs/Glacial_Lure_Module.png" alt="Glacial LM" title="Glacial Lure Module" style="float: inline-start; width: 75px; margin-right: 10px;">
-        <h3 class="eeveelutiontext">Glacial Lure Module (Pokemon GO Exclusive)</h3>
-        <p class="eeveelutiontext">Glacial Lure Modules are one of the 5 types of lure modules that can be found, purchased or awarded by missions in Pokemon GO. These lure modules have a higher chance to attract ice type pokemon and can also cause some pokemon to evolve.</p>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Glaceon has only one form:</p>
-        <img src="Imgs/Glaceon_shiny.png" alt="ShinyGlac" title="Shiny Glaceon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Glaceon</p>
-        <br>
-    </div>
+                    <h3>Strike Jolteon</h3>
+                    <p>Strike Jolteon is a black Jolteon with light blue markings. It has increased lightning abilities.</p>
+                    
+                    <div class="warningSign">!!! High Value Target !!!</div>
+                </div>
 
-    <div class="sylveon eeveelutiondiv" id="sylveon">
-        <img src="Imgs/Sylveon.png" alt="Sylveon" title="Sylveon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Sylveon <img src="Imgs/sylveon_icon.png" alt="Sylveon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Sylveon is the fairy type evolution of eevee. It's most recognizable feature is it's 4 ribbons.</h5>
-        <br>
-        <p class="eeveelutiontext">Sylveons can only be evolved if the eevee is on maximum friendship (Pokemon GO) in a flowery biome (Pixelmon). It's the only generation 6 eeveelution, making it the rarest among trainers.</p>
-        <br>
-        <p class="eeveelutiontext">Sylveons can be found in areas with a lot of flowers, most likely in a lavender field. It's mostly active during daytime, but occasionally appears at night as well.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Sylveon has only one form:</p>
-        <img src="Imgs/Sylveon_shiny.png" alt="ShinySylv" title="Shiny Sylveon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Sylveon</p>
-        <br>
-        <br>
-    </div>
+                <!-- UMBREON -->
+                <div class="eeveelution Umbreon">
+                    <h1>Umbreon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/5_Umbreon/Normal.webp" alt="Umbreon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/5_Umbreon/Shiny.webp" alt="Shiny Umbreon" class="speciesImage">
+                    </div>
+                    <p>Umbreon is the first of the second generation. It hides easily in the dark.</p>
 
-    <div class="eeveelutiontext headdiv" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;">
-        <h1 class="eeveelutiontext title">Here come the custom eeveelutions!</h1>
-        <h4 class="eeveelutiontext">From here on, you'll be reading about Eeveelutions that are present in our place, and most likely only our place. The images might be from other sources, but the descriptions and evolution conditions are fully custom-made.</h4>
-    </div>
+                    <h3>Strike Umbreon</h3>
+                    <p>Strike Umbreon is a black Umbreon with light blue rings.</p>
 
-    <div class="insecteon eeveelutiondiv" id="insecteon">
-        <img src="Imgs/Insecteon.png" alt="Insecteon" title="Insecteon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Insecteon <img src="Imgs/Insecteon_icon.png" alt="Insecteon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Insecteon is the bug type evolution of Eevee. It's most recognizable features are it's insect wings and it's tail ending in a butterfly shape.</h5>
-        <br>
-        <p class="eeveelutiontext">Insecteon is the first custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved by leveling an eevee up in a swamp near cattails. Manually planted cattails DO count.</p>
-        <br>
-        <p class="eeveelutiontext">Insecteons can mostly be found in very grassy areas during sunrise, but they tend to wander around the day too, although they're rarer. They also like cattails, so the most common place you'll find them roaming are swamps.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Insecteon has only one form:</p>
-        <img src="Imgs/Insecteon_shiny.png" alt="ShinyIns" title="Shiny Insecteon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Insecteon</p>
-        <br>
-        <br>
-    </div>
+                    <h3>Ashen Umbreon</h3>
+                    <p>Body made of ash and luminescent bodies. Extremely dangerous.</p>
 
-    <div class="brawleon eeveelutiondiv" id="brawleon">
-        <img src="Imgs/Brawleon.png" alt="Brawleon" title="Brawleon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Brawleon <img src="Imgs/Brawleon_icon.png" alt="Brawleon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Brawleon is the fighting type evolution of Eevee. It's most recognizable features are it's squirrel like tail and it's cross on it's face.</h5>
-        <br>
-        <p class="eeveelutiontext">Brawleon is the second custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved by leveling an eevee up if it knows a fighting type move, most notably, Double Kick.</p>
-        <br>
-        <p class="eeveelutiontext">Brawleons can mostly be found around gyms and arenas as captured pokemon. It can also be found wildly roaming around all kinds of areas. Be careful, they might be a little aggressive...</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Brawleon has only one form:</p>
-        <img src="Imgs/Brawleon_shiny.png" alt="ShinyBrawl" title="Shiny Brawleon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Brawleon</p>
-        <br>
-    </div>
+                    <div class="warningSign">!!! High Value Target !!!</div>
+                </div>
 
-    <div class="veneon eeveelutiondiv" id="veneon">
-        <img src="Imgs/Veneon.png" alt="Veneon" title="Veneon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Veneon <img src="Imgs/Veneon_icon.png" alt="Veneon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Veneon is the poison type evolution of Eevee. It's most recognizable feature is it's spiky appearance.</h5>
-        <br>
-        <p class="eeveelutiontext">Veneon is the third custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved by having high friendship and being in a swamp.</p>
-        <br>
-        <p class="eeveelutiontext">Veneons can be found around swamps, most likely rolling around in the mud.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Veneon has only one form:</p>
-        <img src="Imgs/Veneon_shiny.png" alt="ShinyVen" title="Shiny Veneon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Veneon</p>
-        <br>
-    </div>
+                <!-- ESPEON -->
+                <div class="eeveelution Espeon">
+                    <h1>Espeon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/6_Espeon/Normal.webp" alt="Espeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/6_Espeon/Shiny.webp" alt="Shiny Espeon" class="speciesImage">
+                    </div>
+                    <p>Espeon is the psychic eeveelution. It can manipulate minds and objects.</p>
+                    
+                    <h3>Strike Espeon</h3>
+                    <p>Strike Espeon is a black Espeon with light blue markings.</p>
 
-    <div class="dusteon eeveelutiondiv" id="dusteon">
-        <img src="Imgs/Dusteon.png" alt="Dusteon" title="Dusteon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Dusteon <img src="Imgs/Dusteon_icon.png" alt="Dusteon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Dusteon is the ground type evolution of Eevee. It's most recognizable features are the bone stuck in it's tail and it's fluff around the neck and tail.</h5>
-        <br>
-        <p class="eeveelutiontext">Dusteon is the fourth custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved by having high friendship and knowing a ground type move, most notably, Dig.</p>
-        <br>
-        <p class="eeveelutiontext">Dusteons can be fround underground in the shallower areas and surface caves. When sunset hits, it wanders around looking for berries. It doesn't appear during winter.</p>
-        <br>
-        <p class="eeveelutiontext">Ignore the G.</p>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Dusteon has only one form:</p>
-        <img src="Imgs/Dusteon_shiny.png" alt="ShinyDust" title="Shiny Dusteon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Dusteon</p>
-        <br>
-    </div>
+                    <div class="warningSign">!!! High Value Target !!!</div>
+                </div>
 
-    <div class="breezeon eeveelutiondiv" id="breezeon">
-        <img src="Imgs/Breezeon.png" alt="Breezeon" title="Breezeon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext" style="color: black;">Breezeon <img src="Imgs/breezeon_icon.png" alt="Breezeon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext" style="color: black;">Breezeon is the flying type evolution of Eevee. It's most recognizable features are it's wings and cloud fluff.</h5>
-        <br>
-        <p class="eeveelutiontext" style="color: black;">Breezeon is the fifth custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved on strong, windy days up on the mountains, or by making an eevee fall for an extended period of time.</p>
-        <br>
-        <p class="eeveelutiontext" style="color: black;">Breezeons can most commonly be found in the mountains, at the very top usually. It wanders everywhere in strong winds, especially in winter.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext" style="color: black;">Forms</h3>
-        <p class="eeveelutiontext" style="color: black;">Breezeon has multiple forms:</p>
-        <img src="Imgs/Breezeon_shiny.png" alt="ShinyBree" title="Shiny Breezeon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px; color: black;"> | Shiny Breezeon</p>
-        <br>
-        <br>
-        <img src="Imgs/Breezeon_Alolan.png" alt="AloBree" title="Alolan Breezeon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px; color: black;"> | Alolan Breezeon</p>
-        <br>
-    </div>
+                <!-- LEAFEON -->
+                <div class="eeveelution Leafeon">
+                    <h1>Leafeon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Normal.webp" alt="Leafeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Shiny.webp" alt="Shiny Leafeon" class="speciesImage">
+                    </div>
+                    <p>Leafeon is the ally of gardeners. It can manipulate plants.</p>
+                    
+                    <h3>Seasonal Leafeons</h3>
+                    <p>Spring (Pink flowers), Summer (Green), Autumn (Brown/Jade), Winter (Ice/Blue).</p>
 
-    <div class="obsideon eeveelutiondiv" id="obsideon">
-        <img src="Imgs/Obsideon.png" alt="Obsideon" title="Obsideon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Obsideon <img src="Imgs/Obsideon_icon.png" alt="Obsideon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Obsideon is the rock type evolution of Eevee. It's most recognizable feature is it's dinosaur-like spike.</h5>
-        <br>
-        <p class="eeveelutiontext">Obsideon is the sixth custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved in deeper caves with high friendship.</p>
-        <br>
-        <p class="eeveelutiontext">Obsideon can mostly be found within deep caves, especially around underwater lakes, as they don't have many drinking places. They can sometimes be found swimming inside lava pools.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Obsideon has Multiple forms:</p>
-        <img src="Imgs/Obsideon_Shiny.png" alt="ShinyObs" title="Shiny Obsideon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Obsideon</p>
-        <br>
-        <br>
-        <img src="Imgs/Alolan_Obsideon.png" alt="AlolanObs" title="Alolan Obsidian" style="width: 150px; float: inline-start; margin-top: -30px;">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Alolan Obsideon</p>
-        <br>
-    </div>
+                    <div class="warningSign">!!! High Value Target !!!</div>
+                </div>
 
-    <div class="skulleon eeveelutiondiv" id="skulleon">
-        <img src="Imgs/Skulleon.png" alt="Skulleon" title="Skulleon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Skulleon <img src="Imgs/Skulleon_icon.png" alt="Skulleon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Skulleon is the ghost type evolution of Eevee. It's most recognizable features are it's spirit-flaming ear and tail, and it's bone-like parts around the head, neck and body.</h5>
-        <br>
-        <p class="eeveelutiontext">Skulleon is the seventh custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved by using a Shadow Ball TM on it, making it quite a rare occurence.</p>
-        <br>
-        <p class="eeveelutiontext">Skulleons can be found in the deeper caverns along with Obsideons in the darker sides. It doesn't like to be near light sources, but they still manage to get along with lava-bathing Obsideons.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Skulleon has only one form:</p>
-        <img src="Imgs/Skulleon_shiny.png" alt="ShinySku" title="Shiny Skulleon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Skulleon</p>
-        <br>
-    </div>
+                <!-- GLACEON -->
+                <div class="eeveelution Glaceon">
+                    <h1>Glaceon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/8_Glaceon/Normal.webp" alt="Glaceon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/8_Glaceon/Shiny.webp" alt="Shiny Glaceon" class="speciesImage">
+                    </div>
+                    <p>Glaceon can create any form of ice, limited only by its imagination.</p>
+                    
+                    <h3>Spirit Glaceon</h3>
+                    <p>Black Glaceon with purple-pink ice features.</p>
+                    
+                    <div class="warningSign">!!! High Value Target !!!</div>
+                </div>
 
-    <div class="eterneon eeveelutiondiv" id="eterneon">
-        <img src="Imgs/Eterneon.png" alt="Eterneon" title="Eterneon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Eterneon <img src="Imgs/Eterneon_icon.png" alt="Eterneon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Eterneon is the dragon type evolution of Eevee. It's most recognizable feature is it's dragon-like maine.</h5>
-        <br>
-        <p class="eeveelutiontext">Eterneon is the eighth custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved by levelling up an Eevee that's given a Dragon Gem high in the mountains. Because Dragon Gems are extremely rarely found in dust clouds, it makes this eeveelution the rarest among the bunch.</p>
-        <br>
-        <p class="eeveelutiontext">Eterneons are usually found around mountains at night time. They can also be found in underground lakes.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Eterneon has only one forms:</p>
-        <img src="Imgs/Eterneon_shiny.png" alt="ShinyEte" title="Shiny Eterneon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Eterneon</p>
-        <br>
-    </div>
+                <!-- SYLVEON -->
+                <div class="eeveelution Sylveon">
+                    <h1>Sylveon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/9_Sylveon/Normal.webp" alt="Sylveon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/9_Sylveon/Shiny.webp" alt="Shiny Sylveon" class="speciesImage">
+                    </div>
+                    <p>Sylveon uses its ribbons to lift heavy objects, though limited by its own strength.</p>
+                    
+                    <h3>Spirit Sylveon</h3>
+                    <p>Black Sylveon with purple-pink ribbons.</p>
 
-    <div class="glaiveon eeveelutiondiv" id="glaiveon">
-        <img src="Imgs/Glaiveon.png" alt="Glaiveon" title="Glaiveon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Glaiveon <img src="Imgs/Glaiveon_icon.png" alt="Glaiveon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Glaiveon is the steel type evolution of Eevee. It's most recognizable feature is it's sharp-edged ears and tail.</h5>
-        <br>
-        <p class="eeveelutiontext">Glaiveon is the ninth custom Eeveelution we have around our parts, making them not very accessible for trainers. It can be evolved with a chance by it getting hit by a steel type move. The highest chance for an evolution is the move "Iron Tail".</p>
-        <br>
-        <p class="eeveelutiontext">Glaiveons are usually found tamed inside factories, and don't appear anywhere else, making it the rarest regular eeveelution to find.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Glaiveon has only one forms:</p>
-        <img src="Imgs/Glaiveon_shiny.png" alt="ShinyGlaiv" title="Shiny Glaiveon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Glaiveon</p>
-        <br>
-    </div>
-    
-    <div class="galacteon eeveelutiondiv" id="galacteon">
-        <img src="Imgs/Galacteon.png" alt="Galacteon" title="Galacteon" class="eeveelutionpicture">
-        <h1 class="eeveelutiontext">Galacteon <img src="Imgs/galacteon_icon.png" alt="Galacteon Minimalist" style="width: 50px;"></h1>
-        <h5 class="eeveelutiontext">Galacteon is the cosmic type eeveelution. It's type is entirely custom and it's the strongest of them all. They seem to appear without warning. It's easily distinguishable because it's fur and tail seem to represent a part of space.</h5>
-        <br>
-        <p class="eeveelutiontext">Galacteon is the tenth and final custom Eeveelution. It's seemingly unable to evolve from an Eevee, but it's suspected that if you feed an Eevee crushed moon stone residue in any food, it'll evolve into one. However, upon evolving, you need to transfer it to a stronger balls, as it's not going to stay for long if it's in a weak one.</p>
-        <br>
-        <p class="eeveelutiontext">Galacteons seem to come from outer space, tho we don't understand them completely. One can be found roaming around the Earth at all times, making it truly the rarest eeveelution. It's near impossible to capture, and has a 50% chance to break out of even the strongest Master Ball.</p>
-        <br>
-        <br>
-        <br>
-        <h3 class="eeveelutiontext">Forms</h3>
-        <p class="eeveelutiontext">Galacteon has only one registered form:</p>
-        <img src="Imgs/Galacteon_shiny.png" alt="ShinyGalact" title="Shiny Galacteon" class="formImage">
-        <br>
-        <p class="eeveelutiontext" style="font-size: x-large; text-indent: 7.5px;"> | Shiny Galacteon</p>
-        <br>
-        <br>
-        <h4 class="eeveelutiontext">Note: Be careful, this eeveelution is known to be able to shapeshift into any other, copying their abilities, moves, and even stats. Upon successful capture, it'll always revert to it's original form.</h4>
-    </div>
+                    <div class="warningSign">!!! High Value Target !!!</div>
+                </div>
 
-    <div class="headdiv">
-        <h2 class="eeveelutiontext"><a href="https://discord.gg/hmtf5uqtwY" target="_blank" class="jointext">--Join us in our discord!-- <br><img src="Imgs/DiscordInvite.png" alt="discinv" title="Discord Invite" class="discInvite"></a></h2>
-    </div>
+                <!-- INSECTEON -->
+                <div class="eeveelution Insecteon">
+                    <h1>Insecteon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/10_Insecteon/Normal.webp" alt="Insecteon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/10_Insecteon/Shiny.webp" alt="Shiny Insecteon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- BRAWLEON -->
+                <div class="eeveelution Brawleon">
+                    <h1>Brawleon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/11_Brawleon/Normal.png" alt="Brawleon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/11_Brawleon/Shiny.png" alt="Shiny Brawleon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- VENEON -->
+                <div class="eeveelution Veneon">
+                    <h1>Veneon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/12_Veneon/Normal.png" alt="Veneon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/12_Veneon/Shiny.png" alt="Shiny Veneon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- DUSTEON -->
+                <div class="eeveelution Dusteon">
+                    <h1>Dusteon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/13_Dusteon/Normal.png" alt="Dusteon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/13_Dusteon/Shiny.png" alt="Shiny Dusteon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- BREEZEON -->
+                <div class="eeveelution Breezeon">
+                    <h1>Breezeon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/14_Breezeon/Normal.png" alt="Breezeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/14_Breezeon/Shiny.png" alt="Shiny Breezeon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- OBSIDEON -->
+                <div class="eeveelution Obsideon">
+                    <h1>Obsideon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/15_Obsideon/Normal.png" alt="Obsideon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/15_Obsideon/Shiny.png" alt="Shiny Obsideon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- SKULLEON -->
+                <div class="eeveelution Skulleon">
+                    <h1>Skulleon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/16_Skulleon/Normal.png" alt="Skulleon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/16_Skulleon/Shiny.png" alt="Shiny Skulleon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- ETERNEON -->
+                <div class="eeveelution Eterneon">
+                    <h1>Eterneon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/17_Eterneon/Normal.png" alt="Eterneon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/17_Eterneon/Shiny.png" alt="Shiny Eterneon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- GLAIVEON -->
+                <div class="eeveelution Glaiveon">
+                    <h1>Glaiveon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/18_Glaiveon/Normal.png" alt="Glaiveon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/18_Glaiveon/Shiny.png" alt="Shiny Glaiveon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+
+                <!-- GALACTEON -->
+                <div class="eeveelution Galacteon">
+                    <h1>Galacteon</h1>
+                    <div class="images">
+                        <img src="Assets/Images/Eeveelutions/19_Galacteon/Normal.webp" alt="Galacteon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/19_Galacteon/Shiny.png" alt="Shiny Galacteon" class="speciesImage">
+                    </div>
+                    <p style="text-align: center;">Data currently unavailable.</p>
+                </div>
+            </div>
+
+            <!-- Next Button (Desktop: Right) -->
+            <div class="switchButton desktop-only" onclick="plusSlides(1)">
+                <img src="Assets/Images/fast-forward.webp" alt="Next" class="switchButtonIcon">
+            </div>
+
+        </div>
+
+        
+        <!-- INVITE SECTION -->
+        <section class="joinDiv card">
+            <div class="card-header">
+                <h2>Come Join Us!</h2>
+            </div>
+            <p style="text-align: center;">If we caught your attention, make sure to join our server.</p>
+            
+            <center>
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank">
+                    <img src="Imgs/DiscordInvite.png" alt="Eeveelution Kingdom Invite" class="invite-image">
+                </a>
+                
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank" class="join-btn">
+                    JOIN OUR SERVER
+                </a>
+            </center>
+        </section>
+
+    </main>
+
+    <script>
+        let slideIndex = 1;
+        
+        showSlides(slideIndex);
+
+        /*function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("eeveelution");
+            
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            
+            slides[slideIndex-1].style.display = "block";  
+        }
+
+        const desktopBtns = document.querySelectorAll('.desktop-only');
+        const mobileControls = document.querySelector('.mobile-controls');
+
+        function checkMobile() {
+            if (window.innerWidth <= 900) {
+                desktopBtns.forEach(btn => btn.style.display = 'none');
+                mobileControls.style.display = 'flex';
+            } else {
+                desktopBtns.forEach(btn => btn.style.display = 'flex');
+                mobileControls.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('resize', checkMobile);
+        checkMobile();*/
+    </script>
 </body>
 </html>
