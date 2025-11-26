@@ -156,6 +156,15 @@
         }
 
 
+    /* --- TEXT IMAGES --- */
+        .textImage{
+            width: 30px;
+            height: 30px;
+            display: inline;
+            vertical-align: middle;
+        }
+
+
 
 
 
@@ -458,8 +467,20 @@
             margin-bottom: 2rem;
             flex-wrap: wrap;
         }
+        .formImages{
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
         .speciesImage {
             width: 250px;
+            height: auto;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
+            transition: transform 0.3s;
+        }
+        .formImages .speciesImage{
+            width: 125px;
             height: auto;
             filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
             transition: transform 0.3s;
