@@ -30,6 +30,7 @@
             --sidebar-width: 260px;
             --glow: 0 0 20px rgba(231, 160, 93, 0.4);
             --danger: #ff4757;
+            --missingdata: #ffed47;
         }
 
 
@@ -490,7 +491,7 @@
         }
 
 
-    /* --- WARNING BOX --- */
+    /* --- WARNING AND DATA MISSING BOXES --- */
         .warningSign {
             background: rgba(255, 71, 87, 0.15);
             border: 1px solid var(--danger);
@@ -506,6 +507,22 @@
             width: 100%;
             display: block !important;
             border-bottom: 1px solid var(--danger) !important;
+        }
+        .dataMissingSign{
+            background: rgba(255, 243, 71, 0.15);
+            border: 1px solid var(--missingdata);
+            color: var(--missingdata) !important;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-family: var(--font-body) !important;
+            font-weight: bold;
+            font-size: 1rem !important;
+            line-height: 1.5;
+            text-align: center;
+            margin: 2rem 0;
+            width: 100%;
+            display: block !important;
+            border-bottom: 1px solid var(--missingdata) !important;
         }
 
 
