@@ -458,6 +458,41 @@
         .Sylveon h1,.Sylveon h3{
             color: #ed99af;
         }
+        .Insecteon h1,.Insecteon h3{
+            color: #c7edda;
+        }
+        .Brawleon h1,.Brawleon h3{
+            color: #96524e;
+        }
+        .Veneon h1,.Veneon h3{
+            color: #655763;
+        }
+        .Dusteon h1,.Dusteon h3{
+            color: #cfa699;
+        }
+        .Breezeon h1,.Breezeon h3{
+            color: #b6c0df;
+        }
+        .Obsideon h1,.Obsideon h3{
+            color: #bc8ed4;
+        }
+        .Skulleon h1,.Skulleon h3{
+            color: #bfb3f0;
+        }
+        .Eterneon h1,.Eterneon h3{
+            color: #3f424a;
+        }
+        .Glaiveon h1,.Glaiveon h3{
+            color: #e1dfe8;
+        }
+        .Galacteon h1,.Galacteon h3{
+            background-image: url(Assets/Images/--cosmos.png);
+            background-size: 275px;
+            background-position-x: center;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
 
 
     /* --- IMAGE DISPLAY --- */
