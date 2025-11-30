@@ -216,7 +216,7 @@ img {
 
 .carouselTrack {
     display: flex;
-    gap: 1.6rem;
+    gap: 26px;
     width: max-content;
     /* 
            Calculation (in @keyframes scroll): 
@@ -245,7 +245,7 @@ img {
     }
 
     100% {
-        transform: translateX(-49%);
+        transform: translateX(calc(-50% - 13px));
     }
 }
 
