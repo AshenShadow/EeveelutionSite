@@ -1,0 +1,2 @@
+Vector images should all be made on a width just enough so the drawn line is contained within the origianl, so make sure to resize the source image to that width. Height Matters not.
+No line width changes, default is fine for consistency.

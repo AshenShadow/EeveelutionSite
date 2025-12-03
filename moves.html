@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veelution Campfire - Moves</title>
+    <link rel="icon" href="Assets/Images/Campfire.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MOBILE HEADER (Visible on Phone) -->
+    <div class="mobile-header">
+        <a href="#" class="mobile-logo-container">
+            <img src="Assets/Images/Campfire.webp" alt="Logo">
+            <span class="mobile-logo-text">Eeveelution Campfire</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sideDiv" id="sideMenu">
+        <!-- DESKTOP LOGO -->
+        <div class="sidebar-header">
+            <img src="Assets/Images/Campfire.webp" alt="Eeveelution Campfire">
+            <h3>Eeveelution Campfire</h3>
+        </div>
+
+        <a href="index.html">
+            <div class="nav-item">
+                <h2>Home</h2>
+            </div>
+        </a>
+        <a href="eeveelutions.html">
+            <div class="nav-item">
+                <h2>Eeveelutions</h2>
+            </div>
+        </a>
+        <a href="#">
+            <div class="nav-item Active">
+                <h2>Moves</h2>
+            </div>
+        </a>
+        <a href="abilities.html">
+            <div class="nav-item">
+                <h2>Abilities</h2>
+            </div>
+        </a>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="welcomeDiv">
+            <div class="nameDiv">
+                <img src="Assets/Images/Campfire.webp" alt="Campfire Icon">
+                <h1>Eeveelution Campfire</h1>
+                <h2>Moves</h2>
+            </div>
+        </div>
+
+        <div class="content-container">
+
+            <div class="section-header">
+                <h1>Type effectiveness chart</h1>
+                <p>Use the arrows to browse the Type Effectiveness Chart.</p>
+                <p>This chart includes custom types as well.</p>
+            </div>
+
+            <div class="type-container">
+
+                <div class="switchButton desktop-only" onclick="plusSlides(-1)">
+                    <img src="Assets/Images/fast-forward.webp" class="switchButtonIcon"
+                        style="transform: rotate(180deg);" alt="Prev">
+                </div>
+
+                <div class="mobile-controls" style="display: none;">
+                    <div class="switchButton" onclick="plusSlides(-1)">
+                        <img src="Assets/Images/fast-forward.webp" class="switchButtonIcon"
+                            style="transform: rotate(180deg);">
+                    </div>
+                    <div class="switchButton" onclick="plusSlides(1)">
+                        <img src="Assets/Images/fast-forward.webp" class="switchButtonIcon">
+                    </div>
+                </div>
+
+                <div id="typeSlidesWrapper" style="width: 100%;">
+
+                    <!-- 1. NORMAL -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Normal.webp" class="type-icon-lg" alt="Normal">
+                            <h3>Normal</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons"><span class="empty-text">N/A</span></div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Ghost.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. FIRE -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Fire.webp" class="type-icon-lg" alt="Fire">
+                            <h3>Fire</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ice.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Bug.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Water.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dragon.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. WATER -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Water.webp" class="type-icon-lg" alt="Water">
+                            <h3>Water</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ground.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Water.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dragon.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><span class="empty-text">Nothing</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 4. GRASS -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Grass.webp" class="type-icon-lg" alt="Grass">
+                            <h3>Grass</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Water.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ground.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Poison.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Flying.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Bug.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dragon.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. ELECTRIC -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Electric.webp" class="type-icon-lg" alt="Electric">
+                            <h3>Electric</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Water.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Flying.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Electric.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dragon.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Ground.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. ICE -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Ice.webp" class="type-icon-lg" alt="Ice">
+                            <h3>Ice</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ground.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Flying.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dragon.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Water.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ice.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><span class="empty-text">Nothing</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 7. FIGHTING -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Fighting.webp" class="type-icon-lg" alt="Fighting">
+                            <h3>Fighting</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Normal.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ice.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dark.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Poison.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Flying.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Psychic.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Bug.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Fairy.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Ghost.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. POISON -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Poison.webp" class="type-icon-lg" alt="Poison">
+                            <h3>Poison</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Fairy.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Poison.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ground.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ghost.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. GROUND -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Ground.webp" class="type-icon-lg" alt="Ground">
+                            <h3>Ground</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Electric.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Poison.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Bug.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Flying.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. FLYING -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Flying.webp" class="type-icon-lg" alt="Flying">
+                            <h3>Flying</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Fighting.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Bug.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Electric.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><span class="empty-text">Nothing</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 11. PSYCHIC -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Psychic.webp" class="type-icon-lg" alt="Psychic">
+                            <h3>Psychic</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fighting.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Poison.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Psychic.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Dark.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12. BUG -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Bug.webp" class="type-icon-lg" alt="Bug">
+                            <h3>Bug</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dark.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Psychic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Fighting.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Poison.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Flying.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ghost.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Fairy.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><span class="empty-text">Nothing</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 13. ROCK -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Rock.webp" class="type-icon-lg" alt="Rock">
+                            <h3>Rock</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ice.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Flying.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Bug.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fighting.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ground.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><span class="empty-text">Nothing</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 14. GHOST -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Ghost.webp" class="type-icon-lg" alt="Ghost">
+                            <h3>Ghost</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Psychic.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ghost.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Dark.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Normal.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 15. DRAGON -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Dragon.webp" class="type-icon-lg" alt="Dragon">
+                            <h3>Dragon</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Dragon.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Fairy.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 16. DARK -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Dark.webp" class="type-icon-lg" alt="Dark">
+                            <h3>Dark</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Psychic.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ghost.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fighting.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dark.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Fairy.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 17. STEEL -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Steel.webp" class="type-icon-lg" alt="Steel">
+                            <h3>Steel</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Ice.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Fairy.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Water.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Electric.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><span class="empty-text">Nothing</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 18. FAIRY -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Fairy.webp" class="type-icon-lg" alt="Fairy">
+                            <h3>Fairy</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fighting.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dragon.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dark.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Poison.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 19. COSMIC -->
+                    <div class="type-slide fade">
+                        <div class="type-main">
+                            <img src="Assets/Images/Icons/Types/Cosmic.webp" class="type-icon-lg" alt="Cosmic">
+                            <h3>Cosmic</h3>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#4cd137;">Super Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Normal.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Fire.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Water.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Grass.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dragon.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Dark.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Cosmic.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e1b12c;">Not Very Effective On</span>
+                            <div class="eff-icons">
+                                <img src="Assets/Images/Icons/Types/Ice.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Ground.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Bug.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Rock.webp" class="mini-type">
+                                <img src="Assets/Images/Icons/Types/Steel.webp" class="mini-type">
+                            </div>
+                        </div>
+                        <div class="effectiveness-row">
+                            <span class="eff-label" style="color:#e84118;">No Effect On</span>
+                            <div class="eff-icons"><img src="Assets/Images/Icons/Types/Psychic.webp" class="mini-type">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="switchButton desktop-only" onclick="plusSlides(1)">
+                    <img src="Assets/Images/fast-forward.webp" class="switchButtonIcon" alt="Next">
+                </div>
+
+            </div>
+
+            <div class="section-header">
+                <h1>Custom Moves</h1>
+                <p>These moves are unique to our ecosystem. They follow standard mechanics but offer new strategic
+                    depth.</p>
+            </div>
+
+            <div class="moves-grid">
+
+                <div class="move-card grass">
+                    <div class="move-header">
+                        <div class="move-title">
+                            <h2>Leaf Sprint</h2>
+                        </div>
+                        <img src="Assets/Images/Icons/Types/Grass.webp" class="move-type-icon">
+                    </div>
+                    <div class="move-stats">
+                        <span class="cat-badge cat-status">
+                            <img src="Assets/Images/Icons/MoveCategories/Status.webp"> Status
+                        </span>
+                        <span class="stat-badge">PP: 15</span>
+                        <span class="stat-badge">Pwr: -</span>
+                        <span class="stat-badge">Acc: -</span>
+                    </div>
+                    <div class="move-desc">
+                        Allows the pokemon to enter a pile of leaves, and exit out another one. Most effective during
+                        Autumn. Takes 2 turns.
+                    </div>
+                </div>
+
+                <div class="move-card normal">
+                    <div class="move-header">
+                        <div class="move-title">
+                            <h2>Lightweight</h2>
+                        </div>
+                        <img src="Assets/Images/Icons/Types/Normal.webp" class="move-type-icon">
+                    </div>
+                    <div class="move-stats">
+                        <span class="cat-badge cat-status">
+                            <img src="Assets/Images/Icons/MoveCategories/Status.webp"> Status
+                        </span>
+                        <span class="stat-badge">PP: 30</span>
+                        <span class="stat-badge">Pwr: -</span>
+                        <span class="stat-badge">Acc: -</span>
+                    </div>
+                    <div class="move-desc">
+                        Increases the user's evasion and speed stats.
+                    </div>
+                </div>
+
+                <div class="move-card water">
+                    <div class="move-header">
+                        <div class="move-title">
+                            <h2>Ultra Hydropump</h2>
+                        </div>
+                        <img src="Assets/Images/Icons/Types/Water.webp" class="move-type-icon">
+                    </div>
+                    <div class="move-stats">
+                        <span class="cat-badge cat-special">
+                            <img src="Assets/Images/Icons/MoveCategories/Special.webp"> Special
+                        </span>
+                        <span class="stat-badge">PP: 5</span>
+                        <span class="stat-badge">Pwr: 300%</span>
+                        <span class="stat-badge">Acc: ∞</span>
+                    </div>
+                    <div class="move-desc">
+                        Takes 2 turns. Releases a blast with infinite accuracy. Afterwards, user's stats harshly
+                        decrease and takes 25 recoil damage. Cooldown: 3 turns.
+                    </div>
+                </div>
+
+                <div class="move-card cosmic">
+                    <div class="move-header">
+                        <div class="move-title">
+                            <h2>Core Collapse</h2>
+                        </div>
+                        <img src="Assets/Images/Icons/Types/Cosmic.webp" class="move-type-icon">
+                    </div>
+                    <div class="move-stats">
+                        <span class="cat-badge cat-special">
+                            <img src="Assets/Images/Icons/MoveCategories/Special.webp"> Special
+                        </span>
+                        <span class="stat-badge">PP: 1</span>
+                        <span class="stat-badge">Pwr: ∞</span>
+                        <span class="stat-badge">Acc: ∞</span>
+                    </div>
+                    <div class="move-desc">
+                        <strong>Turn 9+ Only.</strong> This move eliminates everything in existence, including pokemon
+                        in pokeballs. Exclusive to Cosmic types.
+                    </div>
+                </div>
+
+                <div class="move-card cosmic">
+                    <div class="move-header">
+                        <div class="move-title">
+                            <h2>Star Shooter</h2>
+                        </div>
+                        <img src="Assets/Images/Icons/Types/Cosmic.webp" class="move-type-icon">
+                    </div>
+                    <div class="move-stats">
+                        <span class="cat-badge cat-special">
+                            <img src="Assets/Images/Icons/MoveCategories/Special.webp"> Special
+                        </span>
+                        <span class="stat-badge">PP: 10</span>
+                        <span class="stat-badge">Pwr: 25</span>
+                        <span class="stat-badge">Acc: 85%</span>
+                    </div>
+                    <div class="move-desc">
+                        The user summons shooting stars to hit the opponent. Hits multiple times. The move ends when it
+                        misses.
+                    </div>
+                </div>
+
+                <div class="move-card cosmic">
+                    <div class="move-header">
+                        <div class="move-title">
+                            <h2>Cosmic Fang</h2>
+                        </div>
+                        <img src="Assets/Images/Icons/Types/Cosmic.webp" class="move-type-icon">
+                    </div>
+                    <div class="move-stats">
+                        <span class="cat-badge cat-physical">
+                            <img src="Assets/Images/Icons/MoveCategories/Physical.webp"> Physical
+                        </span>
+                        <span class="stat-badge">PP: 20</span>
+                        <span class="stat-badge">Pwr: 75</span>
+                        <span class="stat-badge">Acc: 100%</span>
+                    </div>
+                    <div class="move-desc">
+                        The user bites the opponent with fangs powered by outer space.
+                    </div>
+                </div>
+
+                <div class="move-card cosmic">
+                    <div class="move-header">
+                        <div class="move-title">
+                            <h2>Supernova</h2>
+                        </div>
+                        <img src="Assets/Images/Icons/Types/Cosmic.webp" class="move-type-icon">
+                    </div>
+                    <div class="move-stats">
+                        <span class="cat-badge cat-special">
+                            <img src="Assets/Images/Icons/MoveCategories/Special.webp"> Special
+                        </span>
+                        <span class="stat-badge">PP: 5</span>
+                        <span class="stat-badge">Pwr: 150</span>
+                        <span class="stat-badge">Acc: 80%</span>
+                    </div>
+                    <div class="move-desc">
+                        Takes 2 turns. Turn 1: Summons a star. Turn 2: Detonates the star for a devastating blow.
+                    </div>
+                </div>
+
+                <div class="move-card cosmic">
+                    <div class="move-header">
+                        <div class="move-title">
+                            <h2>Asteroid Rain</h2>
+                        </div>
+                        <img src="Assets/Images/Icons/Types/Cosmic.webp" class="move-type-icon">
+                    </div>
+                    <div class="move-stats">
+                        <span class="cat-badge cat-status">
+                            <img src="Assets/Images/Icons/MoveCategories/Status.webp"> Status
+                        </span>
+                        <span class="stat-badge">PP: 15</span>
+                        <span class="stat-badge">Pwr: -</span>
+                        <span class="stat-badge">Acc: -</span>
+                    </div>
+                    <div class="move-desc">
+                        Lasts 5 turns. Summons an asteroid rain. Each turn damages both sides for 5% of their max HP.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="joinDiv card">
+            <div class="card-header">
+                <h2>Come Join Us!</h2>
+            </div>
+            <p style="text-align: center;">If we caught your attention, make sure to join our server.</p>
+
+            <center>
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank">
+                    <img src="Assets/OldImgs/Invite.png" alt="Eeveelution Kingdom Invite" class="invite-image">
+                </a>
+
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank" class="join-btn">
+                    JOIN OUR SERVER
+                </a>
+            </center>
+        </section>
+
+    </main>
+
+    <!-- SCRIPT FOR MOBILE MENU & RESIZE FIX -->
+    <script>
+        // --- MOBILE MENU LOGIC ---
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const sideMenu = document.getElementById('sideMenu');
+
+        if (hamburgerBtn && sideMenu) {
+            hamburgerBtn.addEventListener('click', () => {
+                sideMenu.classList.toggle('open');
+                hamburgerBtn.classList.toggle('active');
+            });
+
+            const navLinks = document.querySelectorAll('.nav-item');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    sideMenu.classList.remove('open');
+                    hamburgerBtn.classList.remove('active');
+                });
+            });
+        }
+
+        // --- SLIDESHOW LOGIC ---
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("type-slide");
+            if (slides.length === 0) return; // Prevent error if not on moves page
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        // --- MOBILE RESIZE CHECK ---
+        const desktopBtns = document.querySelectorAll('.desktop-only');
+        const mobileControls = document.querySelector('.mobile-controls');
+
+        function checkMobile() {
+            if (window.innerWidth <= 900) {
+                if (desktopBtns) desktopBtns.forEach(btn => btn.style.display = 'none');
+                if (mobileControls) mobileControls.style.display = 'flex';
+            } else {
+                if (desktopBtns) desktopBtns.forEach(btn => btn.style.display = 'flex');
+                if (mobileControls) mobileControls.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('resize', checkMobile);
+        checkMobile(); // Run on load
+
+        // Resize Animation Stopper (Fixes the weird animation on window resizing)
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            document.body.classList.add("resize-animation-stopper");
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                document.body.classList.remove("resize-animation-stopper");
+            }, 400);
+        });
+    </script>
+
+</body>
+
+</html>

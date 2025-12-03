@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veelution Campfire - Abilities</title>
+    <link rel="icon" href="Assets/Images/Campfire.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MOBILE HEADER (Visible on Phone) -->
+    <div class="mobile-header">
+        <a href="#" class="mobile-logo-container">
+            <img src="Assets/Images/Campfire.webp" alt="Logo">
+            <span class="mobile-logo-text">Eeveelution Campfire</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sideDiv" id="sideMenu">
+
+        <!-- DESKTOP LOGO -->
+        <div class="sidebar-header">
+            <img src="Assets/Images/Campfire.webp" alt="Eeveelution Campfire">
+            <h3>Eeveelution Campfire</h3>
+        </div>
+
+        <a href="index.html">
+            <div class="nav-item">
+                <h2>Home</h2>
+            </div>
+        </a>
+        <a href="eeveelutions.html">
+            <div class="nav-item">
+                <h2>Eeveelutions</h2>
+            </div>
+        </a>
+        <a href="moves.html">
+            <div class="nav-item">
+                <h2>Moves</h2>
+            </div>
+        </a>
+        <a href="#">
+            <div class="nav-item Active">
+                <h2>Abilities</h2>
+            </div>
+        </a>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="welcomeDiv">
+            <div class="nameDiv">
+                <img src="Assets/Images/Campfire.webp" alt="Campfire Icon">
+                <h1>Eeveelution Campfire</h1>
+                <h2>Abilities</h2>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="section-header">
+                <h1>Custom Abilities</h1>
+                <p>These abilities are unique to our ecosystem.</p>
+                <p>Abilities are special traits acquired on birth or through evolution.</p>
+            </div>
+
+            <div class="ability-card">
+                <div class="ability-header">
+                    <h2>Formswitch</h2>
+                    <p style="color: #ccc;">Allows the pokemon to switch forms at will. There are currently 2 forms
+                        registered.</p>
+                </div>
+                <div class="form-container">
+                    <div class="form-box">
+                        <h3>Form: Berserk</h3>
+                        <p style="color:var(--text-muted); font-size: 0.9rem;">Calling: Transform</p>
+                        <img src="Assets/Images/Icons/Abilities/Berserk.webp" alt="Berserk">
+                        <p style="text-align: left; font-size: 0.9rem; line-height: 1.6; color: #ccc;">
+                            • All stats +50%<br>
+                            • Move Power +50%<br>
+                            • Max HP +200%
+                        </p>
+                    </div>
+                    <div class="form-box">
+                        <h3>Form: Ultra</h3>
+                        <p style="color:var(--text-muted); font-size: 0.9rem;">Calling: Ultrify</p>
+                        <img src="Assets/Images/Icons/Abilities/Ultrify.webp" alt="Ultrify">
+                        <p style="text-align: left; font-size: 0.9rem; line-height: 1.6; color: #ccc;">
+                            • All stats +200%<br>
+                            • Move Power +300%<br>
+                            • Max HP +1100%
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ability-card">
+                <div class="ability-header">
+                    <h2>Shellshift</h2>
+                </div>
+                <p>Allows the pokemon to devolve for 30 minutes. While devolved, the pokemon is unable to evolve into
+                    anything else.</p>
+            </div>
+
+            <div class="ability-card">
+                <div class="ability-header">
+                    <h2>My Creations</h2>
+                </div>
+                <p>The pokemon heals 17% hp each turn.</p>
+                <p style="margin-top: 10px;">If the pokemon is the last of its team, Attack is increased by 500% for 5
+                    turns and revives all fallen allies to 50% health. (No effect on "Core Collapse")</p>
+            </div>
+        </div>
+
+        <!-- INVITE SECTION -->
+        <section class="joinDiv card">
+            <div class="card-header">
+                <h2>Come Join Us!</h2>
+            </div>
+            <p style="text-align: center;">If we caught your attention, make sure to join our server.</p>
+
+            <center>
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank">
+                    <img src="Assets/OldImgs/Invite.png" alt="Eeveelution Kingdom Invite" class="invite-image">
+                </a>
+
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank" class="join-btn">
+                    JOIN OUR SERVER
+                </a>
+            </center>
+        </section>
+    </main>
+
+    <script>
+        // --- MOBILE MENU LOGIC ---
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const sideMenu = document.getElementById('sideMenu');
+
+        if (hamburgerBtn && sideMenu) {
+            hamburgerBtn.addEventListener('click', () => {
+                sideMenu.classList.toggle('open');
+                hamburgerBtn.classList.toggle('active');
+            });
+
+            const navLinks = document.querySelectorAll('.nav-item');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    sideMenu.classList.remove('open');
+                    hamburgerBtn.classList.remove('active');
+                });
+            });
+        }
+
+        // --- RESIZE ANIMATION STOPPER ---
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            document.body.classList.add("resize-animation-stopper");
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                document.body.classList.remove("resize-animation-stopper");
+            }, 400);
+        });
+    </script>
+</body>
+
+</html>

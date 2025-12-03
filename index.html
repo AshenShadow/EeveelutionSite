@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,31 @@
     <link rel="icon" href="Assets/Images/Campfire.webp">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <aside class="sideDiv">
+    <!-- MOBILE HEADER (Visible on Phone) -->
+    <div class="mobile-header">
+        <a href="#" class="mobile-logo-container">
+            <img src="Assets/Images/Campfire.webp" alt="Logo">
+            <span class="mobile-logo-text">Eeveelution Campfire</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <aside class="sideDiv" id="sideMenu">
+
+        <!-- DESKTOP LOGO (Hidden on Mobile via CSS) -->
+        <div class="sidebar-header">
+            <img src="Assets/Images/Campfire.webp" alt="Eeveelution Campfire">
+            <h3>Eeveelution Campfire</h3>
+        </div>
+
         <a href="#">
             <div class="nav-item Active">
                 <h2>Home</h2>
@@ -20,60 +43,103 @@
                 <h2>Eeveelutions</h2>
             </div>
         </a>
-        <a href="movesandabilities.html">
+        <a href="moves.html">
             <div class="nav-item">
-                <h2>WIP</h2>
+                <h2>Moves</h2>
+            </div>
+        </a>
+        <a href="abilities.html">
+            <div class="nav-item">
+                <h2>Abilities</h2>
             </div>
         </a>
     </aside>
 
     <main class="main-content">
-        
+
         <div class="welcomeDiv">
             <!-- CAROUSEL -->
             <div class="carouselDiv">
                 <div class="carouselTrack">
                     <!-- SET 1 -->
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Eevee.webp" alt="Eevee" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Flareon.webp" alt="Flareon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Vaporeon.webp" alt="Vaporeon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Jolteon.webp" alt="Jolteon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Umbreon.webp" alt="Umbreon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Espeon.webp" alt="Espeon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Leafeon.webp" alt="Leafeon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Glaceon.webp" alt="Glaceon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Sylveon.webp" alt="Sylveon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Insecteon.webp" alt="Insecteon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Brawleon.webp" alt="Brawleon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Veneon.webp" alt="Veneon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Dusteon.webp" alt="Dusteon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Breezeon.webp" alt="Breezeon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Obsideon.webp" alt="Obsideon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Skulleon.webp" alt="Skulleon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Eterneon.webp" alt="Eterneon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Glaiveon.webp" alt="Glaiveon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Galacteon.webp" alt="Galacteon" class="CarouselIcon"></div>
-                    
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Eevee.webp" alt="Eevee"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Flareon.webp" alt="Flareon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Vaporeon.webp" alt="Vaporeon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Jolteon.webp" alt="Jolteon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Umbreon.webp" alt="Umbreon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Espeon.webp" alt="Espeon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Leafeon.webp" alt="Leafeon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Glaceon.webp" alt="Glaceon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Sylveon.webp" alt="Sylveon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Insecteon.webp"
+                            alt="Insecteon" class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Brawleon.webp" alt="Brawleon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Veneon.webp" alt="Veneon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Dusteon.webp" alt="Dusteon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Breezeon.webp" alt="Breezeon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Obsideon.webp" alt="Obsideon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Skulleon.webp" alt="Skulleon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Eterneon.webp" alt="Eterneon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Glaiveon.webp" alt="Glaiveon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Galacteon.webp"
+                            alt="Galacteon" class="CarouselIcon"></div>
+
                     <!-- SET 2 -->
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Eevee.webp" alt="Eevee" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Flareon.webp" alt="Flareon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Vaporeon.webp" alt="Vaporeon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Jolteon.webp" alt="Jolteon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Umbreon.webp" alt="Umbreon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Espeon.webp" alt="Espeon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Leafeon.webp" alt="Leafeon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Glaceon.webp" alt="Glaceon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Sylveon.webp" alt="Sylveon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Insecteon.webp" alt="Insecteon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Brawleon.webp" alt="Brawleon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Veneon.webp" alt="Veneon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Dusteon.webp" alt="Dusteon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Breezeon.webp" alt="Breezeon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Obsideon.webp" alt="Obsideon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Skulleon.webp" alt="Skulleon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Eterneon.webp" alt="Eterneon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Glaiveon.webp" alt="Glaiveon" class="CarouselIcon"></div>
-                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Galacteon.webp" alt="Galacteon" class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Eevee.webp" alt="Eevee"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Flareon.webp" alt="Flareon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Vaporeon.webp" alt="Vaporeon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Jolteon.webp" alt="Jolteon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Umbreon.webp" alt="Umbreon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Espeon.webp" alt="Espeon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Leafeon.webp" alt="Leafeon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Glaceon.webp" alt="Glaceon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Sylveon.webp" alt="Sylveon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Insecteon.webp"
+                            alt="Insecteon" class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Brawleon.webp" alt="Brawleon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Veneon.webp" alt="Veneon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Dusteon.webp" alt="Dusteon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Breezeon.webp" alt="Breezeon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Obsideon.webp" alt="Obsideon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Skulleon.webp" alt="Skulleon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Eterneon.webp" alt="Eterneon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Glaiveon.webp" alt="Glaiveon"
+                            class="CarouselIcon"></div>
+                    <div class="carouselSlide"><img src="Assets/Images/Icons/Eeveelutions/Galacteon.webp"
+                            alt="Galacteon" class="CarouselIcon"></div>
                 </div>
             </div>
 
@@ -92,9 +158,13 @@
                     <img src="Assets/Images/Scroll.webp" alt="Icon_AboutUs" class="card-image">
                     <h2>About our community</h2>
                 </div>
-                <p>We're a very small, and ever-so-slowly growing community made of most eeveelutions. A DM group that started as a group of 4 turned into this server with over 30 members (some active, some not).</p>
-                <p>We're very happy to have founded this community, and we hope that you can join in too! More members are always welcome.</p>
-                <p>While most people would only know the original 9 eeveelutions, we have custom ones too! We have an eeveelution for each type, as well as an entirely custom type with its respective eeveelution. These eeveelutions can be viewed on the "Eeveelutions" page.</p>
+                <p>We're a very small, and ever-so-slowly growing community made of most eeveelutions. A DM group that
+                    started as a group of 4 turned into this server with over 30 members (some active, some not).</p>
+                <p>We're very happy to have founded this community, and we hope that you can join in too! More members
+                    are always welcome.</p>
+                <p>While most people would only know the original 9 eeveelutions, we have custom ones too! We have an
+                    eeveelution for each type, as well as an entirely custom type with its respective eeveelution. These
+                    eeveelutions can be viewed on the "Eeveelutions" page.</p>
             </section>
 
             <!-- HISTORY SECTION -->
@@ -103,10 +173,16 @@
                     <img src="Assets/Images/Book.webp" alt="Icon_Book" class="card-image">
                     <h2>Our server's history</h2>
                 </div>
-                <p>We went through a very long 1 year long journey to get to here. We had many struggles and obstacles through the way. If you want to learn our history, here it is!</p>
-                <p>The entire concept started as a DM group of 3. During a school day, another person saw his groupmate chat in the dm group and asked to join, since he was a big fan of eeveelutions. After he joined, more and more people started to appear overtime.</p>
-                <p>A while later before the group was full, we decided to create a server to hopefully accept more people. And we continued growing, and growing. Unfortunately after a few months of growing decently positive, a huge wave of negativity hit and we lost a few members.</p>
-                <p>And now we arrive to today. Our community is doing very nice right now, and we're not in any immediate danger. But I'm sure the clouds will set upon us and we'll get a negative wave again.</p>
+                <p>We went through a very long 1 year long journey to get to here. We had many struggles and obstacles
+                    through the way. If you want to learn our history, here it is!</p>
+                <p>The entire concept started as a DM group of 3. During a school day, another person saw his groupmate
+                    chat in the dm group and asked to join, since he was a big fan of eeveelutions. After he joined,
+                    more and more people started to appear overtime.</p>
+                <p>A while later before the group was full, we decided to create a server to hopefully accept more
+                    people. And we continued growing, and growing. Unfortunately after a few months of growing decently
+                    positive, a huge wave of negativity hit and we lost a few members.</p>
+                <p>And now we arrive to today. Our community is doing very nice right now, and we're not in any
+                    immediate danger. But I'm sure the clouds will set upon us and we'll get a negative wave again.</p>
             </section>
 
             <!-- INVITE SECTION -->
@@ -115,12 +191,12 @@
                     <h2>Come Join Us!</h2>
                 </div>
                 <p style="text-align: center;">If we caught your attention, make sure to join our server.</p>
-                
+
                 <center>
                     <a href="https://discord.gg/6g2eM5gRdA" target="_blank">
                         <img src="Assets/OldImgs/Invite.png" alt="Eeveelution Kingdom Invite" class="invite-image">
                     </a>
-                    
+
                     <a href="https://discord.gg/6g2eM5gRdA" target="_blank" class="join-btn">
                         JOIN OUR SERVER
                     </a>
@@ -129,5 +205,38 @@
         </div>
 
     </main>
+
+    <!-- SCRIPT FOR MOBILE MENU & RESIZE FIX -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const sideMenu = document.getElementById('sideMenu');
+
+        // Toggle Menu
+        hamburgerBtn.addEventListener('click', () => {
+            sideMenu.classList.toggle('open');
+            hamburgerBtn.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = document.querySelectorAll('.nav-item');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sideMenu.classList.remove('open');
+                hamburgerBtn.classList.remove('active');
+            });
+        });
+
+        // Resize Animation Stopper (Fixes the weird animation on window resizing)
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            document.body.classList.add("resize-animation-stopper");
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                document.body.classList.remove("resize-animation-stopper");
+            }, 400);
+        });
+    </script>
+
 </body>
+
 </html>
