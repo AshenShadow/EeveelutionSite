@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -841,18 +840,26 @@ html
 
         </div>
 
-        <div class="joinDiv">
-            <h2>Join our community!</h2>
-            <div style="margin: 20px 0;">
-                <img src="Imgs/DiscordInvite.png" alt="Discord Invite"
-                    style="max-width: 300px; margin: 0 auto; border-radius: 10px;">
+        <section class="joinDiv card">
+            <div class="card-header">
+                <h2>Come Join Us!</h2>
             </div>
-            <a href="https://discord.gg/6g2eM5gRdA" target="_blank">JOIN SERVER</a>
-        </div>
+            <p style="text-align: center;">If we caught your attention, make sure to join our server.</p>
+
+            <center>
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank">
+                    <img src="Assets/OldImgs/Invite.png" alt="Eeveelution Kingdom Invite" class="invite-image">
+                </a>
+
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank" class="join-btn">
+                    JOIN OUR SERVER
+                </a>
+            </center>
+        </section>
 
     </main>
 
-    <!-- SCRIPT FOR MOBILE MENU, LIGHTBOX & SLIDESHOW -->
+    <!-- SCRIPT FOR MOBILE MENU & RESIZE FIX -->
     <script>
         // --- MOBILE MENU LOGIC ---
         const hamburgerBtn = document.getElementById('hamburgerBtn');
@@ -922,6 +929,7 @@ html
             }, 400);
         });
     </script>
+
 </body>
 
 </html>

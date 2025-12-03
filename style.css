@@ -10,7 +10,6 @@
 /* --- CUSTOM FONTS --- */
 @font-face {
     font-family: 'Ketchum';
-    /* Using path provided in prompt */
     src: url('Assets/fonts/Ketchum.otf') format('opentype'),
         url('Assets/fonts/Ketchum.ttf') format('truetype');
     font-weight: normal;
@@ -91,6 +90,7 @@ p {
     padding: 2rem 1rem;
     gap: 1rem;
     z-index: 100;
+    /* Removed border-right to clean up black line */
     border-right: 1px solid #333;
 }
 
@@ -273,17 +273,15 @@ p {
     color: var(--primary);
 }
 
-/* --- INVITE SECTION (FIXED SIZING) --- */
+/* --- INVITE SECTION --- */
 .joinDiv {
     width: 100%;
     max-width: 1000px;
-    /* Ensures it spans properly */
     text-align: center;
     background: linear-gradient(145deg, #2b2d31, #18191c);
     border: 1px solid var(--secondary);
     box-shadow: 0 0 30px rgba(88, 101, 242, 0.15);
     margin: 2rem auto;
-    /* Centers the block */
 }
 
 .invite-image {
@@ -835,6 +833,8 @@ p {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
+    /* FORCE CENTER ALIGNMENT FOR HEADER TEXT */
+    text-align: center;
 }
 
 /* --- TYPE SLIDESHOW --- */
