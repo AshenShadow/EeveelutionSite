@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
 
-    <aside class="sideDiv">
+    <!-- MOBILE HEADER (Visible on Phone) -->
+    <div class="mobile-header">
+        <a href="#" class="mobile-logo-container">
+            <img src="Assets/Images/Campfire.webp" alt="Logo">
+            <span class="mobile-logo-text">Eeveelution Campfire</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sideDiv" id="sideMenu">
+
+        <!-- DESKTOP LOGO -->
+        <div class="sidebar-header">
+            <img src="Assets/Images/Campfire.webp" alt="Eeveelution Campfire">
+            <h3>Eeveelution Campfire</h3>
+        </div>
+
         <a href="index.html">
             <div class="nav-item">
                 <h2>Home</h2>
@@ -21,15 +44,20 @@
                 <h2>Eeveelutions</h2>
             </div>
         </a>
-        <a href="movesandabilities.html">
+        <a href="moves.html">
             <div class="nav-item">
-                <h2>WIP</h2>
+                <h2>Moves</h2>
+            </div>
+        </a>
+        <a href="abilities.html">
+            <div class="nav-item">
+                <h2>Abilities</h2>
             </div>
         </a>
     </aside>
 
     <main class="main-content eeveelutions-main-content">
-        
+
         <div class="welcomeDiv">
             <div class="nameDiv">
                 <img src="Assets/Images/Campfire.webp" alt="Campfire Icon">
@@ -41,12 +69,14 @@
         <!-- Layout Container for Slideshow -->
         <div class="eeveelutions-container">
             <div class="switchButton desktop-only" onclick="plusSlides(-1)">
-                <img src="Assets/Images/fast-forward.webp" alt="Prev" class="switchButtonIcon" style="transform: rotate(180deg);">
+                <img src="Assets/Images/fast-forward.webp" alt="Prev" class="switchButtonIcon"
+                    style="transform: rotate(180deg);">
             </div>
 
             <div class="mobile-controls" style="display: none;">
-                 <div class="switchButton" onclick="plusSlides(-1)">
-                    <img src="Assets/Images/fast-forward.webp" alt="Prev" class="switchButtonIcon" style="transform: rotate(180deg);">
+                <div class="switchButton" onclick="plusSlides(-1)">
+                    <img src="Assets/Images/fast-forward.webp" alt="Prev" class="switchButtonIcon"
+                        style="transform: rotate(180deg);">
                 </div>
                 <div class="switchButton" onclick="plusSlides(1)">
                     <img src="Assets/Images/fast-forward.webp" alt="Next" class="switchButtonIcon">
@@ -55,29 +85,36 @@
 
             <!-- Content Area -->
             <div class="eeveelutionSelection" id="selection">
-                
+
                 <!-- EEVEE -->
                 <div class="eeveelution Eevee">
                     <h1>Eevee</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/1_Eevee/Normal.webp" alt="Eevee" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/1_Eevee/Normal.svg" alt="Eevee" class="speciesImage">
                         <img src="Assets/Images/Eeveelutions/1_Eevee/Shiny.webp" alt="Shiny Eevee" class="speciesImage">
                     </div>
-                    <p>Eevee is the base of the eeveelutions, being able to evolve into any of the 17. It can be evolved with a stone or by meeting conditions.</p>
-                    <p>Eevee is a fox-like creature with thick, soft, white fur around its neck and the end of its tail. Compared to the others, it's the smallest at an average height of 0.3m (1'00") and an average weight of 6.5kg (14.3 lbs).</p>
-                    <p>Eevee's the most common of the eeveelutions, most commonly found in large plains or light forests, living among the roots of trees in dens.</p>
-                    
+                    <p>Eevee is the base of the eeveelutions, being able to evolve into any of the 17. It can be evolved
+                        with a stone or by meeting conditions.</p>
+                    <p>Eevee is a fox-like creature with thick, soft, white fur around its neck and the end of its tail.
+                        Compared to the others, it's the smallest at an average height of 0.3m (1'00") and an average
+                        weight of 6.5kg (14.3 lbs).</p>
+                    <p>Eevee's the most common of the eeveelutions, most commonly found in large plains or light
+                        forests, living among the roots of trees in dens.</p>
+
                     <h3>Strike Eevee</h3>
                     <img src="Assets/Images/Eeveelutions/1_Eevee/Strike.webp" alt="Strike Eevee" class="speciesImage">
-                    <p>A special form of Eevee. Rarely found in storms or the highest mountains, this black-furred variant has a very high price on the market.</p>
+                    <p>A special form of Eevee. Rarely found in storms or the highest mountains, this black-furred
+                        variant has a very high price on the market.</p>
                     <p>Its most notable features are its light blue eyes and the light blue markings on its body.</p>
                     <div class="warningSign">
-                        !!! Strike Eevee is heavily hunted for its unique fur markings. If you find one, please make sure to report it to the city's pokemon safety center. !!!
+                        !!! Strike Eevee is heavily hunted for its unique fur markings. If you find one, please make
+                        sure to report it to the city's pokemon safety center. !!!
                     </div>
-                    
+
                     <h3>Spirit Eevee</h3>
                     <img src="Assets/Images/Eeveelutions/1_Eevee/Spirit.webp" alt="Spirit Eevee" class="speciesImage">
-                    <p>A special form of Eevee. Found amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <p>A special form of Eevee. Found amongst the graves and tombstones of graveyards, It's nearly
+                        always suspected to be the lingering spirit of a dead pokemon.</p>
                     <p>This form's recognizable due to its fur and fluff being the same color.</p>
                 </div>
 
@@ -86,23 +123,34 @@
                     <h1>Vaporeon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/2_Vaporeon/Normal.svg" alt="Vaporeon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/2_Vaporeon/Shiny.svg" alt="Shiny Vaporeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/2_Vaporeon/Shiny.svg" alt="Shiny Vaporeon"
+                            class="speciesImage">
                     </div>
-                    <p>Vaporeon is the water type evolution. This evolution is guaranteed upon an Eevee coming in contact with a Water Stone<img src="Assets/Images/EvolutionItems/Stone_Water.webp" alt="Water Stone" class="textImage"></p>
-                    <p>Instead of fur, most Vaporeons have hard scales covering their body. Its most recognizable features are its long mermaid-like tail, white neck ruff and three fin-like ears. It has an average height of 1m (3'03") and an average weight of 29kg (63.9 lbs).</p>
-                    <p>Vaporeon's found around wet areas. It's most commonly seen around rivers, ponds, lakes and oceans, but some reports claim rare sightings in swamps.</p>
-                    
+                    <p>Vaporeon is the water type evolution. This evolution is guaranteed upon an Eevee coming in
+                        contact with a Water Stone<img src="Assets/Images/EvolutionItems/Stone_Water.webp"
+                            alt="Water Stone" class="textImage"></p>
+                    <p>Instead of fur, most Vaporeons have hard scales covering their body. Its most recognizable
+                        features are its long mermaid-like tail, white neck ruff and three fin-like ears. It has an
+                        average height of 1m (3'03") and an average weight of 29kg (63.9 lbs).</p>
+                    <p>Vaporeon's found around wet areas. It's most commonly seen around rivers, ponds, lakes and
+                        oceans, but some reports claim rare sightings in swamps.</p>
+
                     <h3>Strike Vaporeon</h3>
-                    <img src="Assets/Images/Eeveelutions/2_Vaporeon/Strike.svg" alt="Strike Vaporeon" class="speciesImage">
-                    <p>A special form of Vaporeon. Rarely found in storms and high mountains around large bodies of water, this black-scaled variant has a very high price on the market.</p>
+                    <img src="Assets/Images/Eeveelutions/2_Vaporeon/Strike.svg" alt="Strike Vaporeon"
+                        class="speciesImage">
+                    <p>A special form of Vaporeon. Rarely found in storms and high mountains around large bodies of
+                        water, this black-scaled variant has a very high price on the market.</p>
                     <p>It's most notable features are its light blue eyes and the light blue markings on its body.</p>
                     <div class="warningSign">
-                        !!! Strike Vaporeon is heavily hunted for its unique scale markings. If you find one, please make sure to report it to the city's pokemon safety center. !!!
+                        !!! Strike Vaporeon is heavily hunted for its unique scale markings. If you find one, please
+                        make sure to report it to the city's pokemon safety center. !!!
                     </div>
-                    
+
                     <h3>Spirit Vaporeon</h3>
-                    <img src="Assets/Images/Eeveelutions/2_Vaporeon/Spirit.svg" alt="Spirit Vaporeon" class="speciesImage">
-                    <p>A special form of Vaporeon. Found rarely amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <img src="Assets/Images/Eeveelutions/2_Vaporeon/Spirit.svg" alt="Spirit Vaporeon"
+                        class="speciesImage">
+                    <p>A special form of Vaporeon. Found rarely amongst the graves and tombstones of graveyards, It's
+                        nearly always suspected to be the lingering spirit of a dead pokemon.</p>
                     <p>This form's recognizable due to it'S scales and fins being the same color.</p>
                 </div>
 
@@ -111,25 +159,41 @@
                     <h1>Flareon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/3_Flareon/Normal.webp" alt="Flareon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/3_Flareon/Shiny.webp" alt="Shiny Flareon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/3_Flareon/Shiny.webp" alt="Shiny Flareon"
+                            class="speciesImage">
                     </div>
-                    <p>Flareon is the fire type evolution. This evolution is guaranteed upon an Eevee coming in contact with a Fire Stone<img src="Assets/Images/EvolutionItems/Stone_Fire.webp" alt="Fire Stone" class="textImage"></p>
-                    <p>Flareon has the most fluff out of all the eeveelutions. These fluffs are it's most recognizable features as well, having the biggest tail and neck fluff of all the eeveelutions. It has an average height of 0.9 m (2'11") and an average weight of 25 kg (55.1 lbs)</p>
-                    <p>Flareon's found around the hottest environments. Most common sightings include deserts and bases of volcanoes, but witnesses have also claimed to rarely see it in Savannas and around natural hot springs.</p>
+                    <p>Flareon is the fire type evolution. This evolution is guaranteed upon an Eevee coming in contact
+                        with a Fire Stone<img src="Assets/Images/EvolutionItems/Stone_Fire.webp" alt="Fire Stone"
+                            class="textImage"></p>
+                    <p>Flareon has the most fluff out of all the eeveelutions. These fluffs are it's most recognizable
+                        features as well, having the biggest tail and neck fluff of all the eeveelutions. It has an
+                        average height of 0.9 m (2'11") and an average weight of 25 kg (55.1 lbs)</p>
+                    <p>Flareon's found around the hottest environments. Most common sightings include deserts and bases
+                        of volcanoes, but witnesses have also claimed to rarely see it in Savannas and around natural
+                        hot springs.</p>
 
                     <h3>Blue Moon Flareon</h3>
-                    <img src="Assets/Images/Eeveelutions/3_Flareon/Blue_Moon.webp" alt="Blue Moon Flareon" class="speciesImage">
-                    <p>A special form of Flareon. Possibly one of the rarest special forms because it's only found during a celestial event called a blue moon.</p>
-                    <p>Blue Moon Flareon has a unique evolution condition: An Eevee must come in contact with a Fire Stone<img src="Assets/Images/EvolutionItems/Stone_Fire.webp" alt="Fire Stone" class="textImage"> and must be exposed to the reflected deep blue light of a Blue Moon.</p>
-                    <p>Blue Moon Flareon is identical to a regular Flareon, except it has black fur and dark blue fluff. This blue fluff, suspected to be made of a special material, Blue Moon Flareon is amongst the most valued pokemon on the market.</p>
+                    <img src="Assets/Images/Eeveelutions/3_Flareon/Blue_Moon.webp" alt="Blue Moon Flareon"
+                        class="speciesImage">
+                    <p>A special form of Flareon. Possibly one of the rarest special forms because it's only found
+                        during a celestial event called a blue moon.</p>
+                    <p>Blue Moon Flareon has a unique evolution condition: An Eevee must come in contact with a Fire
+                        Stone<img src="Assets/Images/EvolutionItems/Stone_Fire.webp" alt="Fire Stone" class="textImage">
+                        and must be exposed to the reflected deep blue light of a Blue Moon.</p>
+                    <p>Blue Moon Flareon is identical to a regular Flareon, except it has black fur and dark blue fluff.
+                        This blue fluff, suspected to be made of a special material, Blue Moon Flareon is amongst the
+                        most valued pokemon on the market.</p>
                     <div class="warningSign">
-                        !!! Blue Moon Flareon is heavily hunted for its fur and price. If you ever encounter one please make sure to report it to the city's pokemon safety center. !!!
+                        !!! Blue Moon Flareon is heavily hunted for its fur and price. If you ever encounter one please
+                        make sure to report it to the city's pokemon safety center. !!!
                     </div>
 
                     <h3>Spirit Flareon</h3>
-                    <img src="Assets/Images/Eeveelutions/3_Flareon/Spirit.webp" alt="Spirit Flareon" class="speciesImage">
-                    <p>A special form of Flareon. Found rarely amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <img src="Assets/Images/Eeveelutions/3_Flareon/Spirit.webp" alt="Spirit Flareon"
+                        class="speciesImage">
+                    <p>A special form of Flareon. Found rarely amongst the graves and tombstones of graveyards, It's
+                        nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                 </div>
 
                 <!-- JOLTEON -->
@@ -137,25 +201,39 @@
                     <h1>Jolteon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/4_Jolteon/Normal.webp" alt="Jolteon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/4_Jolteon/Shiny.webp" alt="Shiny Jolteon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/4_Jolteon/Shiny.webp" alt="Shiny Jolteon"
+                            class="speciesImage">
                     </div>
-                    <p>Jolteon is the electric type evolution. This evolutions is guaranteed upon an Eevee coming in contact with a Thunder Stone<img src="Assets/Images/EvolutionItems/Stone_Thunder.webp" alt="Thunder Stone" class="textImage"></p>
-                    <p>Jolteon's the fastest eeveelution, reaching speeds of over 418 km/h (260mph). It's most recognizable due to its spiky fur and lack of a tail. It has an average height of 0.8 m (2'07") and an average weight of 24.5 kg (54 lbs)</p>
-                    <p>Jolteon is mostly found mostly in mountains, but it's also known to wander around during storms.</p>
+                    <p>Jolteon is the electric type evolution. This evolutions is guaranteed upon an Eevee coming in
+                        contact with a Thunder Stone<img src="Assets/Images/EvolutionItems/Stone_Thunder.webp"
+                            alt="Thunder Stone" class="textImage"></p>
+                    <p>Jolteon's the fastest eeveelution, reaching speeds of over 418 km/h (260mph). It's most
+                        recognizable due to its spiky fur and lack of a tail. It has an average height of 0.8 m (2'07")
+                        and an average weight of 24.5 kg (54 lbs)</p>
+                    <p>Jolteon is mostly found mostly in mountains, but it's also known to wander around during storms.
+                    </p>
 
                     <h3>Strike Jolteon</h3>
-                    <img src="Assets/Images/Eeveelutions/4_Jolteon/Strike.webp" alt="Strike Jolteon" class="speciesImage">
-                    <p>A special form of Jolteon. Rarely found in mountains and savannas during heavy storms, it's the rarest strike form out of all. Due to its higher speed, it has quite the value on the market.</p>
-                    <p>Strike Jolteon is identical to a regular Jolteon, except it has a black fur and light blue markings.</p>
+                    <img src="Assets/Images/Eeveelutions/4_Jolteon/Strike.webp" alt="Strike Jolteon"
+                        class="speciesImage">
+                    <p>A special form of Jolteon. Rarely found in mountains and savannas during heavy storms, it's the
+                        rarest strike form out of all. Due to its higher speed, it has quite the value on the market.
+                    </p>
+                    <p>Strike Jolteon is identical to a regular Jolteon, except it has a black fur and light blue
+                        markings.</p>
 
                     <h3>Tailed Jolteon</h3>
-                    <img src="Assets/Images/Eeveelutions/4_Jolteon/Tailed.webp" alt="Tailed Jolteon" class="speciesImage">
-                    <p>A special form of Jolteon. It's extremely rare, but a weird evolution can cause Jolteons to have a very spiky tail.</p>
+                    <img src="Assets/Images/Eeveelutions/4_Jolteon/Tailed.webp" alt="Tailed Jolteon"
+                        class="speciesImage">
+                    <p>A special form of Jolteon. It's extremely rare, but a weird evolution can cause Jolteons to have
+                        a very spiky tail.</p>
 
                     <h3>Spirit Jolteon</h3>
-                    <img src="Assets/Images/Eeveelutions/4_Jolteon/Spirit.webp" alt="Spirit Jolteon" class="speciesImage">
-                    <p>A special form of Jolteon. Found rarely amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <img src="Assets/Images/Eeveelutions/4_Jolteon/Spirit.webp" alt="Spirit Jolteon"
+                        class="speciesImage">
+                    <p>A special form of Jolteon. Found rarely amongst the graves and tombstones of graveyards, It's
+                        nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                 </div>
 
                 <!-- UMBREON -->
@@ -163,16 +241,23 @@
                     <h1>Umbreon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/5_Umbreon/Normal.webp" alt="Umbreon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/5_Umbreon/Shiny.webp" alt="Shiny Umbreon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/5_Umbreon/Shiny.webp" alt="Shiny Umbreon"
+                            class="speciesImage">
                     </div>
-                    <p>Umbreon is the dark type evolution. This evolution is guaranteed upon an Eevee coming in contact with a Dusk Stone<img src="Assets/Images/EvolutionItems/Stone_Dusk.webp" alt="Dusk Stone" class="textImage"> or having an Eevee exposed to moonlight with high friendship.</p>
-                    <p>Umbreon's most recognizable features are its glowing rings on its legs, forehead, ears and tail. It's the best eeveelution at hiding in dark places due to it's dark fur. It has an average height of 1 m (3'03") and an average weight of 27 kg (59.5 lbs)</p>
-                    <p>Umbreon is mostly found in dark forests and caves, but it's also known to roam around during the night.</p>
+                    <p>Umbreon is the dark type evolution. This evolution is guaranteed upon an Eevee coming in contact
+                        with a Dusk Stone<img src="Assets/Images/EvolutionItems/Stone_Dusk.webp" alt="Dusk Stone"
+                            class="textImage"> or having an Eevee exposed to moonlight with high friendship.</p>
+                    <p>Umbreon's most recognizable features are its glowing rings on its legs, forehead, ears and tail.
+                        It's the best eeveelution at hiding in dark places due to it's dark fur. It has an average
+                        height of 1 m (3'03") and an average weight of 27 kg (59.5 lbs)</p>
+                    <p>Umbreon is mostly found in dark forests and caves, but it's also known to roam around during the
+                        night.</p>
 
                     <h3>Strike Umbreon</h3>
-                    <img src="Assets/Images/Eeveelutions/5_Umbreon/Strike.webp" alt="Strike Umbreon" class="speciesImage">
+                    <img src="Assets/Images/Eeveelutions/5_Umbreon/Strike.webp" alt="Strike Umbreon"
+                        class="speciesImage">
                     <p>A special form of Umbreon. Rarely found at night during storms.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                     <div class="warningSign">
                         !!! HIGH VALUE TARGET // DESCRIPTION MISSING // !!!
                     </div>
@@ -180,22 +265,32 @@
                     <h3>Ashen Umbreon</h3>
                     <img src="Assets/Images/Eeveelutions/5_Umbreon/Ashen.webp" alt="Ashen Umbreon" class="speciesImage">
                     <p>A special form of Umbreon. Ashen Umbreon is found in deep and irregularly dusty caves.</p>
-                    <p>Ashen Umbreon's fur has a pattern similar to Ash spread on a smooth surface, while its eyes and rings are a reddish-magenta. Unlike other Umbreons, its eyes are structured differently.</p>
-                    <p>Hunters are the least likely to go after Ashen Umbreons because of their habitats, making hunting extremely annoying.</p>
+                    <p>Ashen Umbreon's fur has a pattern similar to Ash spread on a smooth surface, while its eyes and
+                        rings are a reddish-magenta. Unlike other Umbreons, its eyes are structured differently.</p>
+                    <p>Hunters are the least likely to go after Ashen Umbreons because of their habitats, making hunting
+                        extremely annoying.</p>
 
                     <h3>Blood Moon Umbreon</h3>
-                    <img src="Assets/Images/Eeveelutions/5_Umbreon/Blood_Moon.webp" alt="Blood Moon Umbreon" class="speciesImage">
-                    <p>A special form of Umbreon. Possibly one of the rarest special forms because it's only found during a celestial event called a blood moon.</p>
-                    <p>Blood Moon Umbreon has a unique evolution condition: An Eevee must come in contact with a Dusk Stone<img src="Assets/Images/EvolutionItems/Stone_Dusk.webp" alt="Dusk Stone" class="textImage"> or have high friendship and must be exposed to the reflected red light of a Blood Moon.</p>
-                    <p>Blood Moon Umbreon is identical to a regular Flareon, except it has red rings and light blue eyes. Due to its rarity, Blood Moon Umbreon has a very high price on the market.</p>
+                    <img src="Assets/Images/Eeveelutions/5_Umbreon/Blood_Moon.webp" alt="Blood Moon Umbreon"
+                        class="speciesImage">
+                    <p>A special form of Umbreon. Possibly one of the rarest special forms because it's only found
+                        during a celestial event called a blood moon.</p>
+                    <p>Blood Moon Umbreon has a unique evolution condition: An Eevee must come in contact with a Dusk
+                        Stone<img src="Assets/Images/EvolutionItems/Stone_Dusk.webp" alt="Dusk Stone" class="textImage">
+                        or have high friendship and must be exposed to the reflected red light of a Blood Moon.</p>
+                    <p>Blood Moon Umbreon is identical to a regular Flareon, except it has red rings and light blue
+                        eyes. Due to its rarity, Blood Moon Umbreon has a very high price on the market.</p>
                     <div class="warningSign">
-                        !!! Blood Moon Umbreon is heavily hunted for its price. If you ever encounter one please make sure to report it to the city's pokemon safety center. !!!
+                        !!! Blood Moon Umbreon is heavily hunted for its price. If you ever encounter one please make
+                        sure to report it to the city's pokemon safety center. !!!
                     </div>
 
                     <h3>Spirit Umbreon</h3>
-                    <img src="Assets/Images/Eeveelutions/5_Umbreon/Spirit.webp" alt="Spirit Umbreon" class="speciesImage">
-                    <p>A special form of Umbreon. Found rarely amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <img src="Assets/Images/Eeveelutions/5_Umbreon/Spirit.webp" alt="Spirit Umbreon"
+                        class="speciesImage">
+                    <p>A special form of Umbreon. Found rarely amongst the graves and tombstones of graveyards, It's
+                        nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                 </div>
 
                 <!-- ESPEON -->
@@ -203,24 +298,32 @@
                     <h1>Espeon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/6_Espeon/Normal.webp" alt="Espeon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/6_Espeon/Shiny.webp" alt="Shiny Espeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/6_Espeon/Shiny.webp" alt="Shiny Espeon"
+                            class="speciesImage">
                     </div>
-                    <p>Espeon is the psychic type evolution. This evolution is guaranteed upon an Eevee coming in contact with a Dawn Stone<img src="Assets/Images/EvolutionItems/Stone_Dawn.webp" alt="Dawn Stone" class="textImage"> or having an Eevee exposed to sunlight with high friendship.</p>
-                    <p>Espeon's most recognizable features are its twin-tail and its forehead gem. It has very smooth pink fur. It has an average height of 0.9 m (2'11") and an average weight of 26.5 kg (58.4 lbs)</p>
-                    <p>Espeon is mostly found in clear, plain patches of grass during daytime, and is known to retreat into shelters during the night.</p>
-                    
+                    <p>Espeon is the psychic type evolution. This evolution is guaranteed upon an Eevee coming in
+                        contact with a Dawn Stone<img src="Assets/Images/EvolutionItems/Stone_Dawn.webp"
+                            alt="Dawn Stone" class="textImage"> or having an Eevee exposed to sunlight with high
+                        friendship.</p>
+                    <p>Espeon's most recognizable features are its twin-tail and its forehead gem. It has very smooth
+                        pink fur. It has an average height of 0.9 m (2'11") and an average weight of 26.5 kg (58.4 lbs)
+                    </p>
+                    <p>Espeon is mostly found in clear, plain patches of grass during daytime, and is known to retreat
+                        into shelters during the night.</p>
+
                     <h3>Strike Espeon</h3>
                     <img src="Assets/Images/Eeveelutions/6_Espeon/Strike.webp" alt="Strike Espeon" class="speciesImage">
                     <p>A special form of Espeon. Rarely found in grasslands during daytime.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                     <div class="warningSign">
                         !!! HIGH VALUE TARGET // DESCRIPTION MISSING // !!!
                     </div>
 
                     <h3>Spirit Espeon</h3>
                     <img src="Assets/Images/Eeveelutions/6_Espeon/Spirit.webp" alt="Spirit Espeon" class="speciesImage">
-                    <p>A special form of Espeon. Found rarely amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <p>A special form of Espeon. Found rarely amongst the graves and tombstones of graveyards, It's
+                        nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                 </div>
 
                 <!-- LEAFEON -->
@@ -228,35 +331,51 @@
                     <h1>Leafeon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/7_Leafeon/Normal.webp" alt="Leafeon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Shiny.webp" alt="Shiny Leafeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Shiny.webp" alt="Shiny Leafeon"
+                            class="speciesImage">
                     </div>
-                    <p>Leafeon is the grass type evolution. This evolution is guaranteed upon an Eevee coming in contact with a Leaf Stone<img src="Assets/Images/EvolutionItems/Stone_Leaf.webp" alt="Leaf Stone" class="textImage"> or having Eevee level up near a giant moss stone.</p>
-                    <p>Leafeon's most recognizable features are its forehead leaf and its leaf-like ears and tail. It also has several smaller leaf-like structures attached to its body. It has an average height of 1 m (3'03") and an average weight of 25.5 kg (56.2 lbs)</p>
-                    <p>Leafeon is mostly found in dense forests and overgrown caves, but it's rarely been spotted wandering in swamps or flower fields.</p>
-                    
+                    <p>Leafeon is the grass type evolution. This evolution is guaranteed upon an Eevee coming in contact
+                        with a Leaf Stone<img src="Assets/Images/EvolutionItems/Stone_Leaf.webp" alt="Leaf Stone"
+                            class="textImage"> or having Eevee level up near a giant moss stone.</p>
+                    <p>Leafeon's most recognizable features are its forehead leaf and its leaf-like ears and tail. It
+                        also has several smaller leaf-like structures attached to its body. It has an average height of
+                        1 m (3'03") and an average weight of 25.5 kg (56.2 lbs)</p>
+                    <p>Leafeon is mostly found in dense forests and overgrown caves, but it's rarely been spotted
+                        wandering in swamps or flower fields.</p>
+
                     <h3>Seasonal Leafeons</h3>
                     <div class="formImages">
-                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Spring.webp" alt="Spring Leafeon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Summer.webp" alt="Summer Leafeon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Autumn.webp" alt="Autumn Leafeon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Winter.webp" alt="Winter Leafeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Spring.webp" alt="Spring Leafeon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Summer.webp" alt="Summer Leafeon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Autumn.webp" alt="Autumn Leafeon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/7_Leafeon/Winter.webp" alt="Winter Leafeon"
+                            class="speciesImage">
                     </div>
-                    <p>Special forms of Leafeon. Seasonal Leafeons are extremely rare. They're Leafeons who have adapted to the harsh conditions of different environments.</p>
-                    <p>Spring Leafeon has slightly brighter fur and pink leaves, Summer Leafeon has darker fur and brighter leaves, Autumn Leafeon has slightly darker fur and orange leaves, and Winter Leafeon has near-white fur and pine green leaves.</p>
+                    <p>Special forms of Leafeon. Seasonal Leafeons are extremely rare. They're Leafeons who have adapted
+                        to the harsh conditions of different environments.</p>
+                    <p>Spring Leafeon has slightly brighter fur and pink leaves, Summer Leafeon has darker fur and
+                        brighter leaves, Autumn Leafeon has slightly darker fur and orange leaves, and Winter Leafeon
+                        has near-white fur and pine green leaves.</p>
                     <p>Believed to be protectors of the seasons, hunters are skeptical in hunting them.</p>
 
                     <h3>Strike Leafeon</h3>
-                    <img src="Assets/Images/Eeveelutions/7_Leafeon/Strike.webp" alt="Strike Leafeon" class="speciesImage">
+                    <img src="Assets/Images/Eeveelutions/7_Leafeon/Strike.webp" alt="Strike Leafeon"
+                        class="speciesImage">
                     <p>A special form of Leafeon. Rarely found in dense forests during storms.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                     <div class="warningSign">
                         !!! HIGH VALUE TARGET // DESCRIPTION MISSING // !!!
                     </div>
 
                     <h3>Spirit Leafeon</h3>
-                    <img src="Assets/Images/Eeveelutions/7_Leafeon/Spirit.webp" alt="Spirit Leafeon" class="speciesImage">
-                    <p>A special form of Leafeon. Found rarely amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <img src="Assets/Images/Eeveelutions/7_Leafeon/Spirit.webp" alt="Spirit Leafeon"
+                        class="speciesImage">
+                    <p>A special form of Leafeon. Found rarely amongst the graves and tombstones of graveyards, It's
+                        nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                 </div>
 
                 <!-- GLACEON -->
@@ -264,16 +383,24 @@
                     <h1>Glaceon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/8_Glaceon/Normal.webp" alt="Glaceon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/8_Glaceon/Shiny.webp" alt="Shiny Glaceon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/8_Glaceon/Shiny.webp" alt="Shiny Glaceon"
+                            class="speciesImage">
                     </div>
-                    <p>Glaceon is the ice type evolution. This evolution is guaranteed upon an Eevee coming in contact with an Ice Stone<img src="Assets/Images/EvolutionItems/Stone_Ice.webp" alt="Ice Stone" class="textImage"> or having an Eevee level up near a giant frozen stone.</p>
-                    <p>Glaceon's most recognizable features are its ice shard crown and flat tail. It has 2 long, flat ribbon-like structures hanging from its crown. It has an average height of 0.8 m (2'07") and an average weight of 25.9 kg (57.1 lbs).</p>
-                    <p>Glaceon is mostly found in snowy or frozen environments like tundras, glaciers and arctic regions like frozen oceans.</p>
-                    
+                    <p>Glaceon is the ice type evolution. This evolution is guaranteed upon an Eevee coming in contact
+                        with an Ice Stone<img src="Assets/Images/EvolutionItems/Stone_Ice.webp" alt="Ice Stone"
+                            class="textImage"> or having an Eevee level up near a giant frozen stone.</p>
+                    <p>Glaceon's most recognizable features are its ice shard crown and flat tail. It has 2 long, flat
+                        ribbon-like structures hanging from its crown. It has an average height of 0.8 m (2'07") and an
+                        average weight of 25.9 kg (57.1 lbs).</p>
+                    <p>Glaceon is mostly found in snowy or frozen environments like tundras, glaciers and arctic regions
+                        like frozen oceans.</p>
+
                     <h3>Spirit Glaceon</h3>
-                    <img src="Assets/Images/Eeveelutions/8_Glaceon/Spirit.webp" alt="Spirit Glaceon" class="speciesImage">
-                    <p>A special form of Glaceon. Found rarely amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <img src="Assets/Images/Eeveelutions/8_Glaceon/Spirit.webp" alt="Spirit Glaceon"
+                        class="speciesImage">
+                    <p>A special form of Glaceon. Found rarely amongst the graves and tombstones of graveyards, It's
+                        nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                 </div>
 
                 <!-- SYLVEON -->
@@ -281,28 +408,39 @@
                     <h1>Sylveon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/9_Sylveon/Normal.webp" alt="Sylveon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/9_Sylveon/Shiny.webp" alt="Shiny Sylveon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/9_Sylveon/Shiny.webp" alt="Shiny Sylveon"
+                            class="speciesImage">
                     </div>
-                    <p>Sylveon is the fairy type evolution. This evolution is guaranteed upon maxing out an Eevee's friendship.</p>
-                    <p>Sylveon's most recognizable features are its 4 ribbons attached to bowties in pairs. It has an average height of 1 m (3'03") and an average weight of 23.5 kg (51.8 lbs).</p>
+                    <p>Sylveon is the fairy type evolution. This evolution is guaranteed upon maxing out an Eevee's
+                        friendship.</p>
+                    <p>Sylveon's most recognizable features are its 4 ribbons attached to bowties in pairs. It has an
+                        average height of 1 m (3'03") and an average weight of 23.5 kg (51.8 lbs).</p>
                     <p>Sylveon is mostly found in blooming areas like flower fields and flower forests.</p>
-                    
+
                     <h3>Spirit Sylveon</h3>
-                    <img src="Assets/Images/Eeveelutions/9_Sylveon/Spirit.webp" alt="Spirit Sylveon" class="speciesImage">
-                    <p>A special form of Sylveon. Found rarely amongst the graves and tombstones of graveyards, It's nearly always suspected to be the lingering spirit of a dead pokemon.</p>
-                    <p>// APPEARANCE DESCRIPTION MISSING //</p>
+                    <img src="Assets/Images/Eeveelutions/9_Sylveon/Spirit.webp" alt="Spirit Sylveon"
+                        class="speciesImage">
+                    <p>A special form of Sylveon. Found rarely amongst the graves and tombstones of graveyards, It's
+                        nearly always suspected to be the lingering spirit of a dead pokemon.</p>
+                    <div class="missingAppearanceSign">APPEARANCE DESCRIPTION MISSING</div>
                 </div>
 
                 <!-- INSECTEON -->
                 <div class="eeveelution Insecteon">
                     <h1>Insecteon</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/10_Insecteon/Normal.webp" alt="Insecteon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/10_Insecteon/Shiny.webp" alt="Shiny Insecteon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/10_Insecteon/Normal.webp" alt="Insecteon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/10_Insecteon/Shiny.webp" alt="Shiny Insecteon"
+                            class="speciesImage">
                     </div>
-                    <p>Insecteon is the bug type evolution. This evolution is guaranteed upon leveling an Eevee up near cattails in a swamp. Planting cattails yourself do count as long as they're in a swamp.</p>
-                    <p>Insecteon's most recognizable features are its antennae, small insect-like wings and its butterfly-shaped tail. It has an average height of 0.9 m (2'11") and an average weight of 19 kg (41.9 lbs).</p>
-                    <p>Insecteon lives around areas with lots of pollen and nectar while occasionally appearing around swamps.</p>
+                    <p>Insecteon is the bug type evolution. This evolution is guaranteed upon leveling an Eevee up near
+                        cattails in a swamp. Planting cattails yourself do count as long as they're in a swamp.</p>
+                    <p>Insecteon's most recognizable features are its antennae, small insect-like wings and its
+                        butterfly-shaped tail. It has an average height of 0.9 m (2'11") and an average weight of 19 kg
+                        (41.9 lbs).</p>
+                    <p>Insecteon lives around areas with lots of pollen and nectar while occasionally appearing around
+                        swamps.</p>
 
                     <div class="dataMissingSign">
                         ??? // SPECIAL FORM DATA UNKNOWN // ???
@@ -313,12 +451,18 @@
                 <div class="eeveelution Brawleon">
                     <h1>Brawleon</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/11_Brawleon/Normal.webp" alt="Brawleon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/11_Brawleon/Shiny.webp" alt="Shiny Brawleon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/11_Brawleon/Normal.webp" alt="Brawleon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/11_Brawleon/Shiny.webp" alt="Shiny Brawleon"
+                            class="speciesImage">
                     </div>
-                    <p>Brawleon is the fighting type evolution. This evolution is guaranteed upon leveling an Eevee that knows a fighting type move up. Due to Eevee being able to learn Double Kick, this is one of the most common eeveelutions.</p>
-                    <p>Brawleon's most recognizable features are its curly, squirrel-like tail and the cross on its face. It has an average height of 1.1 m (3'07") and an average weight of 34 kg (74.9 lbs).</p>
-                    <p>Brawleon is most common as a captured pokemon, but it can rarely be found anywhere that's not a freezing or scorching environment.</p>
+                    <p>Brawleon is the fighting type evolution. This evolution is guaranteed upon leveling an Eevee that
+                        knows a fighting type move up. Due to Eevee being able to learn Double Kick, this is one of the
+                        most common eeveelutions.</p>
+                    <p>Brawleon's most recognizable features are its curly, squirrel-like tail and the cross on its
+                        face. It has an average height of 1.1 m (3'07") and an average weight of 34 kg (74.9 lbs).</p>
+                    <p>Brawleon is most common as a captured pokemon, but it can rarely be found anywhere that's not a
+                        freezing or scorching environment.</p>
 
                     <div class="dataMissingSign">
                         ??? // SPECIAL FORM DATA UNKNOWN // ???
@@ -330,11 +474,16 @@
                     <h1>Veneon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/12_Veneon/Normal.webp" alt="Veneon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/12_Veneon/Shiny.webp" alt="Shiny Veneon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/12_Veneon/Shiny.webp" alt="Shiny Veneon"
+                            class="speciesImage">
                     </div>
-                    <p>Veneon is the poison type evolution. This evolution is guaranteed upon leveling an Eevee with high friendship up in a swamp.</p>
-                    <p>Veneon's most recognizable features are its spikes around its neck and the spiky markings on its face and back. It has an average height of 0.8 m (2'07") and an average weight of 25.8 kg (56.9 lbs).</p>
-                    <p>Veneon is most common in muddier areas of swamps, but it's also known to roam around edges of shallow bodies of water.</p>
+                    <p>Veneon is the poison type evolution. This evolution is guaranteed upon leveling an Eevee with
+                        high friendship up in a swamp.</p>
+                    <p>Veneon's most recognizable features are its spikes around its neck and the spiky markings on its
+                        face and back. It has an average height of 0.8 m (2'07") and an average weight of 25.8 kg (56.9
+                        lbs).</p>
+                    <p>Veneon is most common in muddier areas of swamps, but it's also known to roam around edges of
+                        shallow bodies of water.</p>
 
                     <div class="dataMissingSign">
                         ??? // SPECIAL FORM DATA UNKNOWN // ???
@@ -346,10 +495,15 @@
                     <h1>Dusteon</h1>
                     <div class="images">
                         <img src="Assets/Images/Eeveelutions/13_Dusteon/Normal.webp" alt="Dusteon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/13_Dusteon/Shiny.webp" alt="Shiny Dusteon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/13_Dusteon/Shiny.webp" alt="Shiny Dusteon"
+                            class="speciesImage">
                     </div>
-                    <p>Dusteon is the ground type evolution. This evolution is guaranteed upon Eevee reaching high friendship while knowing a ground type move. Since Eevee can learn Sand Attack at quite a young age, this is one of the most common eeveelutions.</p>
-                    <p>Dusteon's most recognizable features is its fluffy tail which is holding a bone. It has an average height of 1 m (3'03") and an average weight of 32.8 kg (72.3 lbs) mostly because of its bone.</p>
+                    <p>Dusteon is the ground type evolution. This evolution is guaranteed upon Eevee reaching high
+                        friendship while knowing a ground type move. Since Eevee can learn Sand Attack at quite a young
+                        age, this is one of the most common eeveelutions.</p>
+                    <p>Dusteon's most recognizable features is its fluffy tail which is holding a bone. It has an
+                        average height of 1 m (3'03") and an average weight of 32.8 kg (72.3 lbs) mostly because of its
+                        bone.</p>
                     <p>Dusteon is mostly found underground close to the surface, but disappears for winter.</p>
 
                     <div class="dataMissingSign">
@@ -361,46 +515,67 @@
                 <div class="eeveelution Breezeon">
                     <h1>Breezeon</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/14_Breezeon/Normal.webp" alt="Breezeon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/14_Breezeon/Shiny.webp" alt="Shiny Breezeon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/14_Breezeon/Normal.webp" alt="Breezeon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/14_Breezeon/Shiny.webp" alt="Shiny Breezeon"
+                            class="speciesImage">
                     </div>
-                    <p>Breezeon is the flying type evolution. Guaranteeing the evolution of an Eevee into a Breezeon is the most risky. This evolution is guaranteed by making an Eevee fall for an extended period of time during heavy winds on mountains.</p>
-                    <p>Breezeon's most recognizable features are its wings, fluffy tail and flareon-like fluff around its neck. It has an average height of 1 m (3'03") and an average weight of 16.5 kg (36.4 lbs).</p>
+                    <p>Breezeon is the flying type evolution. Guaranteeing the evolution of an Eevee into a Breezeon is
+                        the most risky. This evolution is guaranteed by making an Eevee fall for an extended period of
+                        time during heavy winds on mountains.</p>
+                    <p>Breezeon's most recognizable features are its wings, fluffy tail and flareon-like fluff around
+                        its neck. It has an average height of 1 m (3'03") and an average weight of 16.5 kg (36.4 lbs).
+                    </p>
                     <p>Breezeon is mostly found flying through the air or rarely on the ground on high mountains.</p>
 
                     <h3>Alolan Breezeon</h3>
-                    <img src="Assets/Images/Eeveelutions/14_Breezeon/Alolan.webp" alt="Alolan Breezeon" class="speciesImage">
+                    <img src="Assets/Images/Eeveelutions/14_Breezeon/Alolan.webp" alt="Alolan Breezeon"
+                        class="speciesImage">
                     <p>A special form of Breezeon. Found around the Alola region, it uses its ears as wings.</p>
-                    <p>Alolan Breezeon is much less fluffy than a normal breezeon, giving it an easier time soaring through the skies.</p>
+                    <p>Alolan Breezeon is much less fluffy than a normal breezeon, giving it an easier time soaring
+                        through the skies.</p>
                 </div>
 
                 <!-- OBSIDEON -->
                 <div class="eeveelution Obsideon">
                     <h1>Obsideon</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/15_Obsideon/Normal.webp" alt="Obsideon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/15_Obsideon/Shiny.webp" alt="Shiny Obsideon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/15_Obsideon/Normal.webp" alt="Obsideon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/15_Obsideon/Shiny.webp" alt="Shiny Obsideon"
+                            class="speciesImage">
                     </div>
-                    <p>Obsideon is the rock type evolution. This evolution is guaranteed upon an Eevee being exposed to the environment of a deep cave with high friendship.</p>
-                    <p>Obsideon's most recognizable due to its dinosaur-like appearance. It has an average height of 0.8 m (2'07") and an average weight of 42 kg (92.6 lbs).</p>
-                    <p>Obsideon is mostly found in deep caves, most commonly around underwater lakes. Some witnesses claim to have seen obsideons swimming in lava as well.</p>
+                    <p>Obsideon is the rock type evolution. This evolution is guaranteed upon an Eevee being exposed to
+                        the environment of a deep cave with high friendship.</p>
+                    <p>Obsideon's most recognizable due to its dinosaur-like appearance. It has an average height of 0.8
+                        m (2'07") and an average weight of 42 kg (92.6 lbs).</p>
+                    <p>Obsideon is mostly found in deep caves, most commonly around underwater lakes. Some witnesses
+                        claim to have seen obsideons swimming in lava as well.</p>
 
                     <h3>Alolan Obsideon</h3>
-                    <img src="Assets/Images/Eeveelutions/15_Obsideon/Alolan.webp" alt="Alolan Obsideon" class="speciesImage">
+                    <img src="Assets/Images/Eeveelutions/15_Obsideon/Alolan.webp" alt="Alolan Obsideon"
+                        class="speciesImage">
                     <p>A special form of Obsideon. Found around the Alola region, it has a much more rocky exterior.</p>
-                    <p>Alolan Obsideon has a much longer rocky tail and a coat of rocks, giving it much higher defense than the normal one.</p>
+                    <p>Alolan Obsideon has a much longer rocky tail and a coat of rocks, giving it much higher defense
+                        than the normal one.</p>
                 </div>
 
                 <!-- SKULLEON -->
                 <div class="eeveelution Skulleon">
                     <h1>Skulleon</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/16_Skulleon/Normal.webp" alt="Skulleon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/16_Skulleon/Shiny.webp" alt="Shiny Skulleon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/16_Skulleon/Normal.webp" alt="Skulleon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/16_Skulleon/Shiny.webp" alt="Shiny Skulleon"
+                            class="speciesImage">
                     </div>
-                    <p>Skulleon is the ghost type evolution. This evolution is guaranteed upon using TM30 Shadow Ball on an Eevee.</p>
-                    <p>Skulleon's most recognizable features are its bone structures around its body and neck and the skull on its head. It has an average height of 0.9 m (2'11") and it's near-weightless with an average weight of 3 kg (6.6 lbs).</p>
-                    <p>Skulleon is mostly found in deep caves with very little to no light. As much as it hates the light, it can rarely be seen getting along with obsideons near or in lava lakes.</p>
+                    <p>Skulleon is the ghost type evolution. This evolution is guaranteed upon using TM30 Shadow Ball on
+                        an Eevee.</p>
+                    <p>Skulleon's most recognizable features are its bone structures around its body and neck and the
+                        skull on its head. It has an average height of 0.9 m (2'11") and it's near-weightless with an
+                        average weight of 3 kg (6.6 lbs).</p>
+                    <p>Skulleon is mostly found in deep caves with very little to no light. As much as it hates the
+                        light, it can rarely be seen getting along with obsideons near or in lava lakes.</p>
 
                     <div class="dataMissingSign">
                         ??? // SPECIAL FORM DATA UNKNOWN // ???
@@ -411,12 +586,17 @@
                 <div class="eeveelution Eterneon">
                     <h1>Eterneon</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/17_Eterneon/Normal.webp" alt="Eterneon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/17_Eterneon/Shiny.webp" alt="Shiny Eterneon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/17_Eterneon/Normal.webp" alt="Eterneon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/17_Eterneon/Shiny.webp" alt="Shiny Eterneon"
+                            class="speciesImage">
                     </div>
-                    <p>Eterneon is the dragon type evolution. This evolution is guaranteed upon leveling an Eevee holding a Dragon Gem up in the mountains.</p>
-                    <p>Eterneon's most recognizable for its scales, long tail and maine. It has an average height of 1.1 m (3'07") and an average weight of 38 kg (83.8 lbs).</p>
-                    <p>Eterneon is mostly found around mountains at night, but miners claim to have seen them around large underwater lakes as well.</p>
+                    <p>Eterneon is the dragon type evolution. This evolution is guaranteed upon leveling an Eevee
+                        holding a Dragon Gem up in the mountains.</p>
+                    <p>Eterneon's most recognizable for its scales, long tail and maine. It has an average height of 1.1
+                        m (3'07") and an average weight of 38 kg (83.8 lbs).</p>
+                    <p>Eterneon is mostly found around mountains at night, but miners claim to have seen them around
+                        large underwater lakes as well.</p>
 
                     <div class="dataMissingSign">
                         ??? // SPECIAL FORM DATA UNKNOWN // ???
@@ -427,12 +607,19 @@
                 <div class="eeveelution Glaiveon">
                     <h1>Glaiveon</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/18_Glaiveon/Normal.webp" alt="Glaiveon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/18_Glaiveon/Shiny.webp" alt="Shiny Glaiveon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/18_Glaiveon/Normal.webp" alt="Glaiveon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/18_Glaiveon/Shiny.webp" alt="Shiny Glaiveon"
+                            class="speciesImage">
                     </div>
-                    <p>Glaiveon is the steel type evolution. This evolution is the rarest to happen, occuring rarely when an Eevee gets hit with a steel-type move. The move that has the highest chance to evolve it is Iron Tail.</p>
-                    <p>Glaiveon's most recognizable features are its unique markings on its body and its sharp, blade-like tail. It has an average height of 0.9 m (2'11") and an average weight of 48.5 kg (106.9 lbs).</p>
-                    <p>Glaiveon is mostly found captured in factories, but there have been a few times explorers saw wild Glaiveons in abandoned ones.</p>
+                    <p>Glaiveon is the steel type evolution. This evolution is the rarest to happen, occuring rarely
+                        when an Eevee gets hit with a steel-type move. The move that has the highest chance to evolve it
+                        is Iron Tail.</p>
+                    <p>Glaiveon's most recognizable features are its unique markings on its body and its sharp,
+                        blade-like tail. It has an average height of 0.9 m (2'11") and an average weight of 48.5 kg
+                        (106.9 lbs).</p>
+                    <p>Glaiveon is mostly found captured in factories, but there have been a few times explorers saw
+                        wild Glaiveons in abandoned ones.</p>
 
                     <div class="dataMissingSign">
                         ??? // SPECIAL FORM DATA UNKNOWN // ???
@@ -443,15 +630,25 @@
                 <div class="eeveelution Galacteon">
                     <h1>Galacteon</h1>
                     <div class="images">
-                        <img src="Assets/Images/Eeveelutions/19_Galacteon/Normal.webp" alt="Galacteon" class="speciesImage">
-                        <img src="Assets/Images/Eeveelutions/19_Galacteon/Shiny.webp" alt="Shiny Galacteon" class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/19_Galacteon/Normal.webp" alt="Galacteon"
+                            class="speciesImage">
+                        <img src="Assets/Images/Eeveelutions/19_Galacteon/Shiny.webp" alt="Shiny Galacteon"
+                            class="speciesImage">
                     </div>
-                    <p>Galacteon is a cosmic type pokemon. Not much is known about them. There have only been 3 real encounters recorded. Attempts to capture and study them have been heavily unsuccessful.</p>
-                    <p>It's highly theorized that Galacteons are protectors of space. While their evolution line is unknown, their Eevee like appearance suggests they could be an eeveelution, though it's not confirmed.</p>
-                    <p>Galacteons are extremely rarely found roaming around anywhere on the planet. A few space missions revealed that there's more of them out there, as there have been a total of 7 sightings of Galacteons floating through space.</p>
+                    <p>Galacteon is a cosmic type pokemon. Not much is known about them. There have only been 3 real
+                        encounters recorded. Attempts to capture and study them have been heavily unsuccessful.</p>
+                    <p>It's highly theorized that Galacteons are protectors of space. While their evolution line is
+                        unknown, their Eevee like appearance suggests they could be an eeveelution, though it's not
+                        confirmed.</p>
+                    <p>Galacteons are extremely rarely found roaming around anywhere on the planet. A few space missions
+                        revealed that there's more of them out there, as there have been a total of 7 sightings of
+                        Galacteons floating through space.</p>
 
                     <div class="warningSign">
-                        !!! DO NOT ATTEMPT TO ENGAGE A GALACTEON WITHOUT KNOWING WHAT YOU'RE UP AGAINST. GALACTEONS ARE ONE OF THE FEW POKEMON SPECIES KNOWN TO BE ABLE TO BREAK OUT OF MASTER BALLS. IT'S ALSO BEEN SEEN USING MOVES UNKNOWN TO HUMANKIND. IF YOU EVER SEE ONE, REPORT THE SIGHTING AND PREFERRABLY AVOID THAT AREA FOR A WHILE. !!!
+                        !!! DO NOT ATTEMPT TO ENGAGE A GALACTEON WITHOUT KNOWING WHAT YOU'RE UP AGAINST. GALACTEONS ARE
+                        ONE OF THE FEW POKEMON SPECIES KNOWN TO BE ABLE TO BREAK OUT OF MASTER BALLS. IT'S ALSO BEEN
+                        SEEN USING MOVES UNKNOWN TO HUMANKIND. IF YOU EVER SEE ONE, REPORT THE SIGHTING AND PREFERRABLY
+                        AVOID THAT AREA FOR A WHILE. !!!
                     </div>
                 </div>
             </div>
@@ -463,19 +660,19 @@
 
         </div>
 
-        
+
         <!-- INVITE SECTION -->
         <section class="joinDiv card">
             <div class="card-header">
                 <h2>Come Join Us!</h2>
             </div>
             <p style="text-align: center;">If we caught your attention, make sure to join our server.</p>
-            
+
             <center>
                 <a href="https://discord.gg/6g2eM5gRdA" target="_blank">
                     <img src="Imgs/DiscordInvite.png" alt="Eeveelution Kingdom Invite" class="invite-image">
                 </a>
-                
+
                 <a href="https://discord.gg/6g2eM5gRdA" target="_blank" class="join-btn">
                     JOIN OUR SERVER
                 </a>
@@ -484,48 +681,112 @@
 
     </main>
 
+    <!-- NEW: The Lightbox Modal (Hidden by default) -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- SCRIPT FOR MOBILE MENU, LIGHTBOX & SLIDESHOW -->
     <script>
+        // --- MOBILE MENU LOGIC ---
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const sideMenu = document.getElementById('sideMenu');
+
+        if (hamburgerBtn && sideMenu) {
+            hamburgerBtn.addEventListener('click', () => {
+                sideMenu.classList.toggle('open');
+                hamburgerBtn.classList.toggle('active');
+            });
+
+            const navLinks = document.querySelectorAll('.nav-item');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    sideMenu.classList.remove('open');
+                    hamburgerBtn.classList.remove('active');
+                });
+            });
+        }
+
+        // --- SLIDESHOW LOGIC ---
         let slideIndex = 1;
-        
         showSlides(slideIndex);
 
-        /* --- TURNING SLIDES --- */
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("eeveelution");
+            if (slides.length === 0) return; // Prevent error if not on eeveelutions page
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
+            slides[slideIndex - 1].style.display = "block";
+        }
 
-        /* --- SHOWING SLIDES --- */
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("eeveelution");
+        // --- MOBILE RESIZE CHECK ---
+        const desktopBtns = document.querySelectorAll('.desktop-only');
+        const mobileControls = document.querySelector('.mobile-controls');
 
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
+        function checkMobile() {
+            if (window.innerWidth <= 900) {
+                if (desktopBtns) desktopBtns.forEach(btn => btn.style.display = 'none');
+                if (mobileControls) mobileControls.style.display = 'flex';
+            } else {
+                if (desktopBtns) desktopBtns.forEach(btn => btn.style.display = 'flex');
+                if (mobileControls) mobileControls.style.display = 'none';
+            }
+        }
 
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
+        window.addEventListener('resize', checkMobile);
+        checkMobile();
+
+        // --- LIGHTBOX LOGIC ---
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var images = document.querySelectorAll('.speciesImage');
+
+        if (modal && modalImg) {
+            images.forEach(img => {
+                img.onclick = function () {
+                    modal.style.display = "flex";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
                 }
+            });
 
-                slides[slideIndex-1].style.display = "block";  
-            }
-
-        /* --- BUTTONS --- */
-            const desktopBtns = document.querySelectorAll('.desktop-only');
-            const mobileControls = document.querySelector('.mobile-controls');
-
-        /* --- MOBILE --- */
-            function checkMobile() {
-                if (window.innerWidth <= 900) {
-                    desktopBtns.forEach(btn => btn.style.display = 'none');
-                    mobileControls.style.display = 'flex';
-                } else {
-                    desktopBtns.forEach(btn => btn.style.display = 'flex');
-                    mobileControls.style.display = 'none';
+            var span = document.getElementsByClassName("close-modal")[0];
+            if (span) {
+                span.onclick = function () {
+                    modal.style.display = "none";
                 }
             }
-        
-            window.addEventListener('resize', checkMobile);
-            checkMobile();
+
+            modal.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+
+        // Resize Animation Stopper (Fixes the weird animation on window resizing)
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            document.body.classList.add("resize-animation-stopper");
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                document.body.classList.remove("resize-animation-stopper");
+            }, 400);
+        });
     </script>
 </body>
+
 </html>

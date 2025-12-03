@@ -1,508 +1,44 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veelution Campfire - Moves & Abilities</title>
-    <link rel="icon" href="Imgs/Eeveelutions.png">
-
-    <style>
-        /* --- 1. FONTS & VARIABLES --- */
-        @font-face {
-            font-family: 'Ketchum';
-            src: url('Assets/Fonts/Ketchum.otf') format('opentype'),
-                url('Assets/Fonts/Ketchum.ttf') format('truetype');
-            font-weight: normal;
-        }
-
-        :root {
-            --font-main: 'Ketchum', 'Segoe UI', Tahoma, sans-serif;
-            --font-body: 'Segoe UI', Tahoma, sans-serif;
-            --primary: #e7a05d;
-            --secondary: #5865F2;
-            --bg-dark: #0a0a0c;
-            --bg-glass: rgba(30, 31, 34, 0.85);
-            --bg-card: rgba(43, 45, 49, 0.7);
-            --sidebar-width: 260px;
-            --text-muted: #b5bac1;
-
-            /* Move Categories */
-            --cat-phys: #ff9f43;
-            --cat-spec: #54a0ff;
-            --cat-stat: #a0a0a0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: var(--font-body);
-            background-color: var(--bg-dark);
-            color: white;
-            display: flex;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        /* --- SIDEBAR --- */
-        .sideDiv {
-            width: var(--sidebar-width);
-            background: #1e1f22;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            padding: 2rem 1rem;
-            gap: 1rem;
-            z-index: 100;
-            border-right: 1px solid #333;
-        }
-
-        .nav-item {
-            padding: 1rem;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-            position: relative;
-            background: #2b2d31;
-        }
-
-        .nav-item h2 {
-            font-family: var(--font-main);
-            font-size: 1.5rem;
-            letter-spacing: 1px;
-            z-index: 2;
-        }
-
-        .nav-item.Active {
-            background: linear-gradient(90deg, rgba(231, 160, 93, 0.2), transparent);
-            border-left: 4px solid var(--primary);
-        }
-
-        .nav-item.Active h2 {
-            color: var(--primary);
-        }
-
-        .nav-item:hover {
-            transform: translateX(5px);
-            background: #35373c;
-        }
-
-        /* --- MAIN CONTENT --- */
-        .main-content {
-            margin-left: var(--sidebar-width);
-            width: calc(100% - var(--sidebar-width));
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background:
-                radial-gradient(circle at top right, #1a1a20 0%, transparent 40%),
-                radial-gradient(circle at bottom left, #15100d 0%, var(--bg-dark) 40%);
-        }
-
-        .content-container {
-            width: 100%;
-            max-width: 1200px;
-            padding: 4rem 2rem;
-        }
-
-        /* --- SECTIONS HEADERS --- */
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-header h1 {
-            font-family: var(--font-main);
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .section-header p {
-            color: var(--text-muted);
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        /* --- TYPE SLIDESHOW (NEW STYLE) --- */
-        .slideshow-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 20px;
-            width: 100%;
-            max-width: 1000px;
-            margin: 0 auto 4rem auto;
-            min-height: 400px;
-        }
-
-        .type-slide {
-            flex-grow: 1;
-            background: var(--bg-glass);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 2.5rem;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-            animation: fadeEffect 0.5s;
-            display: none;
-            /* Hidden by default */
-        }
-
-        @keyframes fadeEffect {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Navigation Buttons */
-        .switchButton {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s;
-            flex-shrink: 0;
-            margin-top: 150px;
-            /* Vertically center relative to card */
-        }
-
-        .switchButton:hover {
-            background: var(--primary);
-            box-shadow: 0 0 20px var(--primary);
-            transform: scale(1.1);
-        }
-
-        .switchButtonIcon {
-            width: 24px;
-            height: 24px;
-            filter: invert(1);
-        }
-
-        /* Type Content Styling */
-        .type-main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .type-main h3 {
-            font-family: var(--font-main);
-            font-size: 2.5rem;
-            color: #fff;
-        }
-
-        .type-icon-lg {
-            width: 80px;
-            height: 80px;
-        }
-
-        .effectiveness-row {
-            margin-bottom: 20px;
-        }
-
-        .eff-label {
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .eff-icons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            min-height: 40px;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.2);
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        .mini-type {
-            width: 90px;
-            height: auto;
-            border-radius: 4px;
-            transition: transform 0.2s;
-        }
-
-        .mini-type:hover {
-            transform: scale(1.1);
-        }
-
-        .empty-text {
-            font-size: 1rem;
-            color: #666;
-            font-style: italic;
-            width: 100%;
-            text-align: center;
-        }
-
-
-        /* --- MOVES GRID --- */
-        .moves-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-            margin-bottom: 4rem;
-        }
-
-        .move-card {
-            background: var(--bg-card);
-            border-radius: 15px;
-            overflow: hidden;
-            border: 1px solid #333;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .move-header {
-            padding: 1.5rem;
-            background: rgba(0, 0, 0, 0.2);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .move-title h2 {
-            font-family: var(--font-main);
-            font-size: 1.6rem;
-            color: #fff;
-        }
-
-        .move-type-icon {
-            width: 35px;
-        }
-
-        .move-stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            padding: 1rem 1.5rem;
-            background: rgba(255, 255, 255, 0.02);
-        }
-
-        .stat-badge {
-            font-size: 0.9rem;
-            color: #ccc;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .cat-badge {
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            color: #222;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .cat-status {
-            background: var(--cat-stat);
-        }
-
-        .cat-special {
-            background: var(--cat-spec);
-        }
-
-        .cat-physical {
-            background: var(--cat-phys);
-        }
-
-        .cat-badge img {
-            width: 16px;
-            height: 16px;
-            filter: brightness(0.2);
-        }
-
-        .move-desc {
-            padding: 1.5rem;
-            font-size: 1rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        /* --- ABILITIES --- */
-        .ability-card {
-            background: linear-gradient(145deg, #2b2d31, #1e1f22);
-            border: 1px solid var(--primary);
-            border-radius: 20px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .ability-header {
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 1rem;
-        }
-
-        .ability-header h2 {
-            font-family: var(--font-main);
-            font-size: 2.2rem;
-            color: var(--primary);
-        }
-
-        .form-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 2rem;
-        }
-
-        .form-box {
-            flex: 1;
-            min-width: 300px;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .form-box h3 {
-            color: white;
-            margin-bottom: 5px;
-            font-family: var(--font-main);
-            letter-spacing: 1px;
-        }
-
-        .form-box img {
-            max-height: 150px;
-            margin: 15px auto;
-            border-radius: 8px;
-            border: 1px solid #444;
-        }
-
-        /* --- FOOTER --- */
-        .joinDiv {
-            width: 100%;
-            text-align: center;
-            background: #18191c;
-            padding: 3rem 1rem;
-            margin-top: auto;
-            border-top: 1px solid #333;
-        }
-
-        .joinDiv a {
-            display: inline-block;
-            margin-top: 1rem;
-            background-color: var(--secondary);
-            color: white;
-            padding: 1rem 3rem;
-            border-radius: 50px;
-            font-family: var(--font-main);
-            font-size: 1.5rem;
-            transition: all 0.2s;
-        }
-
-        .joinDiv a:hover {
-            transform: scale(1.05);
-            background-color: #4752c4;
-        }
-
-        /* --- RESPONSIVE --- */
-        @media (max-width: 900px) {
-            body {
-                flex-direction: column;
-            }
-
-            .sideDiv {
-                width: 100%;
-                height: auto;
-                position: relative;
-                flex-direction: row;
-                overflow-x: auto;
-                padding: 1rem;
-            }
-
-            .nav-item {
-                min-width: 140px;
-            }
-
-            .main-content {
-                margin-left: 0;
-                width: 100%;
-            }
-
-            .type-grid,
-            .moves-grid {
-                grid-template-columns: 1fr;
-            }
-
-            /* Mobile Slideshow */
-            .slideshow-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .mobile-controls {
-                display: flex;
-                gap: 20px;
-                order: -1;
-                margin-bottom: 20px;
-            }
-
-            .desktop-only {
-                display: none;
-            }
-
-            .switchButton {
-                margin-top: 0;
-            }
-        }
-    </style>
+    <title>Veelution Campfire - Moves</title>
+    <link rel="icon" href="Assets/Images/Campfire.webp">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Sidebar -->
-    <aside class="sideDiv">
-        <a href="newIndex.html">
+    <!-- MOBILE HEADER (Visible on Phone) -->
+    <div class="mobile-header">
+        <a href="#" class="mobile-logo-container">
+            <img src="Assets/Images/Campfire.webp" alt="Logo">
+            <span class="mobile-logo-text">Eeveelution Campfire</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sideDiv" id="sideMenu">
+        <!-- DESKTOP LOGO -->
+        <div class="sidebar-header">
+            <img src="Assets/Images/Campfire.webp" alt="Eeveelution Campfire">
+            <h3>Eeveelution Campfire</h3>
+        </div>
+
+        <a href="index.html">
             <div class="nav-item">
                 <h2>Home</h2>
             </div>
         </a>
-        <a href="newEeveelutions.html">
+        <a href="eeveelutions.html">
             <div class="nav-item">
                 <h2>Eeveelutions</h2>
             </div>
@@ -521,6 +57,14 @@
 
     <main class="main-content">
 
+        <div class="welcomeDiv">
+            <div class="nameDiv">
+                <img src="Assets/Images/Campfire.webp" alt="Campfire Icon">
+                <h1>Eeveelution Campfire</h1>
+                <h2>Moves</h2>
+            </div>
+        </div>
+
         <div class="content-container">
 
             <div class="section-header">
@@ -529,7 +73,7 @@
                 <p>This chart includes custom types as well.</p>
             </div>
 
-            <div class="slideshow-container">
+            <div class="type-container">
 
                 <div class="switchButton desktop-only" onclick="plusSlides(-1)">
                     <img src="Assets/Images/fast-forward.webp" class="switchButtonIcon"
@@ -1130,7 +674,7 @@
 
             <div class="moves-grid">
 
-                <div class="move-card">
+                <div class="move-card grass">
                     <div class="move-header">
                         <div class="move-title">
                             <h2>Leaf Sprint</h2>
@@ -1151,7 +695,7 @@
                     </div>
                 </div>
 
-                <div class="move-card">
+                <div class="move-card normal">
                     <div class="move-header">
                         <div class="move-title">
                             <h2>Lightweight</h2>
@@ -1171,7 +715,7 @@
                     </div>
                 </div>
 
-                <div class="move-card">
+                <div class="move-card water">
                     <div class="move-header">
                         <div class="move-title">
                             <h2>Ultra Hydropump</h2>
@@ -1192,7 +736,7 @@
                     </div>
                 </div>
 
-                <div class="move-card" style="border-color: #a29bfe;">
+                <div class="move-card cosmic">
                     <div class="move-header">
                         <div class="move-title">
                             <h2>Core Collapse</h2>
@@ -1213,7 +757,7 @@
                     </div>
                 </div>
 
-                <div class="move-card">
+                <div class="move-card cosmic">
                     <div class="move-header">
                         <div class="move-title">
                             <h2>Star Shooter</h2>
@@ -1234,7 +778,7 @@
                     </div>
                 </div>
 
-                <div class="move-card">
+                <div class="move-card cosmic">
                     <div class="move-header">
                         <div class="move-title">
                             <h2>Cosmic Fang</h2>
@@ -1254,7 +798,7 @@
                     </div>
                 </div>
 
-                <div class="move-card">
+                <div class="move-card cosmic">
                     <div class="move-header">
                         <div class="move-title">
                             <h2>Supernova</h2>
@@ -1274,7 +818,7 @@
                     </div>
                 </div>
 
-                <div class="move-card">
+                <div class="move-card cosmic">
                     <div class="move-header">
                         <div class="move-title">
                             <h2>Asteroid Rain</h2>
@@ -1295,60 +839,6 @@
                 </div>
             </div>
 
-            <!-- Abilities Section -->
-            <div class="section-header">
-                <h1>Custom Abilities</h1>
-                <p>Special traits acquired through evolution or training.</p>
-            </div>
-
-            <div class="ability-card">
-                <div class="ability-header">
-                    <h2>Formswitch</h2>
-                    <p style="color: #ccc;">Allows the pokemon to switch forms at will. There are currently 2 forms
-                        registered.</p>
-                </div>
-
-                <div class="form-container">
-                    <div class="form-box">
-                        <h3>Form: Berserk</h3>
-                        <p style="color:var(--text-muted); font-size: 0.9rem;">Calling: Transform</p>
-                        <img src="Assets/Images/Icons/Abilities/Berserk.webp" alt="Berserk">
-                        <p style="text-align: left; font-size: 0.9rem; line-height: 1.6; color: #ccc;">
-                            • All stats +50%<br>
-                            • Move Power +50%<br>
-                            • Max HP +200%
-                        </p>
-                    </div>
-                    <div class="form-box">
-                        <h3>Form: Ultra</h3>
-                        <p style="color:var(--text-muted); font-size: 0.9rem;">Calling: Ultrify</p>
-                        <img src="Assets/Images/Icons/Abilities/Ultrify.webp" alt="Ultrify">
-                        <p style="text-align: left; font-size: 0.9rem; line-height: 1.6; color: #ccc;">
-                            • All stats +200%<br>
-                            • Move Power +300%<br>
-                            • Max HP +1100%
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ability-card">
-                <div class="ability-header">
-                    <h2>Shellshift</h2>
-                </div>
-                <p>Allows the pokemon to devolve for 30 minutes. While devolved, the pokemon is unable to evolve into
-                    anything else.</p>
-            </div>
-
-            <div class="ability-card">
-                <div class="ability-header">
-                    <h2>My Creations</h2>
-                </div>
-                <p>The pokemon heals 17% hp each turn.</p>
-                <p style="margin-top: 10px;">If the pokemon is the last of its team, Attack is increased by 500% for 5
-                    turns and revives all fallen allies to 50% health. (No effect on "Core Collapse")</p>
-            </div>
-
         </div>
 
         <div class="joinDiv">
@@ -1357,12 +847,33 @@
                 <img src="Imgs/DiscordInvite.png" alt="Discord Invite"
                     style="max-width: 300px; margin: 0 auto; border-radius: 10px;">
             </div>
-            <a href="https://discord.gg/hmtf5uqtwY" target="_blank">JOIN SERVER</a>
+            <a href="https://discord.gg/6g2eM5gRdA" target="_blank">JOIN SERVER</a>
         </div>
 
     </main>
 
+    <!-- SCRIPT FOR MOBILE MENU, LIGHTBOX & SLIDESHOW -->
     <script>
+        // --- MOBILE MENU LOGIC ---
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const sideMenu = document.getElementById('sideMenu');
+
+        if (hamburgerBtn && sideMenu) {
+            hamburgerBtn.addEventListener('click', () => {
+                sideMenu.classList.toggle('open');
+                hamburgerBtn.classList.toggle('active');
+            });
+
+            const navLinks = document.querySelectorAll('.nav-item');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    sideMenu.classList.remove('open');
+                    hamburgerBtn.classList.remove('active');
+                });
+            });
+        }
+
+        // --- SLIDESHOW LOGIC ---
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -1373,6 +884,8 @@
         function showSlides(n) {
             let i;
             let slides = document.getElementsByClassName("type-slide");
+            if (slides.length === 0) return; // Prevent error if not on moves page
+
             if (n > slides.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = slides.length }
 
@@ -1382,22 +895,32 @@
             slides[slideIndex - 1].style.display = "block";
         }
 
-        // Mobile check to show/hide controls
+        // --- MOBILE RESIZE CHECK ---
         const desktopBtns = document.querySelectorAll('.desktop-only');
         const mobileControls = document.querySelector('.mobile-controls');
 
         function checkMobile() {
             if (window.innerWidth <= 900) {
-                desktopBtns.forEach(btn => btn.style.display = 'none');
-                mobileControls.style.display = 'flex';
+                if (desktopBtns) desktopBtns.forEach(btn => btn.style.display = 'none');
+                if (mobileControls) mobileControls.style.display = 'flex';
             } else {
-                desktopBtns.forEach(btn => btn.style.display = 'flex');
-                mobileControls.style.display = 'none';
+                if (desktopBtns) desktopBtns.forEach(btn => btn.style.display = 'flex');
+                if (mobileControls) mobileControls.style.display = 'none';
             }
         }
 
         window.addEventListener('resize', checkMobile);
         checkMobile(); // Run on load
+
+        // Resize Animation Stopper (Fixes the weird animation on window resizing)
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            document.body.classList.add("resize-animation-stopper");
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                document.body.classList.remove("resize-animation-stopper");
+            }, 400);
+        });
     </script>
 </body>
 
