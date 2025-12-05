@@ -1,350 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veelution Campfire - Members</title>
+    <link rel="icon" href="Assets/Images/Campfire.webp">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <title>Eeveelution Family - Members</title>
-    <link rel="icon" href="Imgs/Eeveelutions.png">
 </head>
+
 <body>
-    <nav>
-        <div class="navbody eeveelutiontext">
-            <table style="width: 100%; max-height: 75px;">
-                <tr>
-                    <td style="width:65%; overflow: hidden; max-height: 75px; display: flexbox; flex-wrap: nowrap;">
-                        <div class="titlenlogo">
-                            <a href="index.html"><img src="Imgs/Eeveelutions.png" alt="Veelutions" title="Eeveelutions" class="navlogo"></a>
-                            <h2 class="title">Eeveelution Family</h2>
+
+    <!-- MOBILE HEADER (Visible on Phone) -->
+    <div class="mobile-header">
+        <a href="#" class="mobile-logo-container">
+            <img src="Assets/Images/Campfire.webp" alt="Logo">
+            <span class="mobile-logo-text">Eeveelution Campfire</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sideDiv" id="sideMenu">
+
+        <!-- DESKTOP LOGO -->
+        <div class="sidebar-header">
+            <img src="Assets/Images/Campfire.webp" alt="Eeveelution Campfire">
+            <h3>Eeveelution Campfire</h3>
+        </div>
+
+        <a href="index.html">
+            <div class="nav-item">
+                <h2>Home</h2>
+            </div>
+        </a>
+        <a href="eeveelutions.html">
+            <div class="nav-item">
+                <h2>Eeveelutions</h2>
+            </div>
+        </a>
+        <a href="moves.html">
+            <div class="nav-item">
+                <h2>Moves</h2>
+            </div>
+        </a>
+        <a href="abilities.html">
+            <div class="nav-item">
+                <h2>Abilities</h2>
+            </div>
+        </a>
+        <a href="#">
+            <div class="nav-item Active">
+                <h2>Members</h2>
+            </div>
+        </a>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="welcomeDiv">
+            <div class="nameDiv">
+                <img src="Assets/Images/Campfire.webp" alt="Campfire Icon">
+                <h1>Eeveelution Campfire</h1>
+                <h2>Community Members</h2>
+            </div>
+        </div>
+
+        <div class="content-container">
+
+            <!-- MAIN STAFF HEADER -->
+            <div class="section-header">
+                <h1>Staff Team</h1>
+                <p>The keepers of the flame.</p>
+            </div>
+
+            <!-- 1. OWNER SECTION -->
+            <h3 class="role-category-title role-owner-text">Owner</h3>
+            <div class="member-grid full-width-grid">
+                <div class="member-card owner-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Leafeon.webp" alt="Owner Eeveelution"
+                                class="member-avatar">
                         </div>
-                    </td>
-                    <td style="width: 30%; max-height: 75px;">
-                        <div class="dropdown eeveelutiontext">
-                            <button class="dropbtn">Pages</button>
-                            <div class="dropdown-content">
-                                <a href="custommovesandabilities.html" class="sitebutton"><img src="Imgs/Movesets_icon.png" class="discicon">|Movesets</a>
-                                <br>
-                                <br>
-                                <br>
-                                <a href="members.html" class="sitebutton"><img src="Imgs/Eeveelutions.png" class="discicon">|Members</a>
-                                <br>
-                                <br>
-                                <br>
-                                <a href="eeveelutions.html" class="sitebutton"><img src="Imgs/vee_face.png" class="discicon">|Eeveelutions</a>
-                                <br>
-                                <br>
-                                <br>
-                                <a href="map.html" class="sitebutton"><img src="Imgs/Map.png" class="discicon" style="border-radius: 5px;">|Map</a>
-                            </div>
-                          </div> 
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </nav>
+                        <div class="member-details">
+                            <h2 class="member-name">Nox the Absol</h2>
+                            <p>Referred to as "Leaf" | kamillkevin55</p>
+                            <span class="role-badge role-owner">Owner</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>"The founder of the server. Though he's sometimes depressing, he's a great guy"</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="eeveelutiontext membercard Leaf">
-            <h2 class="membername">Leaf</h2>
-            <p class="memberdesc" style="font-size: larger;">Mainly a Leafeon, and a little bit Vaporeon. Likes chatting, kind, very friendly and can easily get very emotional. Not really into battling, and usually the Healer of the party, but can protect himself. Has unique, never seen before moves too. Usually a shoulder to cry on, and wants to help anyone feeling low. May be apart of an interesting story...</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Leafeon.png" alt="Leafeon" title="Leafeon" class="SpeciesImage">
-                    <h3>Leafeon Vaporeon fusion<br>(Leafeon form)</h3>
-                </div>
-                <div class="membertype">
-                    <p><img src="Imgs/Grass_Type.png" alt="Grass Type" title="Grass Type" class="typeimage"> <img src="Imgs/Water_Type.png" alt="Water Type" title="Water Type" class="typeimage"></p>
-                    <h3>Grass-Water Dualtype</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/YT.png" alt="YTIcon" title="Youtube Icon" class="memberaccountimage"></td>
-                    <td> | @kamillkevin55</td>
-                </tr>
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | kamillkevin55</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Bleedy">
-            <h2 class="membername">Ash</h2>
-            <p class="memberdesc" style="font-size: larger;">He's the co-owner of the server and he tries to make sure everything is according to plan. While he can be depressing and extremely hostile, he can be quite a chill and helpful person when it comes to different stuff. He likes to be with his friends, especially play with them.<br><br>He's suffering from mental weakness and vulnerability so make sure to think before you say something that might be sensitive to him.</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Galacteon.png" alt="Galacteon" title="Form: Galacteon" class="SpeciesImage">
-                    <h3>Galacteon</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Cosmic_Type.png" alt="Cosmic Type" title="Cosmic Type" class="typeimage">
-                    <h3>Cosmic Type</h3>
+            <!-- 2. EDITOR SECTION -->
+            <h3 class="role-category-title role-editor-text">Editors</h3>
+            <div class="member-grid full-width-grid">
+                <div class="member-card editor-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Galacteon.webp" alt="Editor Eeveelution"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Ash Shadowflame</h2>
+                            <span class="role-badge role-editor">Editor</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>"Most of the server's layout is his work. Don't get on his bad side but he's a pretty fun guy
+                            all around."</p>
+                        <p style="margin-top:5px; font-size:0.85rem;">PS: He REALLY loves games.</p>
+                    </div>
                 </div>
             </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/YT.png" alt="YTIcon" title="Youtube Icon" class="memberaccountimage"></td>
-                    <td> | @shadowstreamsthings | @shadowgameplaysofstuff</td>
-                </tr>
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | shadow_thedarkest</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Tornai">
-            <h2 class="membername">Tornai</h2>
-            <p class="memberdesc" style="font-size: larger;">A 'mon who loves to rp, isn't good at making friends, isn't too special, has a small channel.</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Flareon.png" alt="Flareon" title="Flareon" class="SpeciesImage">
-                    <h3>Flareon</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Fire_Type.png" alt="Fire Type" title="Fire Type" class="typeimage">
-                    <h3>Fire Type</h3>
+
+            <!-- 3. ADMIN SECTION -->
+            <h3 class="role-category-title role-admin-text">Admins</h3>
+            <div class="member-grid full-width-grid">
+                <div class="member-card admin-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Sylveon.webp" alt="Admin Eeveelution"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Cris</h2>
+                            <span class="role-badge role-admin">Admin</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>"Loves to roleplay and is a great person to chat with. He's mostly around when the owner is."
+                        </p>
+                    </div>
                 </div>
             </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/YT.png" alt="YTIcon" title="Youtube Icon" class="memberaccountimage"></td>
-                    <td> | @TornaiFunkin</td>
-                </tr>
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | not_tornai | flareon_almostfluffy</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Sam">
-            <h2 class="membername">Sam</h2>
-            <p class="memberdesc" style="font-size: larger;">A 14 year old boy that once used to live as a human, but one day, he learned how to turn into different Eeveelutions with a special ability passed down by his bloodline. Loves to rp, make friends, he's supportive, optimistic, and energetic. Dosen't have a YT channel.</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Eeveelutions.png" alt="VeelutionEmblem" title="Eeveelution Emblem" class="SpeciesImage">
-                    <h3>Shapeshifting Eeveelution<br>(Main Form: Jolteon)</h3>
+
+            <!-- 4. MODERATOR SECTION -->
+            <h3 class="role-category-title role-moderator-text">Moderators</h3>
+            <div class="member-grid full-width-grid">
+                <div class="member-card moderator-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <!-- Multiple Icons Test (Diagonal) -->
+                            <img src="Assets/Images/Icons/Eeveelutions/Leafeon.webp" alt="Moderator Eeveelution"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Breezeon.webp" alt="Moderator Eeveelution"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Skye</h2>
+                            <span class="role-badge role-moderator">Moderator</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>"Despite his shortcomings, he's a guy who tries his best."</p>
+                    </div>
                 </div>
-                <div class="membertype">
-                    <img src="Imgs/Normal_Type.png" alt="Normal Type" title="Normal Type" class="typeimage"> <img src="Imgs/Dragon_Type.png" alt="Dragon Type" title="Dragon Type" class="typeimage">
-                    <h3>Normal-Dragon Dualtype</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | samondanewphoneboiiii</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Sky">
-            <h2 class="membername">Skye</h2>
-            <p class="memberdesc" style="font-size: larger;">An Eevee that is really kind, nice, and jolly. He helps his friends the best he can. He Likes meeting new people and make new friends! Really curious and likes to play video games and adventuring outside.</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Eevee.png" alt="Eevee" title="Eevee" class="SpeciesImage">
-                    <h3>Eevee</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Normal_Type.png" alt="Normal Type" title="Normal Type" class="typeimage">
-                    <h3>Normal Type</h3>
+
+                <div class="member-card moderator-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Jolteon.webp" alt="Moderator Eeveelution"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Volt</h2>
+                            <span class="role-badge role-moderator">Moderator</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>"One of our oldest members. He's not as around as the others but he's there when needed."</p>
+                    </div>
                 </div>
             </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | skye_0531</td>
-                </tr>
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/YT.png" alt="YTIcon" title="Youtube Icon" class="memberaccountimage"></td>
-                    <td> | @skye478</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Maple">
-            <h2 class="membername">Emerald (Emy)</h2>
-            <p class="memberdesc" style="font-size: larger;">When I was an eevee, I was cought by someone, I haven't seen my parents since that day. He evolved me into vaporeon and abandoned me because I wasn't female... Now Sam is my trainer. <br>I have invented a new move - ultra hydropump. It charges 2 times longer than normal hydropump, but is 3 times stronger, 3 times faster and using it has some bad consequences for me. <br>Besides that, I'm normal shiny, emerald eyed vaporeon.</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Vaporeon_shiny.png" alt="Shiny Vaporeon" title="Shiny Vaporeon" class="SpeciesImage">
-                    <h3>Shiny Vaporeon</h3>
+
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 3rem 0;">
+
+            <!-- NOTABLE MEMBERS SECTION -->
+            <div class="section-header">
+                <h1>ActiveMembers</h1>
+                <p>Some of the faces you'll see around the server.</p>
+            </div>
+
+            <div class="member-grid notable-grid">
+                <!-- MEMBER 1 -->
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Jolteon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Hawky</h2>
+                            <span class="role-badge role-member">Member</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>Playing the role of a female in texts, he's a great guy to turn to for help.</p>
+                        <p>Editor's note: He helped me in my darkest times.</p>
+                    </div>
                 </div>
-                <div class="membertype">
-                    <img src="Imgs/Water_Type.png" alt="Water Type" title="Water Type" class="typeimage">
-                    <h3>Water Type</h3>
+
+                <!-- MEMBER 2 -->
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Umbreon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Mew</h2>
+                            <span class="role-badge role-member">Member</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>The least active of all of us but he's there.</p>
+                    </div>
+                </div>
+
+                <!-- MEMBER 3 -->
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Leafeon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Leafly</h2>
+                            <span class="role-badge role-member">Member</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>The other least active member.</p>
+                    </div>
+                </div>
+
+                <!-- MEMBER 4 -->
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Eevee.webp" alt="Member Avatar"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Vaporeon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Jolteon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Flareon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Espeon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Umbreon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Leafeon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Glaceon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                            <img src="Assets/Images/Icons/Eeveelutions/Sylveon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Sam</h2>
+                            <span class="role-badge role-member">Member</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>The "shapeshifter" in our server. He can be anything and he's a very friendly guy.</p>
+                    </div>
+                </div>
+
+                <!-- MEMBER 5 -->
+                <div class="member-card">
+                    <div class="member-header">
+                        <div class="avatar-container">
+                            <img src="Assets/Images/Icons/Eeveelutions/Glaceon.webp" alt="Member Avatar"
+                                class="member-avatar">
+                        </div>
+                        <div class="member-details">
+                            <h2 class="member-name">Ashie</h2>
+                            <span class="role-badge role-member">Member</span>
+                        </div>
+                    </div>
+                    <div class="member-body">
+                        <p>Potentially | the guy who's in charge of the server's roleplay's map - Not including outer
+                            space.</p>
+                    </div>
                 </div>
             </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | the_emerald_eyed_vaporeon | cris_the_shiny_sylveon</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Ashie">
-            <h2 class="membername">Ashie</h2>
-            <p class="memberdesc" style="font-size: larger;">One of the two Creators in the flesh using a tiny fragment of the main forme power, a hybrid that has the instincts of an Umbreon, the personality of a Jolteon, with the form of a Glaceon with a black cowboy hat (short) and neck bandana. Primarily uses ice attacks, can become any type using powerful magic to change. <br><br>Lives in a hidden region by the name of Salanor, far West of Kalos and North of the Ferrum region. Has 5 siblings all a part of a world protection organisation, has the strongest bond with his youngest sister, Autumn (Leafeon, Flareon, Espeon hybrid). They are the only hybrids in the current generation and the second instance of this happening. <br><br>He has a strong bond with with a "Sylveon" by the name of Pancakes, the second creator as a living being. If they are separated, or something bad happens to one or the other, they will go berserk possibly causing universal extinction after quite some time. Where's Pancakes... I thought we were getting Ice Cream!</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Glaceon.png" alt="Glaceon" title="Form: Glaceon" class="SpeciesImage">
-                    <h3>Glaceon-Jolteon-Umbreon fusion</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Electric_Type.png" alt="Electric Type" title="Electric Type" class="typeimage"> <img src="Imgs/Dark_Type.png" alt="Dark Type" title="Dark Type" class="typeimage"> <img src="Imgs/Ice_Type.png" alt="Ice Type" title="Ice Type" class="typeimage">
-                    <h3>Electric-Dark-Ice Tritype</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | itsashie_</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Leif">
-            <h2 class="membername">Leif</h2>
-            <p class="memberdesc" style="font-size: larger;">//No description found//</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Leafeon.png" alt="Leafeon" title="Form: Leafeon" class="SpeciesImage">
-                    <h3>Shiny Leafeon-Floragato fusion</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Grass_Type.png" alt="Grass Type" title="Grass Type" class="typeimage"> <img src="Imgs/Dark_Type.png" alt="Dark Type" title="Dark Type" class="typeimage">
-                    <h3>Grass-Dark Dualtype</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | weedcat420</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Luc">
-            <h2 class="membername">Lucario Riolu (Luc)</h2>
-            <p class="memberdesc" style="font-size: larger;">//No description found//</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Glaceon.png" alt="Glaceon" title="Form: Glaceon" class="SpeciesImage">
-                    <h3>Glaceon</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Ice_Type.png" alt="Ice Type" title="Ice Type" class="typeimage">
-                    <h3>Ice Type</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | popplioglaceon_30372</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Faris">
-            <h2 class="membername">Faris</h2>
-            <p class="memberdesc" style="font-size: larger;">//No description found//</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Umbreon.png" alt="Umbreon" title="Form: Umbreon" class="SpeciesImage">
-                    <h3>Umbreon</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Dark_Type.png" alt="Dark Type" title="Dark Type" class="typeimage">
-                    <h3>Dark Type</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | farisbyt | boykisser146 | floofyeevee | .__victini__.</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Leif">
-            <h2 class="membername">LeafeonIdi</h2>
-            <p class="memberdesc" style="font-size: larger;">//No description found//</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Leafeon.png" alt="Leafeon" title="Form: Leafeon" class="SpeciesImage">
-                    <h3>Leafeon</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Grass_Type.png" alt="Grass Type" title="Grass Type" class="typeimage">
-                    <h3>Grass Type</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | leafeonidi</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Erkal">
-            <h2 class="membername">Erkal</h2>
-            <p class="memberdesc" style="font-size: larger;">Goofy online creature that does a variety of things sometimes. Don't be afraid to DM, tho it may be a while before i respond</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Vaporeon.png" alt="Vaporeon" title="Form: Vaporeon" class="SpeciesImage">
-                    <h3>Vaporeon</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Water_Type.png" alt="Water Type" title="Water Type" class="typeimage">
-                    <h3>Water Type</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | admiralerkal79</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Sunset">
-            <h2 class="membername">Sunset</h2>
-            <p class="memberdesc" style="font-size: larger;">//No description found//</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Umbreon.png" alt="Umbreon" title="Form: Umbreon" class="SpeciesImage">
-                    <h3>Umbreon</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Dark_Type.png" alt="Dark Type" title="Dark Type" class="typeimage">
-                    <h3>Dark Type</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | dawn9867</td>
-                </tr>
-            </table>
-        </div>
-        <div class="eeveelutiontext membercard Rubi">
-            <h2 class="membername">Rubi</h2>
-            <p class="memberdesc" style="font-size: larger;">//No description found//</p>
-            <div class="memberinfo">
-                <div class="memberspecies">
-                    <img src="Imgs/Umbreon.png" alt="Umbreon" title="Form: Umbreon" class="SpeciesImage">
-                    <h3>Umbreon</h3>
-                </div>
-                <div class="membertype">
-                    <img src="Imgs/Dark_Type.png" alt="Dark Type" title="Dark Type" class="typeimage">
-                    <h3>Dark Type</h3>
-                </div>
-            </div>
-            <table class="memberaccounts">
-                <tr>
-                    <td style="width: 60px;"><img src="Imgs/disc.png" alt="DiscIcon" title="Discord Icon" class="memberaccountimage"></td>
-                    <td> | absoll</td>
-                </tr>
-            </table>
+
         </div>
 
-        <div class="headdiv">
-            <h2 class="eeveelutiontext"><a href="https://discord.gg/hmtf5uqtwY" target="_blank" class="jointext">--Join us in our discord!-- <br><img src="Imgs/DiscordInvite.png" alt="discinv" title="Discord Invite" class="discInvite"></a></h2>
-        </div>
+        <!-- INVITE SECTION -->
+        <section class="joinDiv card">
+            <div class="card-header">
+                <h2>Come Join Us!</h2>
+            </div>
+            <p style="text-align: center;">If we caught your attention, make sure to join our server.</p>
+
+            <center>
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank">
+                    <img src="Assets/OldImgs/Invite.png" alt="Eeveelution Kingdom Invite" class="invite-image">
+                </a>
+
+                <a href="https://discord.gg/6g2eM5gRdA" target="_blank" class="join-btn">
+                    JOIN OUR SERVER
+                </a>
+            </center>
+        </section>
+
+    </main>
+
+    <!-- SCRIPT -->
+    <script>
+        // --- MOBILE MENU LOGIC ---
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const sideMenu = document.getElementById('sideMenu');
+
+        if (hamburgerBtn && sideMenu) {
+            hamburgerBtn.addEventListener('click', () => {
+                sideMenu.classList.toggle('open');
+                hamburgerBtn.classList.toggle('active');
+            });
+
+            const navLinks = document.querySelectorAll('.nav-item');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    sideMenu.classList.remove('open');
+                    hamburgerBtn.classList.remove('active');
+                });
+            });
+        }
+
+        // --- RESIZE ANIMATION STOPPER ---
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            document.body.classList.add("resize-animation-stopper");
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                document.body.classList.remove("resize-animation-stopper");
+            }, 400);
+        });
+    </script>
 </body>
+
 </html>
