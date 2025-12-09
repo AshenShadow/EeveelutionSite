@@ -1224,6 +1224,21 @@ p {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
+/* New Inactive Member Style */
+.inactive-member {
+    border-color: #555;
+    background: linear-gradient(145deg, rgba(30, 30, 30, 0.9), rgba(10, 10, 10, 0.95));
+}
+
+.inactive-member .member-name {
+    color: #888;
+}
+
+.inactive-member .member-avatar {
+    border-color: #555;
+    filter: grayscale(80%);
+}
+
 /* Role Specific Styling */
 .role-owner,
 .owner-card {
@@ -1273,6 +1288,13 @@ p {
     background: rgba(88, 101, 242, 0.1);
     color: var(--secondary);
     border: 1px solid var(--secondary);
+}
+
+.role-inactive {
+    background: rgba(150, 150, 150, 0.1);
+    color: #99aab5;
+    /* Discord Grey */
+    border: 1px solid #99aab5;
 }
 
 /* Badge tweaks */
