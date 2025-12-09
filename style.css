@@ -1177,6 +1177,7 @@ p {
 }
 
 .full-width-grid .member-card {
+    min-height: 180px;
     border-width: 2px;
 }
 
@@ -1302,7 +1303,7 @@ p {
     flex-shrink: 0;
 }
 
-/* Ensure full-width cards also have good sized avatars, can be larger if desired */
+/* Ensure full-width cards also have good sized avatars */
 .full-width-grid .avatar-container {
     width: 80px;
     height: 80px;
@@ -1443,6 +1444,80 @@ p {
     z-index: 1;
 }
 
+/* 9 Icons: Circle */
+.avatar-container img:first-child:nth-last-child(9),
+.avatar-container img:first-child:nth-last-child(9)~img {
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    border-radius: 50%;
+    border-width: 1px;
+}
+
+/* Positioning 9 items */
+/* 1: Top (0deg) */
+.avatar-container img:first-child:nth-last-child(9) {
+    top: 2%;
+    left: 34%;
+    z-index: 9;
+}
+
+/* 2: 40deg */
+.avatar-container img:first-child:nth-last-child(9)~img:nth-child(2) {
+    top: 10%;
+    right: 12%;
+    z-index: 8;
+}
+
+/* 3: 80deg */
+.avatar-container img:first-child:nth-last-child(9)~img:nth-child(3) {
+    top: 32%;
+    right: 0%;
+    z-index: 7;
+}
+
+/* 4: 120deg */
+.avatar-container img:first-child:nth-last-child(9)~img:nth-child(4) {
+    bottom: 18%;
+    right: 2%;
+    z-index: 6;
+}
+
+/* 5: 160deg */
+.avatar-container img:first-child:nth-last-child(9)~img:nth-child(5) {
+    bottom: 2%;
+    right: 22%;
+    z-index: 5;
+}
+
+/* 6: 200deg */
+.avatar-container img:first-child:nth-last-child(9)~img:nth-child(6) {
+    bottom: 2%;
+    left: 22%;
+    z-index: 4;
+}
+
+/* 7: 240deg */
+.avatar-container img:first-child:nth-last-child(9)~img:nth-child(7) {
+    bottom: 18%;
+    left: 2%;
+    z-index: 3;
+}
+
+/* 8: 280deg */
+.avatar-container img:first-child:nth-last-child(9)~img:nth-child(8) {
+    top: 32%;
+    left: 0%;
+    z-index: 2;
+}
+
+/* 9: 320deg */
+.avatar-container img:first-child:nth-last-child(9)~img:nth-child(9) {
+    top: 10%;
+    left: 12%;
+    z-index: 1;
+}
+
 
 /* --- STATUS DOTS --- */
 .status-dot {
@@ -1471,6 +1546,7 @@ p {
 .status-dot.offline {
     background-color: #80848e;
 }
+
 
 /* --- MEMBER TEXT --- */
 .member-details {
